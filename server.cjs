@@ -250,6 +250,8 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
   }
   const imageUrl = `/images/${req.file.filename}`;
   res.json({ imageUrl });
+});
+
 // 6. GET sitemap.xml for Google SEO ranking
 app.get('/sitemap.xml', (req, res) => {
   const host = req.get('host');
