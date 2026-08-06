@@ -250,7 +250,49 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
   }
   const imageUrl = `/images/${req.file.filename}`;
   res.json({ imageUrl });
+// 6. GET sitemap.xml for Google SEO ranking
+app.get('/sitemap.xml', (req, res) => {
+  const host = req.get('host');
+  const protocol = req.secure ? 'https' : 'http';
+  const baseUrl = `${protocol}://${host}`;
+
+  const products = readProducts();
+  const categories = new Set();
+  products.forEach(p => {
+    if (Array.isArray(p.categories)) {
+      p.categories.forEach(c => categories.add(c));
+    }
+  });
+
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+  // Static pages
+  const staticPaths = ['', '/products', '/contact'];
+  staticPaths.forEach(path => {
+    xml += '  <url>\n';
+    xml += `    <loc>${baseUrl}${path}</loc>\n`;
+    xml += '    <changefreq>daily</changefreq>\n';
+    xml += '    <priority>1.0</priority>\n';
+    xml += '  </url>\n';
+  });
+
+  // Dynamic Category Pages
+  categories.forEach(cat => {
+    const encodedCat = encodeURIComponent(cat);
+    xml += '  <url>\n';
+    xml += `    <loc>${baseUrl}/products?category=${encodedCat}</loc>\n`;
+    xml += '    <changefreq>weekly</changefreq>\n';
+    xml += '    <priority>0.8</priority>\n';
+    xml += '  </url>\n';
+  });
+
+  xml += '</urlset>';
+
+  res.header('Content-Type', 'application/xml');
+  res.status(200).send(xml);
 });
+
 
 // Serve built frontend assets in production
 if (process.env.NODE_ENV === 'production') {

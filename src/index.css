@@ -91,9 +91,7 @@ h6 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: #ffffff;
   border-bottom: 1px solid hsl(var(--color-border));
   transition: var(--transition-smooth);
 }
