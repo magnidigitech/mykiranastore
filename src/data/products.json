@@ -1,0 +1,6011 @@
+[
+  {
+    "id": "3613",
+    "name": "Laxmi Sona Masoori Rice 20LB",
+    "price": 4.99,
+    "original_image": "002-scaled.png",
+    "image": "/images/Laxmi Sona Masoori Rice 20LB.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3621",
+    "name": "Laxmi Extra Hot Chilli Powder",
+    "price": 4.99,
+    "original_image": "009-scaled.png",
+    "image": "/images/Laxmi Extra Hot Chilli Powder.png",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3638",
+    "name": "Laxmi Sesame oil - 500ml",
+    "price": 4.99,
+    "original_image": "003-scaled.png",
+    "image": "/images/Laxmi Sesame oil - 500ml.png",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3640",
+    "name": "CHAKRA IDLI RICE 10LBS",
+    "price": 4.99,
+    "original_image": "CHAKRA-IDLI-RICE-10LB.png",
+    "image": "/images/CHAKRA IDLI RICE 10LBS.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "3643",
+    "name": "Aachi Sambar Powder - 100g",
+    "price": 4.99,
+    "original_image": "005-scaled.png",
+    "image": "/images/Aachi Sambar Powder - 100g.png",
+    "categories": [
+      "Spices",
+      "Groceries"
+    ],
+    "brand": "Aachi",
+    "inStock": true
+  },
+  {
+    "id": "3645",
+    "name": "Nilgiris Palakkadan Matta Rice - 22 LBS",
+    "price": 4.99,
+    "original_image": "006-scaled.png",
+    "image": "/images/Nilgiris Palakkadan Matta Rice - 22 LBS.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Nilgiris",
+    "inStock": true
+  },
+  {
+    "id": "3647",
+    "name": "TF - Chicken Masala",
+    "price": 4.99,
+    "original_image": "10-scaled.png",
+    "image": "/images/TF - Chicken Masala.png",
+    "categories": [
+      "Spices",
+      "Groceries"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "3649",
+    "name": "Laxmi Crystal Sona Masoori Rice - 20 LB",
+    "price": 4.99,
+    "original_image": "11-scaled.png",
+    "image": "/images/Laxmi Crystal Sona Masoori Rice - 20 LB.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3651",
+    "name": "Laxmi Sharbati Chappati Flour",
+    "price": 4.99,
+    "original_image": "12-scaled.png",
+    "image": "/images/Laxmi Sharbati Chappati Flour.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3653",
+    "name": "FRZ NIL Sliced Green  Mango 400GM",
+    "price": 4.99,
+    "original_image": "008-scaled.png",
+    "image": "/images/FRZ NIL Sliced Green  Mango 400GM.png",
+    "categories": [
+      "Groceries",
+      "Frozen Food"
+    ],
+    "brand": "Nilgiris",
+    "inStock": true
+  },
+  {
+    "id": "3655",
+    "name": "FRZ Nil Idiyappam 454 G",
+    "price": 4.99,
+    "original_image": "007-scaled.png",
+    "image": "/images/FRZ Nil Idiyappam 454 G.png",
+    "categories": [
+      "Groceries",
+      "Frozen Food"
+    ],
+    "brand": "Nilgiris",
+    "inStock": true
+  },
+  {
+    "id": "3752",
+    "name": "ASH - PLANTIAN",
+    "price": 4.99,
+    "original_image": "ASH-PLANTAIN.jpg",
+    "image": "/images/ASH - PLANTIAN.jpg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3755",
+    "name": "Dosakai",
+    "price": 4.99,
+    "original_image": "dosakai.jpg",
+    "image": "/images/Dosakai.jpg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3766",
+    "name": "Drumsticks",
+    "price": 4.99,
+    "original_image": "Drumsticks.jpg",
+    "image": "/images/Drumsticks.jpg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3768",
+    "name": "EDDOES",
+    "price": 4.99,
+    "original_image": "EDDOES.jpeg",
+    "image": "/images/EDDOES.jpeg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3770",
+    "name": "DrumStick Leaves",
+    "price": 4.99,
+    "original_image": "Drum-Stick-Leaves.jpeg",
+    "image": "/images/DrumStick Leaves.jpeg",
+    "categories": [
+      "Leafy Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3773",
+    "name": "CALLALOO ( Thotakura )",
+    "price": 4.99,
+    "original_image": "CALLALOO-Thotakura-.jpg",
+    "image": "/images/CALLALOO ( Thotakura ).jpg",
+    "categories": [
+      "Leafy Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3775",
+    "name": "betal leaves",
+    "price": 4.99,
+    "original_image": "betal-leaves.jpg",
+    "image": "/images/betal leaves.jpg",
+    "categories": [
+      "Leafy Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3777",
+    "name": "Snake Guard",
+    "price": 4.99,
+    "original_image": "Snake-Guard.jpeg",
+    "image": "/images/Snake Guard.jpeg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3779",
+    "name": "Ash gourd",
+    "price": 4.99,
+    "original_image": "Ash-gourd.jpg",
+    "image": "/images/Ash gourd.jpg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3781",
+    "name": "Baby Banana",
+    "price": 4.99,
+    "original_image": "baby-banana.jpg",
+    "image": "/images/Baby Banana.jpg",
+    "categories": [
+      "Fruits"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3783",
+    "name": "Indian EggPlant",
+    "price": 4.99,
+    "original_image": "Indian-EggPlant.jpg",
+    "image": "/images/Indian EggPlant.jpg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3788",
+    "name": "Indian Bittermillon",
+    "price": 4.99,
+    "original_image": "Indian-Bittermillon.jpg",
+    "image": "/images/Indian Bittermillon.jpg",
+    "categories": [
+      "Fresh Vegetables"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3790",
+    "name": "Gala Apples",
+    "price": 4.99,
+    "original_image": "gala-apples.jpg",
+    "image": "/images/Gala Apples.jpg",
+    "categories": [
+      "Fruits"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3792",
+    "name": "DP Multigrain Atta 10LB",
+    "price": 4.99,
+    "original_image": "DP-Multigrain-Atta-10LB.png",
+    "image": "/images/DP Multigrain Atta 10LB.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "3795",
+    "name": "MTR Badam Mix Multi Purpose Jar - 1kg",
+    "price": 4.99,
+    "original_image": "MTRBadammixmultipurposejar1kgfront_9964-scaled.webp",
+    "image": "/images/MTR Badam Mix Multi Purpose Jar - 1kg.webp",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "3798",
+    "name": "Chakra Idly Rava",
+    "price": 4.99,
+    "original_image": "Chakra-Idly.png",
+    "image": "/images/Chakra Idly Rava.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "3801",
+    "name": "Sruti Giar beans",
+    "price": 4.99,
+    "original_image": "Sruti-Giar-beans.png",
+    "image": "/images/Sruti Giar beans.png",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3804",
+    "name": "Laxmi phool makhana - 400g",
+    "price": 4.99,
+    "original_image": "NAV_LMFM5_A.jpg",
+    "image": "/images/Laxmi phool makhana - 400g.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3807",
+    "name": "Lx Ging & Gar paste 8 oz",
+    "price": 4.99,
+    "original_image": "NAV_LPSG1_A-scaled.jpg",
+    "image": "/images/Lx Ging & Gar paste 8 oz.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3810",
+    "name": "LX. POHA THIN 10X800 GM",
+    "price": 4.99,
+    "original_image": "NAV_LCP8_A.jpg",
+    "image": "/images/LX. POHA THIN 10X800 GM.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3813",
+    "name": "Banana Leaf",
+    "price": 4.99,
+    "original_image": "Banana-Leaf.jpeg",
+    "image": "/images/Banana Leaf.jpeg",
+    "categories": [
+      "Leafy Vegetables",
+      "Pooja Items"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3816",
+    "name": "Mango leaves",
+    "price": 4.99,
+    "original_image": "Mango-leaves.jpeg",
+    "image": "/images/Mango leaves.jpeg",
+    "categories": [
+      "Leafy Vegetables",
+      "Pooja Items"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3819",
+    "name": "Pooja Coconut",
+    "price": 4.99,
+    "original_image": "Pooja-Coconut.jpeg",
+    "image": "/images/Pooja Coconut.jpeg",
+    "categories": [
+      "Pooja Items"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3822",
+    "name": "Custud Apple",
+    "price": 4.99,
+    "original_image": "Custud-apple.jpeg",
+    "image": "/images/Custud Apple.jpeg",
+    "categories": [
+      "Fruits",
+      "Pooja Items"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3825",
+    "name": "Roses small",
+    "price": 4.99,
+    "original_image": "Roses-small.jpeg",
+    "image": "/images/Roses small.jpeg",
+    "categories": [
+      "Pooja Items",
+      "Flowers"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3828",
+    "name": "Roses",
+    "price": 4.99,
+    "original_image": "Roses1.jpeg",
+    "image": "/images/Roses.jpeg",
+    "categories": [
+      "Pooja Items",
+      "Flowers"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3831",
+    "name": "Grass",
+    "price": 4.99,
+    "original_image": "Grass.jpeg",
+    "image": "/images/Grass.jpeg",
+    "categories": [
+      "Pooja Items"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3834",
+    "name": "lavender",
+    "price": 4.99,
+    "original_image": "Flowes-1.jpeg",
+    "image": "/images/lavender.jpeg",
+    "categories": [
+      "Pooja Items",
+      "Flowers"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3837",
+    "name": "Chamanthi",
+    "price": 4.99,
+    "original_image": "Flowes-2.jpeg",
+    "image": "/images/Chamanthi.jpeg",
+    "categories": [
+      "Pooja Items",
+      "Flowers"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3840",
+    "name": "MTR paneer butter masala curry 300g",
+    "price": 4.99,
+    "original_image": "Mtr-paneer-butter-masala-curry-300g-scaled.png",
+    "image": "/images/MTR paneer butter masala curry 300g.png",
+    "categories": [
+      "Groceries",
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "3843",
+    "name": "Haldirams Dal Palak 300g",
+    "price": 4.99,
+    "original_image": "Haldirams-Dal-Palak.webp",
+    "image": "/images/Haldirams Dal Palak 300g.webp",
+    "categories": [
+      "Groceries",
+      "Frozen Food"
+    ],
+    "brand": "Haldirams",
+    "inStock": true
+  },
+  {
+    "id": "3847",
+    "name": "Priya Tandoori Masala 100g",
+    "price": 4.99,
+    "original_image": "PR-Tandoori-Masala-100g-scaled.png",
+    "image": "/images/Priya Tandoori Masala 100g.png",
+    "categories": [
+      "Spices",
+      "Groceries"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "3850",
+    "name": "Priya HYD Mutton Masala 50g",
+    "price": 4.99,
+    "original_image": "PR-HYD-Mutton-Masala-50g-scaled.png",
+    "image": "/images/Priya HYD Mutton Masala 50g.png",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "3853",
+    "name": "Priya HYD Chicken Biryani Masala 50g",
+    "price": 4.99,
+    "original_image": "PR-HYD-Chicken-Biryani-Masala-50g-scaled.png",
+    "image": "/images/Priya HYD Chicken Biryani Masala 50g.png",
+    "categories": [
+      "Spices",
+      "Groceries"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "3856",
+    "name": "Priya Drum Stick Pickle 300g",
+    "price": 4.99,
+    "original_image": "PR-Drum-Stick-Pickle-300g-scaled.png",
+    "image": "/images/Priya Drum Stick Pickle 300g.png",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "3859",
+    "name": "Priya Garlic pickle 300g",
+    "price": 4.99,
+    "original_image": "PR-Garlic-pickle-300g-scaled.png",
+    "image": "/images/Priya Garlic pickle 300g.png",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "3862",
+    "name": "Haldirams RTE Dal Tadka 300g",
+    "price": 4.99,
+    "original_image": "Hrs-RTE-Dal-Tadka-300g-scaled.png",
+    "image": "/images/Haldirams RTE Dal Tadka 300g.png",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Haldirams",
+    "inStock": true
+  },
+  {
+    "id": "3865",
+    "name": "Laxmi Yellow Madras Pappadam 200g",
+    "price": 4.99,
+    "original_image": "Lx-Yellow-Madras-Pappadam-200g-scaled.png",
+    "image": "/images/Laxmi Yellow Madras Pappadam 200g.png",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3870",
+    "name": "Amma's Kitchen Garlic Murukku 200g",
+    "price": 4.99,
+    "original_image": "AK-Garlic-Murukku-200g-scaled.png",
+    "image": "/images/Amma's Kitchen Garlic Murukku 200g.png",
+    "categories": [
+      "Groceries",
+      "Snacks"
+    ],
+    "brand": "Amma's Kitchen",
+    "inStock": true
+  },
+  {
+    "id": "3873",
+    "name": "Amma's Kitchen Plantain Chips 200gms",
+    "price": 4.99,
+    "original_image": "AK-Plantain-Chips-200gms-scaled.png",
+    "image": "/images/Amma's Kitchen Plantain Chips 200gms.png",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Amma's Kitchen",
+    "inStock": true
+  },
+  {
+    "id": "3876",
+    "name": "Brahmins Appam Idiyappam Powder 1200g",
+    "price": 4.99,
+    "original_image": "BH-Appam-Idiyappam-Powder-1200g-scaled.png",
+    "image": "/images/Brahmins Appam Idiyappam Powder 1200g.png",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "3882",
+    "name": "Brahmins Hot & Sweet Pickle 400g",
+    "price": 4.99,
+    "original_image": "BH-Hot-Sweet-Pickle-400g-scaled.png",
+    "image": "/images/Brahmins Hot & Sweet Pickle 400g.png",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "3885",
+    "name": "Society CTC Leaf Tea Jar 900gm",
+    "price": 4.99,
+    "original_image": "Society-CTC-Leaf-Tea-Jar-900gm-scaled.png",
+    "image": "/images/Society CTC Leaf Tea Jar 900gm.png",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Society",
+    "inStock": true
+  },
+  {
+    "id": "3888",
+    "name": "Gits Rava Idli 200g",
+    "price": 4.99,
+    "original_image": "Gits-Rava-Idli-200g-scaled.png",
+    "image": "/images/Gits Rava Idli 200g.png",
+    "categories": [
+      "Flours",
+      "Groceries"
+    ],
+    "brand": "Gits",
+    "inStock": true
+  },
+  {
+    "id": "3894",
+    "name": "Chakra Jowar Flour 2LBS",
+    "price": 4.99,
+    "original_image": "Chakra-Jowar-Flour-2LBS-scaled.png",
+    "image": "/images/Chakra Jowar Flour 2LBS.png",
+    "categories": [
+      "Flours",
+      "Groceries"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "3897",
+    "name": "Telephone Isabgol Husk 200g",
+    "price": 4.99,
+    "original_image": "Telephone-Isabgol-Husk-200g-scaled.png",
+    "image": "/images/Telephone Isabgol Husk 200g.png",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Telephone Isabgol",
+    "inStock": true
+  },
+  {
+    "id": "3903",
+    "name": "Rehmat-e-Shereen pheni 200g",
+    "price": 4.99,
+    "original_image": "Rehmat-e-Shereen-pheni-200g-scaled.png",
+    "image": "/images/Rehmat-e-Shereen pheni 200g.png",
+    "categories": [
+      "Groceries",
+      "Snacks"
+    ],
+    "brand": "Rehmat-e-Shereen",
+    "inStock": true
+  },
+  {
+    "id": "3906",
+    "name": "Global Choice Dabur Mustard Oil 1L",
+    "price": 4.99,
+    "original_image": "GC-Dabur-Mustard-Oil-1L-scaled.png",
+    "image": "/images/Global Choice Dabur Mustard Oil 1L.png",
+    "categories": [
+      "Groceries",
+      "Oils"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "3909",
+    "name": "Britannia Tiger Glucose 300g",
+    "price": 4.99,
+    "original_image": "BR-Tiger-Glucose-300g-scaled.png",
+    "image": "/images/Britannia Tiger Glucose 300g.png",
+    "categories": [
+      "Snacks",
+      "Biscuits"
+    ],
+    "brand": "Britannia Tiger",
+    "inStock": true
+  },
+  {
+    "id": "3912",
+    "name": "Brahmins SPECIAL PATHIRI PODI",
+    "price": 4.99,
+    "original_image": "BR-SPECIAL-PATHIRI-PODI-N_A-scaled.png",
+    "image": "/images/Brahmins SPECIAL PATHIRI PODI.png",
+    "categories": [
+      "Spices",
+      "Groceries"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "3915",
+    "name": "Priya Roti Pachadi Ridge Gourd",
+    "price": 4.99,
+    "original_image": "Priya-Roti-PAchadi-Ridge-Gourd.webp",
+    "image": "/images/Priya Roti Pachadi Ridge Gourd.webp",
+    "categories": [
+      "Groceries",
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "3918",
+    "name": "Chakra roasted white rice flour 1kg",
+    "price": 4.99,
+    "original_image": "chakra-roasted-white-rice-flour-1kg_jpg.webp",
+    "image": "/images/Chakra roasted white rice flour 1kg.webp",
+    "categories": [
+      "Flours",
+      "Groceries"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "3921",
+    "name": "Deep Roasted Umpa Mix  - 4LB",
+    "price": 4.99,
+    "original_image": "Deep-Umpa.png",
+    "image": "/images/Deep Roasted Umpa Mix  - 4LB.png",
+    "categories": [
+      "Flours",
+      "Groceries"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "3924",
+    "name": "Chakra Ragi flour 1kg",
+    "price": 4.99,
+    "original_image": "chakra-ragi-flour-1kg.png",
+    "image": "/images/Chakra Ragi flour 1kg.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "3927",
+    "name": "Priya Roti Pachadi",
+    "price": 4.99,
+    "original_image": "Priya-Roti-PAchadi.webp",
+    "image": "/images/Priya Roti Pachadi.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": false
+  },
+  {
+    "id": "3930",
+    "name": "Priya Roti Pachadi Yellow Cucumber",
+    "price": 4.99,
+    "original_image": "Yellow-Cucumber.jpg",
+    "image": "/images/Priya Roti Pachadi Yellow Cucumber.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": false
+  },
+  {
+    "id": "3933",
+    "name": "Priya Roti Pachadi Beerakaaya",
+    "price": 4.99,
+    "original_image": "beerakaayafront.webp",
+    "image": "/images/Priya Roti Pachadi Beerakaaya.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": false
+  },
+  {
+    "id": "3936",
+    "name": "24 mantra Organic Green Moong Whole 2lb",
+    "price": 4.99,
+    "original_image": "24-mantra-Organic-Green-Moong-Whole-2lb.jpg",
+    "image": "/images/24 mantra Organic Green Moong Whole 2lb.jpg",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "24 mantra Organic",
+    "inStock": true
+  },
+  {
+    "id": "3939",
+    "name": "Priya garam masala 100g",
+    "price": 4.99,
+    "original_image": "40174762_4-priya-garam-masala.webp",
+    "image": "/images/Priya garam masala 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "3942",
+    "name": "Maggi atta noodles 290g",
+    "price": 4.99,
+    "original_image": "maggi-atta-noodles-290g.webp",
+    "image": "/images/Maggi atta noodles 290g.webp",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Maggi",
+    "inStock": true
+  },
+  {
+    "id": "3945",
+    "name": "Global Choice Green Raisins 400g",
+    "price": 4.99,
+    "original_image": "POS-01363-Global-Choice-Green-Raisins-400g.webp",
+    "image": "/images/Global Choice Green Raisins 400g.webp",
+    "categories": [
+      "Uncategorized"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "3951",
+    "name": "Daawat everyday Basmati rice 4kg",
+    "price": 4.99,
+    "original_image": "Daawat-everyday-Basmati-rice-4kg.jpg",
+    "image": "/images/Daawat everyday Basmati rice 4kg.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Daawat",
+    "inStock": true
+  },
+  {
+    "id": "3954",
+    "name": "FALAK SELLA EXTRA LONG BASMATI 10lb",
+    "price": 4.99,
+    "original_image": "FALAK-SELLA-EXTRA-LONG-BASMATI-10lb.jpg",
+    "image": "/images/FALAK SELLA EXTRA LONG BASMATI 10lb.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Falak",
+    "inStock": true
+  },
+  {
+    "id": "3957",
+    "name": "GOKUL IDLI RICE - 10KG",
+    "price": 4.99,
+    "original_image": "GOKUL-IDLI-RICE-10KG.jpg",
+    "image": "/images/GOKUL IDLI RICE - 10KG.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Gokul",
+    "inStock": true
+  },
+  {
+    "id": "3960",
+    "name": "India Gate Premium Basmati Rice 10lb",
+    "price": 4.99,
+    "original_image": "India-Gate-Premium-Basmati.jpg",
+    "image": "/images/India Gate Premium Basmati Rice 10lb.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "India Gate",
+    "inStock": true
+  },
+  {
+    "id": "3963",
+    "name": "Nilgirs MATTA RICE 10KG",
+    "price": 4.99,
+    "original_image": "Nilgirs-MATTA-RICE-10KG.jpg",
+    "image": "/images/Nilgirs MATTA RICE 10KG.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Nilgirs",
+    "inStock": true
+  },
+  {
+    "id": "3966",
+    "name": "Rice Quality 1121 Extra Long Grain Creamy Sella Basmati 8Lb",
+    "price": 4.99,
+    "original_image": "Rice-Quality-1121-Extra-Long-Grain-Creamy-Sella-Basmati-8L.jpg",
+    "image": "/images/Rice Quality 1121 Extra Long Grain Creamy Sella Basmati 8Lb.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Quality",
+    "inStock": true
+  },
+  {
+    "id": "3969",
+    "name": "Laxmi Chikki Atta 10lb",
+    "price": 4.99,
+    "original_image": "Laxmi-Chikki-Atta-10lb.jpg",
+    "image": "/images/Laxmi Chikki Atta 10lb.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "3972",
+    "name": "Sher Desi Style Atta 20lb",
+    "price": 4.99,
+    "original_image": "Sher-Desi-Style-Atta-20lb.jpg",
+    "image": "/images/Sher Desi Style Atta 20lb.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Sher",
+    "inStock": true
+  },
+  {
+    "id": "3975",
+    "name": "Golden Punjabi Biscuit 2.5lb",
+    "price": 4.99,
+    "original_image": "Golden-Punjabi-Biscuit-2.5lb.jpg",
+    "image": "/images/Golden Punjabi Biscuit 2.5lb.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "Golden",
+    "inStock": true
+  },
+  {
+    "id": "3978",
+    "name": "Savera Pistachio Rasmalai 850g",
+    "price": 4.99,
+    "original_image": "Savera-Pistachio-Rasmalai-850g.jpg",
+    "image": "/images/Savera Pistachio Rasmalai 850g.jpg",
+    "categories": [
+      "Groceries",
+      "Frozen Food",
+      "Snacks"
+    ],
+    "brand": "Savera",
+    "inStock": true
+  },
+  {
+    "id": "3981",
+    "name": "Indian Chikoo",
+    "price": 4.99,
+    "original_image": "Indian-Chikoo.jpg",
+    "image": "/images/Indian Chikoo.jpg",
+    "categories": [
+      "Fruits"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3984",
+    "name": "Tothapuri Mango",
+    "price": 4.99,
+    "original_image": "Tothapuri-Mango.jpg",
+    "image": "/images/Tothapuri Mango.jpg",
+    "categories": [
+      "Fruits"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3987",
+    "name": "Yelachi Banana",
+    "price": 4.99,
+    "original_image": "Yelachi-Banana.jpg",
+    "image": "/images/Yelachi Banana.jpg",
+    "categories": [
+      "Fruits"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "3990",
+    "name": "Nilgirs SAMBAR TUB 400 GM",
+    "price": 4.99,
+    "original_image": "Nilgirs-SAMBAR-TUB-400-GM.jpg",
+    "image": "/images/Nilgirs SAMBAR TUB 400 GM.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Nilgirs",
+    "inStock": true
+  },
+  {
+    "id": "3993",
+    "name": "Global Choice Dhana Jeera Powder 200g",
+    "price": 4.99,
+    "original_image": "Global-Choice-Dhana-Jeera-Powder-200g.jpg",
+    "image": "/images/Global Choice Dhana Jeera Powder 200g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "3996",
+    "name": "Global Choice Gol Gappa Fry With Masala 250g",
+    "price": 4.99,
+    "original_image": "Global-Choice-Gol-Gappa-Fry-With-Masala-250g.jpg",
+    "image": "/images/Global Choice Gol Gappa Fry With Masala 250g.jpg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "3999",
+    "name": "Chheda Bhakarwadi Small 170g",
+    "price": 4.99,
+    "original_image": "Chheda-Bhakarwadi-Small-170g.jpg",
+    "image": "/images/Chheda Bhakarwadi Small 170g.jpg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4002",
+    "name": "kissan Jam Mix Fruit 500g",
+    "price": 4.99,
+    "original_image": "kissan-Jam-Mix-Fruit-500g.jpg",
+    "image": "/images/kissan Jam Mix Fruit 500g.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "kissan",
+    "inStock": true
+  },
+  {
+    "id": "4005",
+    "name": "Chings Mix Veg Soup 55g",
+    "price": 4.99,
+    "original_image": "Chings-Mix-Veg-Soup-55g.jpg",
+    "image": "/images/Chings Mix Veg Soup 55g.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4008",
+    "name": "Yippee Masala Noodles 280g",
+    "price": 4.99,
+    "original_image": "Yippee-Masala-Noodles-280g.jpg",
+    "image": "/images/Yippee Masala Noodles 280g.jpg",
+    "categories": [
+      "Snacks",
+      "Noodles"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4011",
+    "name": "Lx Black Pepper Whole 200gms",
+    "price": 4.99,
+    "original_image": "Lx-Black-Pepper-Whole-200gms.jpg",
+    "image": "/images/Lx Black Pepper Whole 200gms.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4014",
+    "name": "Bambino Vermicelle 1Kg",
+    "price": 4.99,
+    "original_image": "Bambino-Vermicelle-1Kg.jpg",
+    "image": "/images/Bambino Vermicelle 1Kg.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4017",
+    "name": "LX okra Frozen 300g",
+    "price": 4.99,
+    "original_image": "Today-Deals-09.jpg",
+    "image": "/images/LX okra Frozen 300g.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4021",
+    "name": "Aachi Chicken Masala 160g",
+    "price": 4.99,
+    "original_image": "Aachi-Chicken-Masala-160g.webp",
+    "image": "/images/Aachi Chicken Masala 160g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Aachi",
+    "inStock": true
+  },
+  {
+    "id": "4024",
+    "name": "Aachi Egg Masala 160g",
+    "price": 4.99,
+    "original_image": "Aachi-Egg-Masala-160g.png",
+    "image": "/images/Aachi Egg Masala 160g.png",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Aachi",
+    "inStock": true
+  },
+  {
+    "id": "4027",
+    "name": "Aachi Meat Masala 160 g",
+    "price": 4.99,
+    "original_image": "Aachi-Meat-Masala-160-g.jpg",
+    "image": "/images/Aachi Meat Masala 160 g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Aachi",
+    "inStock": true
+  },
+  {
+    "id": "4030",
+    "name": "Aachi Mutton Masala 160g",
+    "price": 4.99,
+    "original_image": "Aachi-Mutton-Masala-160g.webp",
+    "image": "/images/Aachi Mutton Masala 160g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Aachi",
+    "inStock": true
+  },
+  {
+    "id": "4033",
+    "name": "Aachi Tandoori Chicken M - 160g",
+    "price": 4.99,
+    "original_image": "Aachi-Tandoori-Chicken-M-160g.jpg",
+    "image": "/images/Aachi Tandoori Chicken M - 160g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Aachi",
+    "inStock": true
+  },
+  {
+    "id": "4060",
+    "name": "Eastern Fish Masala 165g",
+    "price": 4.99,
+    "original_image": "Eastern-Fish-Masala-165g.png",
+    "image": "/images/Eastern Fish Masala 165g.png",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Eastern",
+    "inStock": true
+  },
+  {
+    "id": "4062",
+    "name": "MDH bombay biryani 100g",
+    "price": 4.99,
+    "original_image": "MDH-bombay-biryani-100g.webp",
+    "image": "/images/MDH bombay biryani 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4064",
+    "name": "MDH butter chicken 100g",
+    "price": 4.99,
+    "original_image": "mdh-butter-chicken-100g.webp",
+    "image": "/images/MDH butter chicken 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4066",
+    "name": "MDH Chana Masala 100g",
+    "price": 4.99,
+    "original_image": "MDH-Chana-Masala-100g.jpg",
+    "image": "/images/MDH Chana Masala 100g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4068",
+    "name": "MDH chat masala 100g",
+    "price": 4.99,
+    "original_image": "MDH-chat-masala-100g.webp",
+    "image": "/images/MDH chat masala 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4070",
+    "name": "MDH chicken curry 100g",
+    "price": 4.99,
+    "original_image": "MDH-chicken-curry-100g.png",
+    "image": "/images/MDH chicken curry 100g.png",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4072",
+    "name": "MDH Garam Masala 100g",
+    "price": 4.99,
+    "original_image": "MDH-Garam-Masala-100g.jpg",
+    "image": "/images/MDH Garam Masala 100g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4074",
+    "name": "MDH Hyderabadi Biryani",
+    "price": 4.99,
+    "original_image": "MDH-Hyderabadi-Biryani.webp",
+    "image": "/images/MDH Hyderabadi Biryani.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4076",
+    "name": "MDH Jal Jeera Masala 100G",
+    "price": 4.99,
+    "original_image": "MDH-Jal-Jeera-Masala-100G.png",
+    "image": "/images/MDH Jal Jeera Masala 100G.png",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4078",
+    "name": "MDH Kashmiri Mirch 100G",
+    "price": 4.99,
+    "original_image": "MDH-Kashmiri-Mirch-100G.webp",
+    "image": "/images/MDH Kashmiri Mirch 100G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4080",
+    "name": "MDH kasoori methi 25g",
+    "price": 4.99,
+    "original_image": "MDH-kasoori-methi-25g.webp",
+    "image": "/images/MDH kasoori methi 25g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4082",
+    "name": "MDH kitchen king 100g",
+    "price": 4.99,
+    "original_image": "MDH-kitchen-king-100g.webp",
+    "image": "/images/MDH kitchen king 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4084",
+    "name": "MDH pav bhaji masala 100g",
+    "price": 4.99,
+    "original_image": "MDH-pav-bhaji-masala-100g.jpg",
+    "image": "/images/MDH pav bhaji masala 100g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4086",
+    "name": "MDH Pani Puri Masala 100g",
+    "price": 4.99,
+    "original_image": "MDH-Pani-Puri-Masala-100g.jpg",
+    "image": "/images/MDH Pani Puri Masala 100g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4088",
+    "name": "MDH sambar masala 100g",
+    "price": 4.99,
+    "original_image": "MDH-sambar-masala-100g.jpg",
+    "image": "/images/MDH sambar masala 100g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4090",
+    "name": "PR GARAM MSL 100g",
+    "price": 4.99,
+    "original_image": "PR-GARAM-MSL-100g.webp",
+    "image": "/images/PR GARAM MSL 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4092",
+    "name": "MDH shahi paneer 100g",
+    "price": 4.99,
+    "original_image": "mdh-shahi-paneer-100g.webp",
+    "image": "/images/MDH shahi paneer 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MDH",
+    "inStock": true
+  },
+  {
+    "id": "4094",
+    "name": "PR KURA KARAM PWDR 100G",
+    "price": 4.99,
+    "original_image": "PR-KURA-KARAM-PWDR-100G.webp",
+    "image": "/images/PR KURA KARAM PWDR 100G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4096",
+    "name": "PR Rasam Powder 100g",
+    "price": 4.99,
+    "original_image": "PR-Rasam-Powder-100g.webp",
+    "image": "/images/PR Rasam Powder 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4098",
+    "name": "PR Sambar Masala 100g",
+    "price": 4.99,
+    "original_image": "PR-Sambar-Masala-100g.webp",
+    "image": "/images/PR Sambar Masala 100g.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4100",
+    "name": "PR Tandoori Masala Powder",
+    "price": 4.99,
+    "original_image": "PR-Tandoori-Masala-Powder.jpg",
+    "image": "/images/PR Tandoori Masala Powder.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4102",
+    "name": "Priya Madras Curry Powder 200 g",
+    "price": 4.99,
+    "original_image": "Priya-Madras-Curry-Powder-200-g.jpg",
+    "image": "/images/Priya Madras Curry Powder 200 g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4104",
+    "name": "Priya Spicy Telugu Chaaru Masala 50g",
+    "price": 4.99,
+    "original_image": "Priya-Spicy-Telugu-Chaaru-Masala-50g.jpg",
+    "image": "/images/Priya Spicy Telugu Chaaru Masala 50g.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4111",
+    "name": "Haldirams Pista Badam Cookies (250 g)",
+    "price": 4.99,
+    "original_image": "Haldirams-Pista-Badam-Cookies-250-g.webp",
+    "image": "/images/Haldirams Pista Badam Cookies (250 g).webp",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "Haldirams",
+    "inStock": true
+  },
+  {
+    "id": "4114",
+    "name": "KARACHI BAKERY PREMIUM DOUBLE DELIGHT 2-IN-1 FRUIT AND KAJU BADAM BISCUITS",
+    "price": 4.99,
+    "original_image": "Karachi-KB-PA-Biscuits.jpg",
+    "image": "/images/KARACHI BAKERY PREMIUM DOUBLE DELIGHT 2-IN-1 FRUIT AND KAJU BADAM BISCUITS.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4117",
+    "name": "Karachi Two Majestic 400g",
+    "price": 4.99,
+    "original_image": "Karachi-Two-Majestic-400g.webp",
+    "image": "/images/Karachi Two Majestic 400g.webp",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4120",
+    "name": "Karachi Bakery Almond Biscuit, 400g",
+    "price": 4.99,
+    "original_image": "Karachi-Bakery-Almond-Biscuit-400g.jpg",
+    "image": "/images/Karachi Bakery Almond Biscuit, 400g.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4123",
+    "name": "Karachi Bakery 2in1 |Fruit + Cashew|, 400g",
+    "price": 4.99,
+    "original_image": "Karachi-Bakery-2in1-Fruit-Cashew-400g.jpg",
+    "image": "/images/Karachi Bakery 2in1 Fruit + Cashew, 400g.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4126",
+    "name": "Karachi Bakery Chai Biscuit, 400g",
+    "price": 4.99,
+    "original_image": "Karachi-Bakery-Chai-Biscuit-400g.jpg",
+    "image": "/images/Karachi Bakery Chai Biscuit, 400g.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4129",
+    "name": "Karachi Fruit Biscuit - Premium, 400 g",
+    "price": 4.99,
+    "original_image": "Karachi-Fruit-Biscuit-Premium-400-g.jpg",
+    "image": "/images/Karachi Fruit Biscuit - Premium, 400 g.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4132",
+    "name": "Haldirams Jeera Namkeen Cookies (250 g)",
+    "price": 4.99,
+    "original_image": "Haldirams-Jeera-Namkeen-Cookies-250-g.webp",
+    "image": "/images/Haldirams Jeera Namkeen Cookies (250 g).webp",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4135",
+    "name": "Karachi Bakery 2 in 1 Fruit and Osmania Biscuits",
+    "price": 4.99,
+    "original_image": "Karachi-Bakery-2-in-1-Fruit-and-Osmania-Biscuits.jpg",
+    "image": "/images/Karachi Bakery 2 in 1 Fruit and Osmania Biscuits.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4138",
+    "name": "Karachi Bakery Kaju Badam (Cashew & Almond) Biscuits",
+    "price": 4.99,
+    "original_image": "Karachi-Bakery-Kaju-Badam-Cashew-Almond-Biscuits.jpg",
+    "image": "/images/Karachi Bakery Kaju Badam (Cashew & Almond) Biscuits.jpg",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "KARACHI BAKERY",
+    "inStock": true
+  },
+  {
+    "id": "4141",
+    "name": "Canteen Foods Suji Rusk 600g",
+    "price": 4.99,
+    "original_image": "Canteen-Foods-Suji-Rusk-600g.jpg",
+    "image": "/images/Canteen Foods Suji Rusk 600g.jpg",
+    "categories": [
+      "Rusk"
+    ],
+    "brand": "Canteen Foods",
+    "inStock": true
+  },
+  {
+    "id": "4145",
+    "name": "Haldiram Soancake, Sadha, 400G",
+    "price": 4.99,
+    "original_image": "Haldiram-Soancake-Sadha-400G.jpg",
+    "image": "/images/Haldiram Soancake, Sadha, 400G.jpg",
+    "categories": [
+      "Sweets"
+    ],
+    "brand": "Haldirams",
+    "inStock": true
+  },
+  {
+    "id": "4148",
+    "name": "Haldirams Soan Papdi - Blended with Natural Cardamom, 250g Pack",
+    "price": 4.99,
+    "original_image": "Haldirams-Soan-Papdi-Blended-with-Natural-Cardamom-250g-Pack.jpg",
+    "image": "/images/Haldirams Soan Papdi - Blended with Natural Cardamom, 250g Pack.jpg",
+    "categories": [
+      "Sweets"
+    ],
+    "brand": "Haldirams",
+    "inStock": true
+  },
+  {
+    "id": "4151",
+    "name": "Britannia Toastea Eggless Rusk Cake 19.40oz (550g)",
+    "price": 4.99,
+    "original_image": "Britannia-Toastea-Eggless-Rusk-Cake-19.40oz-550g.jpg",
+    "image": "/images/Britannia Toastea Eggless Rusk Cake 19.40oz (550g).jpg",
+    "categories": [
+      "Rusk"
+    ],
+    "brand": "Britannia",
+    "inStock": true
+  },
+  {
+    "id": "4154",
+    "name": "Haldiram's Pani Puri  (240 g)",
+    "price": 4.99,
+    "original_image": "Haldirams-Pani-Puri-240-g.jpeg",
+    "image": "/images/Haldiram's Pani Puri  (240 g).jpeg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Haldirams",
+    "inStock": true
+  },
+  {
+    "id": "4158",
+    "name": "Britannia Gobbles Fruit Cake 250 gm",
+    "price": 4.99,
+    "original_image": "Britannia-Gobbles-Fruit-Cake-250-gm.jpg",
+    "image": "/images/Britannia Gobbles Fruit Cake 250 gm.jpg",
+    "categories": [
+      "Snacks",
+      "Sweets"
+    ],
+    "brand": "Britannia",
+    "inStock": true
+  },
+  {
+    "id": "4161",
+    "name": "Britannia Gobbles Vanilla Flavoured Cake 250 g",
+    "price": 4.99,
+    "original_image": "Britannia-Gobbles-Vanilla-Flavoured-Cake-250-g.jpg",
+    "image": "/images/Britannia Gobbles Vanilla Flavoured Cake 250 g.jpg",
+    "categories": [
+      "Snacks",
+      "Sweets"
+    ],
+    "brand": "Britannia",
+    "inStock": true
+  },
+  {
+    "id": "4164",
+    "name": "Britannia Toastea Cake Rusk 550gm",
+    "price": 4.99,
+    "original_image": "5iroau9c-e1762504396631.webp",
+    "image": "/images/Britannia Toastea Cake Rusk 550gm.webp",
+    "categories": [
+      "Biscuits"
+    ],
+    "brand": "Britannia",
+    "inStock": true
+  },
+  {
+    "id": "4167",
+    "name": "MTR UPMA CUP 80G",
+    "price": 4.99,
+    "original_image": "MTR-UPMA-CUP-80G.jpg",
+    "image": "/images/MTR UPMA CUP 80G.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "4170",
+    "name": "canton veg noodles instant cup",
+    "price": 4.99,
+    "original_image": "canton-veg-noodles-instant-cup.webp",
+    "image": "/images/canton veg noodles instant cup.webp",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "canton",
+    "inStock": true
+  },
+  {
+    "id": "4173",
+    "name": "DOUBLE HORSE-Quick & Easy Instant White Idiyappam 200gm",
+    "price": 4.99,
+    "original_image": "DOUBLE-HORSE-Quick-Easy-Instant-White-Idiyappam-200gm.webp",
+    "image": "/images/DOUBLE HORSE-Quick & Easy Instant White Idiyappam 200gm.webp",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "DOUBLE HORSE",
+    "inStock": true
+  },
+  {
+    "id": "4176",
+    "name": "Ching's Secret Hakka Noodles",
+    "price": 4.99,
+    "original_image": "Chings-Secret-Hakka-Noodles.jpeg",
+    "image": "/images/Ching's Secret Hakka Noodles.jpeg",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Ching's",
+    "inStock": true
+  },
+  {
+    "id": "4179",
+    "name": "Top Ramen Classic Masala Noodles 240gm",
+    "price": 4.99,
+    "original_image": "gvgfvg.jpg",
+    "image": "/images/Top Ramen Classic Masala Noodles 240gm.jpg",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Top Ramen",
+    "inStock": true
+  },
+  {
+    "id": "4182",
+    "name": "MAGGI Nutri-licious Masala Veg Atta Noodles, Instant Noodles with 20 Spices & Herbs, Source of Fibre, Protein & Iron, 435g",
+    "price": 4.99,
+    "original_image": "MAGGI-Nutri-licious-Masala-Veg-Atta-Noodles-Instant-Noodles-with-20-Spices-Herbs-Source-of-Fibre-Protein-Iron-435g.jpg",
+    "image": "/images/MAGGI Nutri-licious Masala Veg Atta Noodles, Instant Noodles with 20 Spices & Herbs, Source of Fibre, Protein & Iron, 435g.jpg",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Maggi",
+    "inStock": true
+  },
+  {
+    "id": "4185",
+    "name": "Ching's Manchurian Noodles 240g",
+    "price": 4.99,
+    "original_image": "270512-8_5-chings-secret-manchurian-instant-noodles.webp",
+    "image": "/images/Ching's Manchurian Noodles 240g.webp",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Ching's",
+    "inStock": true
+  },
+  {
+    "id": "4188",
+    "name": "MAGGI 2-Minute Instant Noodles, Masala Noodles 420g/450g Pouch (weight may vary)",
+    "price": 4.99,
+    "original_image": "MAGGI-2-Minute-Instant-Noodles-Masala-Noodles.jpg",
+    "image": "/images/MAGGI 2-Minute Instant Noodles, Masala Noodles 420g450g Pouch (weight may vary).jpg",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Maggi",
+    "inStock": true
+  },
+  {
+    "id": "4191",
+    "name": "Wai Wai Ready To Eat Veg Masala Noodles",
+    "price": 4.99,
+    "original_image": "20004319_4-wai-wai-ready-to-eat-noodles-veg-masala.webp",
+    "image": "/images/Wai Wai Ready To Eat Veg Masala Noodles.webp",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Wai Wai",
+    "inStock": true
+  },
+  {
+    "id": "4194",
+    "name": "Yippee Noodles - Magic Masala, 240g",
+    "price": 4.99,
+    "original_image": "71Oc2RWDHkL._SL1440_.jpg",
+    "image": "/images/Yippee Noodles - Magic Masala, 240g.jpg",
+    "categories": [
+      "Noodles"
+    ],
+    "brand": "Yippee",
+    "inStock": true
+  },
+  {
+    "id": "4197",
+    "name": "Global Choice Golgappa Fry with Masala 250g",
+    "price": 4.99,
+    "original_image": "69205801310.webp",
+    "image": "/images/Global Choice Golgappa Fry with Masala 250g.webp",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4200",
+    "name": "SALT CHILLI",
+    "price": 4.99,
+    "original_image": "f7a437_f56f038c877b4187a782a210e0555ac6mv2.avif",
+    "image": "/images/SALT CHILLI.avif",
+    "categories": [
+      "Spices",
+      "Frozen Food"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4206",
+    "name": "TELUGU FOODS HAND POUND SONA MASOORI RICE 4.54KG",
+    "price": 4.99,
+    "original_image": "TELUGU-FOODS-HAND-POUND-SONA-MASOORI-RICE-4.54KG.webp",
+    "image": "/images/TELUGU FOODS HAND POUND SONA MASOORI RICE 4.54KG.webp",
+    "categories": [
+      "Rices",
+      "Groceries"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4209",
+    "name": "LAL QILLA BASMATI RICE 40LBS",
+    "price": 4.99,
+    "original_image": "LAL-QILLA-BASMATI-RICE-40LBS.jpg",
+    "image": "/images/LAL QILLA BASMATI RICE 40LBS.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "LAL QILLA",
+    "inStock": true
+  },
+  {
+    "id": "4238",
+    "name": "SWETHA TELUGU MADURAI SPECIAL SEERAGA SAMBA RICE 20LBS",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-MADURAI-SPECIAL-SEERAGA-SAMBA-RICE-20LBS.webp",
+    "image": "/images/SWETHA TELUGU MADURAI SPECIAL SEERAGA SAMBA RICE 20LBS.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4240",
+    "name": "KAVERI PONNI RAW RICE PONNI CRU RIZ 20LBS",
+    "price": 4.99,
+    "original_image": "KAVERI-PONNI-RAW-RICE-PONNI-CRU-RIZ-20LBS.webp",
+    "image": "/images/KAVERI PONNI RAW RICE PONNI CRU RIZ 20LBS.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "KAVERI",
+    "inStock": true
+  },
+  {
+    "id": "4244",
+    "name": "SWETHA MADURAI SPECIAL IDLI RICE 10LB",
+    "price": 4.99,
+    "original_image": "SWETHA-MADURAI-SPECIAL-IDLI-RICE-10LB.webp",
+    "image": "/images/SWETHA MADURAI SPECIAL IDLI RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4246",
+    "name": "KAVERI IDLI RICE RIZ POUR IDLI 20LBS",
+    "price": 4.99,
+    "original_image": "KAVERI-IDLI-RICE-RIZ-POUR-IDLI-20LBS.webp",
+    "image": "/images/KAVERI IDLI RICE RIZ POUR IDLI 20LBS.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "KAVERI",
+    "inStock": true
+  },
+  {
+    "id": "4248",
+    "name": "LAXMI PONNI BOILED RICE 20LB",
+    "price": 4.99,
+    "original_image": "LAXMI-PONNI-BOILED-RICE-20LB.jpg",
+    "image": "/images/LAXMI PONNI BOILED RICE 20LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4250",
+    "name": "ROYAL INDIA EXTRA LONG BASMATI RICE 11LB",
+    "price": 4.99,
+    "original_image": "ROYAL-INDIA-EXTRA-LONG-BASMATI-RICE-11LB.jpg",
+    "image": "/images/ROYAL INDIA EXTRA LONG BASMATI RICE 11LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "ROYAL INDIA",
+    "inStock": true
+  },
+  {
+    "id": "4252",
+    "name": "WAGH BAKRI MASALA CHAI 200G",
+    "price": 4.99,
+    "original_image": "WAGH-BAKRI-MASALA-CHAI-200G.jpg",
+    "image": "/images/WAGH BAKRI MASALA CHAI 200G.jpg",
+    "categories": [
+      "Uncategorized"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4255",
+    "name": "WAGH BAKRI INSTANT TEA PREMIX MASALA 200G",
+    "price": 4.99,
+    "original_image": "WAGH-BAKRI-INSTANT-TEA-PREMIX-MASALA-200G.jpg",
+    "image": "/images/WAGH BAKRI INSTANT TEA PREMIX MASALA 200G.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4261",
+    "name": "TETLY ORNAGE PEKOE 945G",
+    "price": 4.99,
+    "original_image": "TETLY-ORNAGE-PEKOE-945G.png",
+    "image": "/images/TETLY ORNAGE PEKOE 945G.png",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "TETLY",
+    "inStock": true
+  },
+  {
+    "id": "4263",
+    "name": "TEJA GLUTEN FREE ATTA 10LBS",
+    "price": 4.99,
+    "original_image": "TEJA-GLUTEN-FREE-ATTA-10LBS.webp",
+    "image": "/images/TEJA GLUTEN FREE ATTA 10LBS.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Teja",
+    "inStock": true
+  },
+  {
+    "id": "4265",
+    "name": "TEA INDIA 2LBS",
+    "price": 4.99,
+    "original_image": "TEA-INDIA-2LBS.avif",
+    "image": "/images/TEA INDIA 2LBS.avif",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "TEA INDIA",
+    "inStock": true
+  },
+  {
+    "id": "4267",
+    "name": "TATA TEA PREMIUM 900G",
+    "price": 4.99,
+    "original_image": "TATA-TEA-PREMIUM-900G.jpg",
+    "image": "/images/TATA TEA PREMIUM 900G.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "TATA TEA",
+    "inStock": true
+  },
+  {
+    "id": "4271",
+    "name": "TATA TEA GOLD 250G",
+    "price": 4.99,
+    "original_image": "TATA-TEA-GOLD-250G.jpg",
+    "image": "/images/TATA TEA GOLD 250G.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "TATA TEA",
+    "inStock": true
+  },
+  {
+    "id": "4275",
+    "name": "TAJ MAHAL TEA 500G",
+    "price": 4.99,
+    "original_image": "TAJ-MAHAL-TEA-500G.webp",
+    "image": "/images/TAJ MAHAL TEA 500G.webp",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "TAJ MAHAL",
+    "inStock": true
+  },
+  {
+    "id": "4277",
+    "name": "ROYAL CHEF_S SECRET 10LB",
+    "price": 4.99,
+    "original_image": "ROYAL-CHEF_S-SECRET-10LB.png",
+    "image": "/images/ROYAL CHEF_S SECRET 10LB.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "ROYAL",
+    "inStock": true
+  },
+  {
+    "id": "4279",
+    "name": "RED LABEL TEA 2.2LB",
+    "price": 4.99,
+    "original_image": "RED-LABEL-TEA-2.2LB.webp",
+    "image": "/images/RED LABEL TEA 2.2LB.webp",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "RED LABEL",
+    "inStock": true
+  },
+  {
+    "id": "4281",
+    "name": "QUALITY EVERY GRAIN DAAWAT 20LB",
+    "price": 4.99,
+    "original_image": "QUALITY-EVERY-GRAIN-DAAWAT-20LB.png",
+    "image": "/images/QUALITY EVERY GRAIN DAAWAT 20LB.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Quality",
+    "inStock": true
+  },
+  {
+    "id": "4284",
+    "name": "IDLI RICE RIZ IDLI 20LB",
+    "price": 4.99,
+    "original_image": "IDLI-RICE-RIZ-IDLI-20LB.jpg",
+    "image": "/images/IDLI RICE RIZ IDLI 20LB.jpg",
+    "categories": [
+      "Rices",
+      "Groceries"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4286",
+    "name": "AASHIRVAAD WHOLE WHEAT FLOUR 20LBS",
+    "price": 4.99,
+    "original_image": "AASHIRVAAD-WHOLE-WHEAT-FLOUR-20LBS.jpg",
+    "image": "/images/AASHIRVAAD WHOLE WHEAT FLOUR 20LBS.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "AASHIRVAAD",
+    "inStock": true
+  },
+  {
+    "id": "4294",
+    "name": "BRU ORIGINAL 200G",
+    "price": 4.99,
+    "original_image": "BRU-ORIGINAL-200G.jpeg",
+    "image": "/images/BRU ORIGINAL 200G.jpeg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "BRU ORIGINAL",
+    "inStock": true
+  },
+  {
+    "id": "4296",
+    "name": "COTHAS COFFEE 500G",
+    "price": 4.99,
+    "original_image": "COTHAS-COFFEE-500G.jpg",
+    "image": "/images/COTHAS COFFEE 500G.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "COTHAS COFFEE",
+    "inStock": true
+  },
+  {
+    "id": "4298",
+    "name": "CHAKRA BESAN FLOUR 1KG",
+    "price": 4.99,
+    "original_image": "CHAKRA-BESAN-FLOUR-1KG.jpg",
+    "image": "/images/CHAKRA BESAN FLOUR 1KG.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "4300",
+    "name": "DAAWAT LOW GI LOCK 10LB",
+    "price": 4.99,
+    "original_image": "DAAWAT-LOW-GI-LOCK-10LB.png",
+    "image": "/images/DAAWAT LOW GI LOCK 10LB.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Daawat",
+    "inStock": true
+  },
+  {
+    "id": "4302",
+    "name": "DAAWAT EVERYDAY BASMATI RICE 10LB",
+    "price": 4.99,
+    "original_image": "DAAWAT-SONA-MASOORI-EVERYDAY-10LB.jpeg",
+    "image": "/images/DAAWAT EVERYDAY BASMATI RICE 10LB.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Daawat",
+    "inStock": true
+  },
+  {
+    "id": "4304",
+    "name": "DAAWAT TRADITIONAL BASMATI RICE 10LBS",
+    "price": 4.99,
+    "original_image": "DAAWAT-TRADITIONAL-BASMATI-RICE-10LBS.jpg",
+    "image": "/images/DAAWAT TRADITIONAL BASMATI RICE 10LBS.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Daawat",
+    "inStock": true
+  },
+  {
+    "id": "4313",
+    "name": "DEEP CHAKKI ATTA 20LB",
+    "price": 4.99,
+    "original_image": "DEEP-CHAKKI-ATTA-20LB.webp",
+    "image": "/images/DEEP CHAKKI ATTA 20LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "4315",
+    "name": "DOUBLE HORSE 2 MINUTE INSTANT IDLIYAPPAM 200G",
+    "price": 4.99,
+    "original_image": "DOUBLE-HORSE-2-MINUTE-INSTANT-IDLIYAPPAM-200G.webp",
+    "image": "/images/DOUBLE HORSE 2 MINUTE INSTANT IDLIYAPPAM 200G.webp",
+    "categories": [
+      "Groceries",
+      "Frozen Food"
+    ],
+    "brand": "DOUBLE HORSE",
+    "inStock": true
+  },
+  {
+    "id": "4317",
+    "name": "DOUBLE HORSE VADI MATTA 20LB",
+    "price": 4.99,
+    "original_image": "DOUBLE-HORSE-VADI-MATTA-44.09LB.webp",
+    "image": "/images/DOUBLE HORSE VADI MATTA 20LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "DOUBLE HORSE",
+    "inStock": true
+  },
+  {
+    "id": "4319",
+    "name": "GC CANDY CADBURY ECLAIRS GOLD 200G",
+    "price": 4.99,
+    "original_image": "GC-CANDY-CADBURY-ECLAIRS-GOLD-200G.webp",
+    "image": "/images/GC CANDY CADBURY ECLAIRS GOLD 200G.webp",
+    "categories": [
+      "Snacks",
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "CADBURY",
+    "inStock": true
+  },
+  {
+    "id": "4321",
+    "name": "GC CANDY KISMI 200G",
+    "price": 4.99,
+    "original_image": "GC-CANDY-KISMI-200G.jpg",
+    "image": "/images/GC CANDY KISMI 200G.jpg",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "Parle",
+    "inStock": true
+  },
+  {
+    "id": "4323",
+    "name": "GC CANDY PLUSE KACHA AAM 200G",
+    "price": 4.99,
+    "original_image": "GC-CANDY-PLUSE-KACHA-AAM-200G.jpg",
+    "image": "/images/GC CANDY PLUSE KACHA AAM 200G.jpg",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "PLUSE KACHA AAM",
+    "inStock": true
+  },
+  {
+    "id": "4325",
+    "name": "GLOBAL CHOICE CENTER FRESH CANDY 200G",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-CENTER-FRESH-CANDY-200G.webp",
+    "image": "/images/GLOBAL CHOICE CENTER FRESH CANDY 200G.webp",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4334",
+    "name": "GLOBAL CHOICE HAJMOLA CANDY 200g",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-HAJMOLA-CANDY-200g.webp",
+    "image": "/images/GLOBAL CHOICE HAJMOLA CANDY 200g.webp",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4336",
+    "name": "GLOBAL CHOICE PLUSE CANDY MIX 200G",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-PLUSE-CANDY-MIX-200G.webp",
+    "image": "/images/GLOBAL CHOICE PLUSE CANDY MIX 200G.webp",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4338",
+    "name": "HANDI CHAKKI ATTA 20LBS",
+    "price": 4.99,
+    "original_image": "HANDI-CHAKKI-ATTA-20LBS.png",
+    "image": "/images/HANDI CHAKKI ATTA 20LBS.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "4340",
+    "name": "HANDI HAJMOLA CANDY 215G",
+    "price": 4.99,
+    "original_image": "HANDI-HAJMOLA-CANDY-215G.webp",
+    "image": "/images/HANDI HAJMOLA CANDY 215G.webp",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "4342",
+    "name": "HANDI HING CANDY 230G",
+    "price": 4.99,
+    "original_image": "HANDI-HING-CANDY-230G.webp",
+    "image": "/images/HANDI HING CANDY 230G.webp",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "4344",
+    "name": "HANDI HING GOLI 230G",
+    "price": 4.99,
+    "original_image": "HANDI-HING-GOLI-230G.webp",
+    "image": "/images/HANDI HING GOLI 230G.webp",
+    "categories": [
+      "Sweets"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "4346",
+    "name": "HIMALAYA LIV.52 TABLETS 100",
+    "price": 4.99,
+    "original_image": "HIMALAYA-LIV.52-TABLETS-100.webp",
+    "image": "/images/HIMALAYA LIV.52 TABLETS 100.webp",
+    "categories": [
+      "TABLETS"
+    ],
+    "brand": "HIMALAYA",
+    "inStock": true
+  },
+  {
+    "id": "4352",
+    "name": "INDIA GATE SONA MASOORI 20LBS",
+    "price": 4.99,
+    "original_image": "INDIA-GATE-SONA-MASOORI-20LBS.jpeg",
+    "image": "/images/INDIA GATE SONA MASOORI 20LBS.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "India Gate",
+    "inStock": true
+  },
+  {
+    "id": "4354",
+    "name": "JAWARI FOXTAIL MILLET KICHDI",
+    "price": 4.99,
+    "original_image": "JAWARI-FOXTAIL-MILLET-KICHDI.jpg",
+    "image": "/images/JAWARI FOXTAIL MILLET KICHDI.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "4358",
+    "name": "LIPTON GREEN TEA 59.5G",
+    "price": 4.99,
+    "original_image": "LIPTON-GREEN-TEA-59.5G-scaled.webp",
+    "image": "/images/LIPTON GREEN TEA 59.5G.webp",
+    "categories": [
+      "LIPTON"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4364",
+    "name": "LIPTON YELLOW LABEL BLACK TEA 200G",
+    "price": 4.99,
+    "original_image": "LIPTON-YELLOW-LABEL-BLACK-TEA-200G.jpg",
+    "image": "/images/LIPTON YELLOW LABEL BLACK TEA 200G.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "LIPTON",
+    "inStock": true
+  },
+  {
+    "id": "4366",
+    "name": "LITTLE MILLET NOODLES 210 G",
+    "price": 4.99,
+    "original_image": "LITTLE-MILLET-NOODLES-210-G.jpg",
+    "image": "/images/LITTLE MILLET NOODLES 210 G.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4368",
+    "name": "MULTI MILLET NOODLES 210 G",
+    "price": 4.99,
+    "original_image": "MULTI-MILLET-NOODLES-210-G.png",
+    "image": "/images/MULTI MILLET NOODLES 210 G.png",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4370",
+    "name": "MTR DOSA MIX 500G",
+    "price": 4.99,
+    "original_image": "MTR-DOSA-MIX-500G.png",
+    "image": "/images/MTR DOSA MIX 500G.png",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "4378",
+    "name": "MTR RAVA DOSA 500G",
+    "price": 4.99,
+    "original_image": "MTR-RAVA-DOSA-500G.jpg",
+    "image": "/images/MTR RAVA DOSA 500G.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "4380",
+    "name": "MTR RAVA IDLI 500G",
+    "price": 4.99,
+    "original_image": "MTR-RAVA-IDLI-500G.webp",
+    "image": "/images/MTR RAVA IDLI 500G.webp",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "4382",
+    "name": "MTR RICE IDLI 500G",
+    "price": 4.99,
+    "original_image": "MTR-RICE-IDLI-500G.webp",
+    "image": "/images/MTR RICE IDLI 500G.webp",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "4384",
+    "name": "MTR UTTAPPAM MIX 500G",
+    "price": 4.99,
+    "original_image": "MTR-UTTAPPAM-MIX-500G.jpg",
+    "image": "/images/MTR UTTAPPAM MIX 500G.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "4386",
+    "name": "MTR VADA MIX 500G",
+    "price": 4.99,
+    "original_image": "MTR-VADA-MIX-500G.jpg",
+    "image": "/images/MTR VADA MIX 500G.jpg",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "4388",
+    "name": "NESCAFE GOLD 200G",
+    "price": 4.99,
+    "original_image": "NESCAFE-GOLD-200G.webp",
+    "image": "/images/NESCAFE GOLD 200G.webp",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "NESCAFE",
+    "inStock": true
+  },
+  {
+    "id": "4397",
+    "name": "NESCAFE RICH RICHE 170G",
+    "price": 4.99,
+    "original_image": "NESCAFE-RICH-RICHE-170G.avif",
+    "image": "/images/NESCAFE RICH RICHE 170G.avif",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "NESCAFE",
+    "inStock": true
+  },
+  {
+    "id": "4399",
+    "name": "NESTLE EVERYDAY KARAK CHAI 170G",
+    "price": 4.99,
+    "original_image": "NESTLE-EVERYDAY-KARAK-CHAI-170G.avif",
+    "image": "/images/NESTLE EVERYDAY KARAK CHAI 170G.avif",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4401",
+    "name": "NESTLE EVERYDAY KASHMIRI CHAI 180G",
+    "price": 4.99,
+    "original_image": "NESTLE-EVERYDAY-KASHMIRI-CHAI-180G.avif",
+    "image": "/images/NESTLE EVERYDAY KASHMIRI CHAI 180G.avif",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "NESTLE EVERYDAY",
+    "inStock": true
+  },
+  {
+    "id": "4403",
+    "name": "NILGIRIS PALAKKADAN MATTA RICE 22LBS",
+    "price": 4.99,
+    "original_image": "NILGIRIS-PALAKKADAN-MATTA-RICE-22LBS.png",
+    "image": "/images/NILGIRIS PALAKKADAN MATTA RICE 22LBS.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Nilgiris",
+    "inStock": true
+  },
+  {
+    "id": "4405",
+    "name": "NILGIRIS THANJAVOOR PONNI RICE 10LBS",
+    "price": 4.99,
+    "original_image": "NILGIRIS-THANJAVOOR-PONNI-RICE-10LBS.png",
+    "image": "/images/NILGIRIS THANJAVOOR PONNI RICE 10LBS.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Nilgiris",
+    "inStock": true
+  },
+  {
+    "id": "4407",
+    "name": "PARLIAMENT LOW GI 11LB",
+    "price": 4.99,
+    "original_image": "PARLIAMENT-LOW-GI-11LB.png",
+    "image": "/images/PARLIAMENT LOW GI 11LB.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "PARLIAMENT LOW GI",
+    "inStock": true
+  },
+  {
+    "id": "4409",
+    "name": "PREMIUM TEA WAGH BAKRI 907G",
+    "price": 4.99,
+    "original_image": "PREMIUM-TEA-WAGH-BAKRI-907G.jpg",
+    "image": "/images/PREMIUM TEA WAGH BAKRI 907G.jpg",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4416",
+    "name": "PRIYA INSTANT DOSA MIX 200G",
+    "price": 4.99,
+    "original_image": "PRIYA-INSTANT-DOSA-MIX-200G.webp",
+    "image": "/images/PRIYA INSTANT DOSA MIX 200G.webp",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4418",
+    "name": "PRIYA INSTANT IDLI MIX 200G",
+    "price": 4.99,
+    "original_image": "PRIYA-INSTANT-IDLI-MIX-200G.webp",
+    "image": "/images/PRIYA INSTANT IDLI MIX 200G.webp",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4420",
+    "name": "PRIYA INSTANT RAVA IDLI MIX 200G",
+    "price": 4.99,
+    "original_image": "PRIYA-INSTANT-RAVA-IDLI-MIX-200G.webp",
+    "image": "/images/PRIYA INSTANT RAVA IDLI MIX 200G.webp",
+    "categories": [
+      "Frozen Food"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4422",
+    "name": "QILLA BASMATI RICE 10LB",
+    "price": 4.99,
+    "original_image": "QILLA-GOLD-BASMATI-RICE-10LB.jpg",
+    "image": "/images/QILLA BASMATI RICE 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "QILLA",
+    "inStock": true
+  },
+  {
+    "id": "4424",
+    "name": "SAFFOLA MASALA OATS 500G",
+    "price": 4.99,
+    "original_image": "SAFFOLA-MASALA-OATS-500G.png",
+    "image": "/images/SAFFOLA MASALA OATS 500G.png",
+    "categories": [
+      "Groceries"
+    ],
+    "brand": "SAFFOLA",
+    "inStock": true
+  },
+  {
+    "id": "4429",
+    "name": "SANTRA CANDY",
+    "price": 4.99,
+    "original_image": "SANTRA-CANDY.webp",
+    "image": "/images/SANTRA CANDY.webp",
+    "categories": [
+      "Sweets",
+      "Chocolate"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4438",
+    "name": "A2 SEA SALT 2LBS",
+    "price": 4.99,
+    "original_image": "A2-SEA-SALT-2LBS.jpg",
+    "image": "/images/A2 SEA SALT 2LBS.jpg",
+    "categories": [
+      "kumuran"
+    ],
+    "brand": "A2",
+    "inStock": true
+  },
+  {
+    "id": "4442",
+    "name": "INDIA GATE BROWN RICE 10LB",
+    "price": 4.99,
+    "original_image": "INDIA-GATE-BROWN-RICE-10LB.webp",
+    "image": "/images/INDIA GATE BROWN RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "India Gate",
+    "inStock": true
+  },
+  {
+    "id": "4445",
+    "name": "TELUGU FOODS SWETHA IDLI RICE 10 LBS",
+    "price": 4.99,
+    "original_image": "TELUGU-FOODS-SWETHA-IDLI-RICE-10-LBS.png",
+    "image": "/images/TELUGU FOODS SWETHA IDLI RICE 10 LBS.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4448",
+    "name": "LAXMI IDLI RICE 10LB",
+    "price": 4.99,
+    "original_image": "LAXMI-IDLI-RICE-20LB.webp",
+    "image": "/images/LAXMI IDLI RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4451",
+    "name": "LAXMI BROWN SONA MASOORI RICE 10LB",
+    "price": 4.99,
+    "original_image": "LAXMI-BROWN-SONA-MASOORI-RICE-10LB.jpg",
+    "image": "/images/LAXMI BROWN SONA MASOORI RICE 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4454",
+    "name": "TELUGU FOODS BROWN SONA MASURI RICE 10 LB",
+    "price": 4.99,
+    "original_image": "TELUGU-FOODS-BROWN-SONA-MASURI-RICE-10-LB.webp",
+    "image": "/images/TELUGU FOODS BROWN SONA MASURI RICE 10 LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4457",
+    "name": "KAVERI IDLI RICE 10LB",
+    "price": 4.99,
+    "original_image": "KAVERI-IDLI-RICE-10LB.webp",
+    "image": "/images/KAVERI IDLI RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "KAVERI",
+    "inStock": true
+  },
+  {
+    "id": "4460",
+    "name": "TELUGU FOODS SONA MASOORI 20LB",
+    "price": 4.99,
+    "original_image": "TELUGU-FOODS-SONA-MASOORI-20LB.jpg",
+    "image": "/images/TELUGU FOODS SONA MASOORI 20LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4463",
+    "name": "AMMA SONA MASOORI RICE 20LB",
+    "price": 4.99,
+    "original_image": "AMMA-SONAMASOORI-RICE-20LB.jpg",
+    "image": "/images/AMMA SONA MASOORI RICE 20LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Amma's Kitchen",
+    "inStock": true
+  },
+  {
+    "id": "4466",
+    "name": "KAVERI SONA MASOORI 20LB",
+    "price": 4.99,
+    "original_image": "KAVERI-SONA-MASOORI-20LB.webp",
+    "image": "/images/KAVERI SONA MASOORI 20LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "KAVERI",
+    "inStock": true
+  },
+  {
+    "id": "4469",
+    "name": "QUALITY PRIYA BASMATI RICE 8LB",
+    "price": 4.99,
+    "original_image": "QUALITY-PRIYA-BASMATI-RICE-8LB.webp",
+    "image": "/images/QUALITY PRIYA BASMATI RICE 8LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4472",
+    "name": "TELUGU FOODS HAND POUND RICE 10LB",
+    "price": 4.99,
+    "original_image": "TELUGU-FOODS-HAND-POUND-RICE-10LB.jpg",
+    "image": "/images/TELUGU FOODS HAND POUND RICE 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4476",
+    "name": "QUALITY BASMATI WHITE RICE XL 8LB",
+    "price": 4.99,
+    "original_image": "QUALITY-BASMATI-WHITE-RICE-XL-8LB.jpg",
+    "image": "/images/QUALITY BASMATI WHITE RICE XL 8LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Quality",
+    "inStock": true
+  },
+  {
+    "id": "4480",
+    "name": "QUALITY 1121 EXTRA LONG GRAIN CREAMY SELLA BASMATI RICE 8LB",
+    "price": 4.99,
+    "original_image": "QUALITY-1121-EXTRA-LONG-GRAIN-CREAMY-SELLA-BASMATI-RICE-8LB.webp",
+    "image": "/images/QUALITY 1121 EXTRA LONG GRAIN CREAMY SELLA BASMATI RICE 8LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Quality",
+    "inStock": true
+  },
+  {
+    "id": "4483",
+    "name": "DOUBLE HOURSE VADI MATTA RICE LONG GRAIN 10KG",
+    "price": 4.99,
+    "original_image": "DOUBLE-HOURSE-VADI-MATTA-RICE-LONG-GRAIN-10KG.jpeg",
+    "image": "/images/DOUBLE HOURSE VADI MATTA RICE LONG GRAIN 10KG.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "DOUBLE HORSE",
+    "inStock": true
+  },
+  {
+    "id": "4487",
+    "name": "SWETHA KERALAL MATTA RICE 10LB",
+    "price": 4.99,
+    "original_image": "SWETHA-KERALAL-MATTA-RICE-10LB.jpeg",
+    "image": "/images/SWETHA KERALAL MATTA RICE 10LB.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4491",
+    "name": "LAXMI PONNI RAW RICE 10 LB",
+    "price": 4.99,
+    "original_image": "LAXMI-PONNI-RAW-RICE-10-LB.jpg",
+    "image": "/images/LAXMI PONNI RAW RICE 10 LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4494",
+    "name": "LAXMI PONNI BOILED RICE 10 LB",
+    "price": 4.99,
+    "original_image": "LAXMI-PONNI-BOILED-RICE-10-LB.jpg",
+    "image": "/images/LAXMI PONNI BOILED RICE 10 LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4497",
+    "name": "QILLA GOLD BASMATI RICE 40LB",
+    "price": 4.99,
+    "original_image": "QILLA-GOLD-BASMATI-RICE-40LB.jpg",
+    "image": "/images/QILLA GOLD BASMATI RICE 40LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "LAL QILLA",
+    "inStock": true
+  },
+  {
+    "id": "4501",
+    "name": "LAXMI PONNI RAW RICE 20 LB",
+    "price": 4.99,
+    "original_image": "LAXMI-PONNI-RAW-RICE-20-LB.jpg",
+    "image": "/images/LAXMI PONNI RAW RICE 20 LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4504",
+    "name": "KAVERI KALI JEERA RICE 10LB",
+    "price": 4.99,
+    "original_image": "KAVERI-KALI-JEERA-RICE-10LB.webp",
+    "image": "/images/KAVERI KALI JEERA RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "KAVERI",
+    "inStock": true
+  },
+  {
+    "id": "4507",
+    "name": "KAVERI RED MATTA RICE 20LBS",
+    "price": 4.99,
+    "original_image": "KAVERI-RED-MATTA-RICE-20LBS.webp",
+    "image": "/images/KAVERI RED MATTA RICE 20LBS.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "KAVERI",
+    "inStock": true
+  },
+  {
+    "id": "4510",
+    "name": "BRAHMINS LONG GRAIN MATTA RICE 10KG",
+    "price": 4.99,
+    "original_image": "BRAHMINS-LONG-GRAIN-MATTA-RICE-10KG.avif",
+    "image": "/images/BRAHMINS LONG GRAIN MATTA RICE 10KG.avif",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "4514",
+    "name": "PARLIAMENT KHICHDI MIX 1KG",
+    "price": 4.99,
+    "original_image": "PARLIAMENT-KHICHDI-MIX-1KG.jpg",
+    "image": "/images/PARLIAMENT KHICHDI MIX 1KG.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "PARLIAMENT LOW GI",
+    "inStock": true
+  },
+  {
+    "id": "4517",
+    "name": "PARLIAMENT DIABETIC LOW GI RICE 10LB",
+    "price": 4.99,
+    "original_image": "PARLIAMENT-DIABETIC-LOW-GI-RICE-10LB.avif",
+    "image": "/images/PARLIAMENT DIABETIC LOW GI RICE 10LB.avif",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "PARLIAMENT LOW GI",
+    "inStock": true
+  },
+  {
+    "id": "4520",
+    "name": "LAXMI LOW GI BASMATI 10LB",
+    "price": 4.99,
+    "original_image": "LAXMI-LOW-GI-BASMATI.jpg",
+    "image": "/images/LAXMI LOW GI BASMATI 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4523",
+    "name": "LAXMI AGED BASMATI RICE 10LB",
+    "price": 4.99,
+    "original_image": "LAXMI-AGED-BASMATI-RICE-10LB.jpg",
+    "image": "/images/LAXMI AGED BASMATI RICE 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4526",
+    "name": "LAXMI BROWN BASMATI RICE 10LB",
+    "price": 4.99,
+    "original_image": "LAXMI-BROWN-BASMATI-RICE-10LB.webp",
+    "image": "/images/LAXMI BROWN BASMATI RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4529",
+    "name": "INDIA GATE BASMATI RICE FEAST ROZZANA 10LB",
+    "price": 4.99,
+    "original_image": "INDIA-GATE-BASMATI-RICE-FEAST-ROZZANA-10LB.jpg",
+    "image": "/images/INDIA GATE BASMATI RICE FEAST ROZZANA 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "India Gate",
+    "inStock": true
+  },
+  {
+    "id": "4532",
+    "name": "DOUBLE HORSE MATTA BROKEN RICE 1KG",
+    "price": 4.99,
+    "original_image": "DOUBLE-HORSE-MATTA-BROKEN-RICE-1KG.jpg",
+    "image": "/images/DOUBLE HORSE MATTA BROKEN RICE 1KG.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "DOUBLE HORSE",
+    "inStock": true
+  },
+  {
+    "id": "4535",
+    "name": "LAXMI AGED BASMATI RICE 4LB",
+    "price": 4.99,
+    "original_image": "LAXMI-AGED-BASMATI-RICE-4LB.jpg",
+    "image": "/images/LAXMI AGED BASMATI RICE 4LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4538",
+    "name": "GUARD ULTIMATE BASMASTI RICE 10LB",
+    "price": 4.99,
+    "original_image": "GUARD-ULTIMATE-BASMASTI-RICE-10LB.jpg",
+    "image": "/images/GUARD ULTIMATE BASMASTI RICE 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "GUARD",
+    "inStock": true
+  },
+  {
+    "id": "4541",
+    "name": "FALAK SUPER BASMATI RICE10LB",
+    "price": 4.99,
+    "original_image": "FALAK-SUPER-BASMATI-RICE-10LB.jpg",
+    "image": "/images/FALAK SUPER BASMATI RICE10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Falak",
+    "inStock": true
+  },
+  {
+    "id": "4544",
+    "name": "FALAK EXTREME BASMATI RICE 10LB",
+    "price": 4.99,
+    "original_image": "FALAK-EXTREME-BASMATI-RICE-10LB.jpg",
+    "image": "/images/FALAK EXTREME BASMATI RICE 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Falak",
+    "inStock": true
+  },
+  {
+    "id": "4548",
+    "name": "FALAK SELLA EXTRA LONG BASMATI 10LB",
+    "price": 4.99,
+    "original_image": "FALAK-SELLA-EXTRA-LONG-BASMATI-10LB.webp",
+    "image": "/images/FALAK SELLA EXTRA LONG BASMATI 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Falak",
+    "inStock": true
+  },
+  {
+    "id": "4551",
+    "name": "LAXMI EXTRA LONG BASMATI RICE 10LB",
+    "price": 4.99,
+    "original_image": "LAXMI-EXTRA-LONG-BASMATI-RICE-10LB.webp",
+    "image": "/images/LAXMI EXTRA LONG BASMATI RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4555",
+    "name": "QILLA GOLD BASMATI RICE 10LB",
+    "price": 4.99,
+    "original_image": "QILLA-GOLD-BASMATI-RICE-10LB.webp",
+    "image": "/images/QILLA GOLD BASMATI RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "QILLA",
+    "inStock": true
+  },
+  {
+    "id": "4561",
+    "name": "KAVERI RED MATTA RICE 10LB",
+    "price": 4.99,
+    "original_image": "KAVERI-RED-MATTA-RICE-10LB.webp",
+    "image": "/images/KAVERI RED MATTA RICE 10LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "KAVERI",
+    "inStock": true
+  },
+  {
+    "id": "4564",
+    "name": "LAXMI SONA MASOORI RICE 10LB",
+    "price": 4.99,
+    "original_image": "LAXMI-SONA-MASOORI-RICE-10LB.jpg",
+    "image": "/images/LAXMI SONA MASOORI RICE 10LB.jpg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4567",
+    "name": "GOKUL PONNI BOILED RICE 10KG",
+    "price": 4.99,
+    "original_image": "GOKUL-PONNI-BOILED-RICE-10KG.webp",
+    "image": "/images/GOKUL PONNI BOILED RICE 10KG.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Gokul",
+    "inStock": true
+  },
+  {
+    "id": "4570",
+    "name": "AJANTA SONA MASOORI 20LB",
+    "price": 4.99,
+    "original_image": "AJANTA-SONA-MASOORI-20LB.webp",
+    "image": "/images/AJANTA SONA MASOORI 20LB.webp",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "AJANTA",
+    "inStock": true
+  },
+  {
+    "id": "4576",
+    "name": "CHAKRA BROWN SONA MASOORI RICE 10LB",
+    "price": 4.99,
+    "original_image": "rice-18-10lb.jpeg",
+    "image": "/images/CHAKRA BROWN SONA MASOORI RICE 10LB.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "4581",
+    "name": "CHAKRA PONNI BOILED RICE 20LBS",
+    "price": 4.99,
+    "original_image": "rice15-e1774903824916.jpeg",
+    "image": "/images/CHAKRA PONNI BOILED RICE 20LBS.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "4585",
+    "name": "DAAWAT SONA MASOORI 20LB",
+    "price": 4.99,
+    "original_image": "DAAWAT-SONA-MASOORI-EVERYDAY-20LB-rotated.jpeg",
+    "image": "/images/DAAWAT SONA MASOORI 20LB.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Daawat",
+    "inStock": true
+  },
+  {
+    "id": "4597",
+    "name": "DECCAN IDLI RICE 10LBS",
+    "price": 4.99,
+    "original_image": "DECCAN_IDLI_RICE_10LBS-removebg-preview.png",
+    "image": "/images/DECCAN IDLI RICE 10LBS.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "DECCAN",
+    "inStock": true
+  },
+  {
+    "id": "4600",
+    "name": "DECCAN PONNI RAW RICE 10LB",
+    "price": 4.99,
+    "original_image": "DECCAN-PONNI-RAW-RICE-10LB.png",
+    "image": "/images/DECCAN PONNI RAW RICE 10LB.png",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "DECCAN",
+    "inStock": true
+  },
+  {
+    "id": "4606",
+    "name": "VERKA CHAKKI ATTA 20LB",
+    "price": 4.99,
+    "original_image": "VERKA-CHAKKI-ATTA-20LB.webp",
+    "image": "/images/VERKA CHAKKI ATTA 20LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "VERKA",
+    "inStock": true
+  },
+  {
+    "id": "4609",
+    "name": "LAXMI MULTIGRAIN CHAPATI FLOUR 20LBS",
+    "price": 4.99,
+    "original_image": "LAXMI-MULTIGRAIN-CHAPATI-FLOUR-20LBS.jpg",
+    "image": "/images/LAXMI MULTIGRAIN CHAPATI FLOUR 20LBS.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4612",
+    "name": "BRAHMINS APPAM IDIYAPPAM POWDER 1KG",
+    "price": 4.99,
+    "original_image": "BRAHMINS-APPAM-IDIYAPPAM-POWDER-1KG.jpg",
+    "image": "/images/BRAHMINS APPAM IDIYAPPAM POWDER 1KG.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "4615",
+    "name": "MOONG DAL WHOLE 2LB,4LB,8LB",
+    "price": 4.99,
+    "original_image": "MOONG-DAL-WHOLE-SMALL-2LB-4LB-8LB.jpg",
+    "image": "/images/MOONG DAL WHOLE 2LB,4LB,8LB.jpg",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4618",
+    "name": "LAXMI SOUTH INDIAN RICE FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "LAXMI-SOUTH-INDIAN-RICE-FLOUR-2LB.webp",
+    "image": "/images/LAXMI SOUTH INDIAN RICE FLOUR 2LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4621",
+    "name": "LAXMI FRESHLY MILLED BESAN FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "LAXMI-FRESHLY-MILLED-BESAN-FLOUR-2LB.png",
+    "image": "/images/LAXMI FRESHLY MILLED BESAN FLOUR 2LB.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4624",
+    "name": "BRAHMINS CHEMBA PUTTU POWDER 1KG",
+    "price": 4.99,
+    "original_image": "BRAHMINS-CHEMBA-PUTTU-POWDER-1KG-.jpg",
+    "image": "/images/BRAHMINS CHEMBA PUTTU POWDER 1KG.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "4629",
+    "name": "MOONG DAL SPLIT 2LB, 4LB, 8LB",
+    "price": 4.99,
+    "original_image": "MOONG-DAL-SPLIT-2LB.jpg",
+    "image": "/images/MOONG DAL SPLIT 2LB, 4LB, 8LB.jpg",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4632",
+    "name": "KALA CHANA 2LB, 4LB, 8LB",
+    "price": 4.99,
+    "original_image": "KALA-CHANA-2LB-4LB-8LB.webp",
+    "image": "/images/KALA CHANA 2LB, 4LB, 8LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4635",
+    "name": "YELLOW MOONG DAL (WITHOUT HUSK) 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "MOONG-DAL-2LB-4LB.webp",
+    "image": "/images/YELLOW MOONG DAL (WITHOUT HUSK) 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4638",
+    "name": "MASOOR DAL WHOLE 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "MASOOR-DAL-2LB-4LB.webp",
+    "image": "/images/MASOOR DAL WHOLE 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4641",
+    "name": "BLACK EYED PEAS 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "BLACK-EYED-PEAS-2LB-4LB.avif",
+    "image": "/images/BLACK EYED PEAS 2LB, 4LB.avif",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4645",
+    "name": "URAD DAL WHOLE 2LB, 4LB, 8LB",
+    "price": 4.99,
+    "original_image": "URAD-DAL-WHOLE-2LB-4LB-8LB.png",
+    "image": "/images/URAD DAL WHOLE 2LB, 4LB, 8LB.png",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4648",
+    "name": "YELLOW VATANA (PEAS) 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "YELLOW-VATANA-PEAS-2LB-4LB.webp",
+    "image": "/images/YELLOW VATANA (PEAS) 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4651",
+    "name": "CHICKPEAS 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "CHICKPEAS-2LB.-4LB.jpg",
+    "image": "/images/CHICKPEAS 2LB, 4LB.jpg",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4654",
+    "name": "RED KIDNEY BEAN DARK 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "RED-KIDNEY-BEAN-DARK-2LB-4LB.png",
+    "image": "/images/RED KIDNEY BEAN DARK 2LB, 4LB.png",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4659",
+    "name": "RED KIDNEY BEAN LIGHT 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "RED-KIDNEY-BEAN-LIGHT-2LB-4LB.webp",
+    "image": "/images/RED KIDNEY BEAN LIGHT 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4662",
+    "name": "MOTH BEANS 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "MOTH-BEANS-2LB-4LB.webp",
+    "image": "/images/MOTH BEANS 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4665",
+    "name": "LENTIL BROWN 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "BROWN-LENTILS-MASOOR-SABUT-2LB-4LB.webp",
+    "image": "/images/LENTIL BROWN 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4668",
+    "name": "URAD DAL SPLIT WHITE 2LB",
+    "price": 4.99,
+    "original_image": "URAD-DAL-SPLIT-WHITE-2LB.webp",
+    "image": "/images/URAD DAL SPLIT WHITE 2LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4671",
+    "name": "URAD GOTA WHITE 2LB, 4LB, 8LB",
+    "price": 4.99,
+    "original_image": "URAD-GOTA-WHITE-2LB-4LB-8LB.webp",
+    "image": "/images/URAD GOTA WHITE 2LB, 4LB, 8LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4674",
+    "name": "CHANA DAL 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "CHANA-DAL-2LB-4LB.webp",
+    "image": "/images/CHANA DAL 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4677",
+    "name": "TOOR DAL 2LB, 4LB, 8LB",
+    "price": 4.99,
+    "original_image": "TOOR-DAL-2LB-4LB.webp",
+    "image": "/images/TOOR DAL 2LB, 4LB, 8LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4712",
+    "name": "GLOBAL CHOICE MILLET BUCKWHEAT 800G",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-MILLET-BUCKWHEAT-800G.png",
+    "image": "/images/GLOBAL CHOICE MILLET BUCKWHEAT 800G.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4715",
+    "name": "GLOBAL CHOICE SAMO SEED 400G",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-SAMO-SEED-400G.jpg",
+    "image": "/images/GLOBAL CHOICE SAMO SEED 400G.jpg",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4718",
+    "name": "NATIVE FOODS PEARL MILLET 2LBS",
+    "price": 4.99,
+    "original_image": "NATIVE-FOODS-PEARL-MILLET-2LBS.jpg",
+    "image": "/images/NATIVE FOODS PEARL MILLET 2LBS.jpg",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Native Foods",
+    "inStock": true
+  },
+  {
+    "id": "4721",
+    "name": "CHAKRA HORSE GRAM 1KG",
+    "price": 4.99,
+    "original_image": "CHAKRA-HORSE-GRAM-1KG.jpg",
+    "image": "/images/CHAKRA HORSE GRAM 1KG.jpg",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "4724",
+    "name": "RAGI FINGER MILLET 4LBS",
+    "price": 4.99,
+    "original_image": "RAGI-FINGER-MILLET-4LBS.png",
+    "image": "/images/RAGI FINGER MILLET 4LBS.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "RAVI Crop.",
+    "inStock": true
+  },
+  {
+    "id": "4727",
+    "name": "A2 FOODS FINGER MILLET 2LBS",
+    "price": 4.99,
+    "original_image": "A2-FOODS-FINGER-MILLET-2LBS.png",
+    "image": "/images/A2 FOODS FINGER MILLET 2LBS.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "A2",
+    "inStock": true
+  },
+  {
+    "id": "4734",
+    "name": "MASOOR DAL SPLIT 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "MASOOR-DAL-SPLIT-2LB-4LB.webp",
+    "image": "/images/MASOOR DAL SPLIT 2LB, 4LB.webp",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4739",
+    "name": "GRREEN VATANA 2LB",
+    "price": 4.99,
+    "original_image": "GRREEN-VATANA-2LB.jpg",
+    "image": "/images/GRREEN VATANA 2LB.jpg",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4742",
+    "name": "HARD WHEAT 2LB",
+    "price": 4.99,
+    "original_image": "HARD-WHEAT-2LB.webp",
+    "image": "/images/HARD WHEAT 2LB.webp",
+    "categories": [
+      "Flours",
+      "Pooja Items"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4745",
+    "name": "TOOR DAL OILY 2LB, 4LB",
+    "price": 4.99,
+    "original_image": "TOOR-DAL-OILY-2LB-4LB.jpg",
+    "image": "/images/TOOR DAL OILY 2LB, 4LB.jpg",
+    "categories": [
+      "Pulses"
+    ],
+    "brand": "Kiran Store",
+    "inStock": true
+  },
+  {
+    "id": "4755",
+    "name": "PRIYA SONA MASOORI RAW RICE 20LB",
+    "price": 4.99,
+    "original_image": "PRIYA-SONA-MASOORI-RAW-RICE-20LB.jpeg",
+    "image": "/images/PRIYA SONA MASOORI RAW RICE 20LB.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4758",
+    "name": "CHAKRA SONA MASOORI RICE 10LB",
+    "price": 4.99,
+    "original_image": "CHAKRA-SONA-MASOORI-RICE-10LB.jpeg",
+    "image": "/images/CHAKRA SONA MASOORI RICE 10LB.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "4761",
+    "name": "CHAKRA SONA MASOORI RICE 20LB",
+    "price": 4.99,
+    "original_image": "CHAKRA-SONA-MASOORI-RICE-20LB.jpeg",
+    "image": "/images/CHAKRA SONA MASOORI RICE 20LB.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "4764",
+    "name": "HANDI SONA MASOORI RICE 20LBS",
+    "price": 4.99,
+    "original_image": "HANDI-SONA-MASOORI-RICE-20LBS.jpeg",
+    "image": "/images/HANDI SONA MASOORI RICE 20LBS.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "4767",
+    "name": "GOKUL SONA MASOORI RICE 10KG",
+    "price": 4.99,
+    "original_image": "GOKUL-SONA-MASOORI-RICE-10KG.jpeg",
+    "image": "/images/GOKUL SONA MASOORI RICE 10KG.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Gokul",
+    "inStock": true
+  },
+  {
+    "id": "4770",
+    "name": "CHAKRA CRYSTAL SONA MASOORI RICE 20LBS",
+    "price": 4.99,
+    "original_image": "CHAKRA-CRYSTAL-SONA-MASOORI-RICE-20LBS.jpeg",
+    "image": "/images/CHAKRA CRYSTAL SONA MASOORI RICE 20LBS.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "4780",
+    "name": "GLOBAL CHOICE FOXTAIL MILLET 800G",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-FOXTAIL-MILLET-800G.jpeg",
+    "image": "/images/GLOBAL CHOICE FOXTAIL MILLET 800G.jpeg",
+    "categories": [
+      "Rices"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4784",
+    "name": "GLOBAL CHOICE BARNYARD MILLET 800G",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-BARNYARD-MILLET-800G.png",
+    "image": "/images/GLOBAL CHOICE BARNYARD MILLET 800G.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "4788",
+    "name": "NATIVE FOODS BARNYARD MILLET 2LBS",
+    "price": 4.99,
+    "original_image": "NATIVE-FOODS-BARNYARD-MILLET-2LBS.png",
+    "image": "/images/NATIVE FOODS BARNYARD MILLET 2LBS.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Native Foods",
+    "inStock": true
+  },
+  {
+    "id": "4791",
+    "name": "NATIVE FOODS LITTLE MILLET 2LBS",
+    "price": 4.99,
+    "original_image": "NATIVE-FOODS-LITTLE-MILLET-2LBS.png",
+    "image": "/images/NATIVE FOODS LITTLE MILLET 2LBS.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Native Foods",
+    "inStock": true
+  },
+  {
+    "id": "4794",
+    "name": "NATIVE FOODS FOXTAIL MILLET 2LBS",
+    "price": 4.99,
+    "original_image": "NATIVE-FOODS-FOXTAIL-MILLET-2LBS.png",
+    "image": "/images/NATIVE FOODS FOXTAIL MILLET 2LBS.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Native Foods",
+    "inStock": true
+  },
+  {
+    "id": "4797",
+    "name": "NATIVE FOODS KODO MILLLET 2LBS",
+    "price": 4.99,
+    "original_image": "NATIVE-FOODS-KODO-MILLLET-2LBS.png",
+    "image": "/images/NATIVE FOODS KODO MILLLET 2LBS.png",
+    "categories": [
+      "Millets"
+    ],
+    "brand": "Native Foods",
+    "inStock": true
+  },
+  {
+    "id": "4801",
+    "name": "TEA INDIA GINGER CHAI 182G",
+    "price": 4.99,
+    "original_image": "TEA-INDIA-GINGER-CHAI-182G.jpg",
+    "image": "/images/TEA INDIA GINGER CHAI 182G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TEA INDIA",
+    "inStock": true
+  },
+  {
+    "id": "4804",
+    "name": "TEA INDIA BLACK TEA MASALA CHAI 182G",
+    "price": 4.99,
+    "original_image": "TEA-INDIA-BLACK-TEA-MASALA-CHAI-182G.jpg",
+    "image": "/images/TEA INDIA BLACK TEA MASALA CHAI 182G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TEA INDIA",
+    "inStock": true
+  },
+  {
+    "id": "4807",
+    "name": "TETLY ORANGE PEKOE 227G",
+    "price": 4.99,
+    "original_image": "TETLY-ORANGE-PEKOE-227G.jpg",
+    "image": "/images/TETLY ORANGE PEKOE 227G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TETLY",
+    "inStock": true
+  },
+  {
+    "id": "4810",
+    "name": "TATA TEA PREMIUM 450G",
+    "price": 4.99,
+    "original_image": "TATA-TEA-PREMIUM-450G.webp",
+    "image": "/images/TATA TEA PREMIUM 450G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TATA TEA",
+    "inStock": true
+  },
+  {
+    "id": "4813",
+    "name": "TATA TEA PREMIUM 638G",
+    "price": 4.99,
+    "original_image": "TATA-TEA-PREMIUM-638G.jpg",
+    "image": "/images/TATA TEA PREMIUM 638G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TATA TEA",
+    "inStock": true
+  },
+  {
+    "id": "4816",
+    "name": "SOCIETY TEA 450G",
+    "price": 4.99,
+    "original_image": "SOCIETY-TEA-450G-scaled.webp",
+    "image": "/images/SOCIETY TEA 450G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "Society",
+    "inStock": true
+  },
+  {
+    "id": "4819",
+    "name": "LIPTON GREEN LABEL TEA BAGS 100BAGS 200G",
+    "price": 4.99,
+    "original_image": "LIPTON-GREEN-LABEL-TEA-BAGS-100BAGS-200G.png",
+    "image": "/images/LIPTON GREEN LABEL TEA BAGS 100BAGS 200G.png",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "LIPTON",
+    "inStock": true
+  },
+  {
+    "id": "4822",
+    "name": "LIPTON YELLOW LABEL TEA BAGS 100BAGS 200G",
+    "price": 4.99,
+    "original_image": "LIPTON-YELLOW-LABEL-TEA-BAGS-100BAGS-200G.png",
+    "image": "/images/LIPTON YELLOW LABEL TEA BAGS 100BAGS 200G.png",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "LIPTON",
+    "inStock": true
+  },
+  {
+    "id": "4825",
+    "name": "HANDI LEMON GRASS TEA 100G",
+    "price": 4.99,
+    "original_image": "HANDI-LEMON-GRASS-TEA-100G-scaled.webp",
+    "image": "/images/HANDI LEMON GRASS TEA 100G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "4828",
+    "name": "HANDI KASHHMIRI PINK TEA 190G",
+    "price": 4.99,
+    "original_image": "HANDI-KASHHMIRI-PINK-TEA-190G.jpg",
+    "image": "/images/HANDI KASHHMIRI PINK TEA 190G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "4831",
+    "name": "NESTLE EVERYDAY KARAK CHAI 170GM",
+    "price": 4.99,
+    "original_image": "NESTLE-EVERYDAY-KARAK-CHAI-170GM.webp",
+    "image": "/images/NESTLE EVERYDAY KARAK CHAI 170GM.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "NESTLE EVERYDAY",
+    "inStock": true
+  },
+  {
+    "id": "4834",
+    "name": "NESTLE EVERYDAY CARDAMOM CHAI MIX 200GM",
+    "price": 4.99,
+    "original_image": "NESTLE-EVERYDAY-CARDAMOM-CHAI-MIX-200GM.webp",
+    "image": "/images/NESTLE EVERYDAY CARDAMOM CHAI MIX 200GM.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "NESTLE EVERYDAY",
+    "inStock": true
+  },
+  {
+    "id": "4837",
+    "name": "WAGH BAKRI MASALA TEA 260GM",
+    "price": 4.99,
+    "original_image": "WAGH-BAKRI-MASALA-TEA-260GM.avif",
+    "image": "/images/WAGH BAKRI MASALA TEA 260GM.avif",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4840",
+    "name": "TATA TEA MASALA CHAI 100G",
+    "price": 4.99,
+    "original_image": "TATA-TEA-MASALA-CHAI-100G.webp",
+    "image": "/images/TATA TEA MASALA CHAI 100G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TATA TEA",
+    "inStock": true
+  },
+  {
+    "id": "4843",
+    "name": "WAGH BAKRI MASALA TEA 250GM",
+    "price": 4.99,
+    "original_image": "WAGHBAKRI-MASALA-TEA-250GM.jpg",
+    "image": "/images/WAGH BAKRI MASALA TEA 250GM.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4846",
+    "name": "WAGH BAKRI INSTANT CARDAMOM TEA 260G",
+    "price": 4.99,
+    "original_image": "WAGH-BAKRI-INSTANT-CARDAMOM-TEA-260G.webp",
+    "image": "/images/WAGH BAKRI INSTANT CARDAMOM TEA 260G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4849",
+    "name": "WAGH BAKRI INSTANT GINGER TEA 260G",
+    "price": 4.99,
+    "original_image": "WAGH-BAKRI-INSTANT-GINGER-TEA-260G.webp",
+    "image": "/images/WAGH BAKRI INSTANT GINGER TEA 260G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4852",
+    "name": "3 ROSES TEA 100G",
+    "price": 4.99,
+    "original_image": "3-ROSES-TEA-100G-1.jpeg",
+    "image": "/images/3 ROSES TEA 100G.jpeg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "Brooke Bond",
+    "inStock": true
+  },
+  {
+    "id": "4855",
+    "name": "TATA TEA AGNI LEAF 1KG",
+    "price": 4.99,
+    "original_image": "TATA-TEA-AGNI-LEAF-1KG.jpg",
+    "image": "/images/TATA TEA AGNI LEAF 1KG.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TATA TEA",
+    "inStock": true
+  },
+  {
+    "id": "4858",
+    "name": "TAJ MAHAL TEA 900G",
+    "price": 4.99,
+    "original_image": "TAJ-MAHAL-TEA-900G-1.webp",
+    "image": "/images/TAJ MAHAL TEA 900G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TAJ MAHAL",
+    "inStock": true
+  },
+  {
+    "id": "4861",
+    "name": "TATA TEA AGNI 1KG",
+    "price": 4.99,
+    "original_image": "TATA-TEA-AGNI-1-kg-1.jpg",
+    "image": "/images/TATA TEA AGNI 1KG.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TATA TEA",
+    "inStock": true
+  },
+  {
+    "id": "4865",
+    "name": "LAXMI TEA MASALA 100G",
+    "price": 4.99,
+    "original_image": "LAXMI-TEA-MASALA-100G.webp",
+    "image": "/images/LAXMI TEA MASALA 100G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "4868",
+    "name": "TEA INDIA 907G",
+    "price": 4.99,
+    "original_image": "TEA-INDIA-907G.jpg",
+    "image": "/images/TEA INDIA 907G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "TEA INDIA",
+    "inStock": true
+  },
+  {
+    "id": "4872",
+    "name": "SWETHA TELUGU FOODS CHEKODILU 150G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-CHEKODILU-150G.webp",
+    "image": "/images/SWETHA TELUGU FOODS CHEKODILU 150G.webp",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4875",
+    "name": "SWETHA TELUGU FOODS JANTHIKALU 170G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-JANTHIKALU-170G.png",
+    "image": "/images/SWETHA TELUGU FOODS JANTHIKALU 170G.png",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4878",
+    "name": "SWETHA TELUGU FOODS KARA BOONDHI 170G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-KARA-BOONDHI.webp",
+    "image": "/images/SWETHA TELUGU FOODS KARA BOONDHI 170G.webp",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4881",
+    "name": "SWETHA TELUGU FOODS ATUKULA MIXTURE 170G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-ATUKULA-MIXTURE-170G.webp",
+    "image": "/images/SWETHA TELUGU FOODS ATUKULA MIXTURE 170G.webp",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4901",
+    "name": "SWETHA TELUGU FOODS ANDHRA MIXTURE 150G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-ANDHRA-MIXTURE-150G.avif",
+    "image": "/images/SWETHA TELUGU FOODS ANDHRA MIXTURE 150G.avif",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4904",
+    "name": "SWETHA TELUGU FOODS MASALA PEANUTS 150G",
+    "price": 4.99,
+    "original_image": "SWETHA-FOODS-MASALA-PEANUTS-150G.png",
+    "image": "/images/SWETHA TELUGU FOODS MASALA PEANUTS 150G.png",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4909",
+    "name": "SWETHA TELUGU FOODS MADRAS MIXTURE 120G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-MADRAS-MIXTURE-120G.jpg",
+    "image": "/images/SWETHA TELUGU FOODS MADRAS MIXTURE 120G.jpg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4912",
+    "name": "SWETHA TELUGU FOODS SANNA KARAPUSA 170G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-SANNA-KARAPUSA-170G.webp",
+    "image": "/images/SWETHA TELUGU FOODS SANNA KARAPUSA 170G.webp",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4915",
+    "name": "SWETHA TELUGU FOODS KARAPUSA 150G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-KARAPUSA-150G.jpg",
+    "image": "/images/SWETHA TELUGU FOODS KARAPUSA 150G.jpg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4918",
+    "name": "SWETHA TELUGU FOODS RIBBON PAKODA 160G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-RIBBON-PAKODA-160G.jpg",
+    "image": "/images/SWETHA TELUGU FOODS RIBBON PAKODA 160G.jpg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4921",
+    "name": "SWETHA TELUGU FOODS BELLAM KOMMULU",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-BELLAM-KOMMULU.jpg",
+    "image": "/images/SWETHA TELUGU FOODS BELLAM KOMMULU.jpg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4924",
+    "name": "SWETHA TELUGU FOODS DAL MOTHI MIXTURE 160G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-DAL-MOTHI-MIXTURE-160G.jpg",
+    "image": "/images/SWETHA TELUGU FOODS DAL MOTHI MIXTURE 160G.jpg",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4927",
+    "name": "SWETHA TELUGU FOODS CHETHI CHEKKALU 170G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-CHETHI-CHEKKALU-170G.png",
+    "image": "/images/SWETHA TELUGU FOODS CHETHI CHEKKALU 170G.png",
+    "categories": [
+      "Snacks"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4930",
+    "name": "SWETHA TELUGU FOODS MANGO GINGER PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-MANGO-GINGER-PICKLE-300G.jpg",
+    "image": "/images/SWETHA TELUGU FOODS MANGO GINGER PICKLE 300G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4933",
+    "name": "SWETHA TELUGU FOODS GARLIC PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-GARLIC-PICKLE-300G.png",
+    "image": "/images/SWETHA TELUGU FOODS GARLIC PICKLE 300G.png",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4936",
+    "name": "SWETHA TELUGU FOODS KERALA PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-KERALA-PICKLE-300G.jpg",
+    "image": "/images/SWETHA TELUGU FOODS KERALA PICKLE 300G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4939",
+    "name": "SWETHA TELUGU FOODS TOMATO PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-TOMATO-PICKLE-300G.webp",
+    "image": "/images/SWETHA TELUGU FOODS TOMATO PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4942",
+    "name": "SWETHA TELUGU FOODS GONGURA PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-GONGURA-PICKLE-300G.jpg",
+    "image": "/images/SWETHA TELUGU FOODS GONGURA PICKLE 300G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4945",
+    "name": "SWETHA TELUGU FOODS GONGURA RED CHILLI PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-GONGURA-RED-CHILLI-PICKLE-300G.webp",
+    "image": "/images/SWETHA TELUGU FOODS GONGURA RED CHILLI PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4948",
+    "name": "SWETHA TELUGU FOODS CUT MANGO PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-CUT-MANGO-PICKLE-300G.webp",
+    "image": "/images/SWETHA TELUGU FOODS CUT MANGO PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4951",
+    "name": "SWETHA TELUGU FOODS LIME PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-LIME-PICKLE-300G-1.webp",
+    "image": "/images/SWETHA TELUGU FOODS LIME PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4955",
+    "name": "SWETHA TELUGU FOODS AMLA PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-AMLA-PICKLE-300G.webp",
+    "image": "/images/SWETHA TELUGU FOODS AMLA PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4960",
+    "name": "SWETHA TELUGU FOODS MANGO THOKKU PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-MANGO-THOKKU-PICKLE-300G.webp",
+    "image": "/images/SWETHA TELUGU FOODS MANGO THOKKU PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4963",
+    "name": "SWETHA TELUGU FOODS RED CHILLI PICKLE 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-RED-CHILLI-PICKLE-300G.webp",
+    "image": "/images/SWETHA TELUGU FOODS RED CHILLI PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4966",
+    "name": "SWETHA TELUGU FOODS GREEN TARMARIND PICKLE WITH GARLIC 300G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-GREEN-TARMARIND-PICKLE-WITH-GARLIC-300G.webp",
+    "image": "/images/SWETHA TELUGU FOODS GREEN TARMARIND PICKLE WITH GARLIC 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4969",
+    "name": "SWETHA TELUGU FOODS GINGER GARLIC PASTE 680G",
+    "price": 4.99,
+    "original_image": "6vvdf.jpg",
+    "image": "/images/SWETHA TELUGU FOODS GINGER GARLIC PASTE 680G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "4974",
+    "name": "EASTERN MANGO PICKLE 400G",
+    "price": 4.99,
+    "original_image": "EASTERN-MANGO-PICKLE-400G.jpeg",
+    "image": "/images/EASTERN MANGO PICKLE 400G.jpeg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Eastern",
+    "inStock": true
+  },
+  {
+    "id": "4976",
+    "name": "EASTERN TENDER MANGO PICKLE 400G",
+    "price": 4.99,
+    "original_image": "EASTERN-TENDER-MANGO-PICKLE-400G.jpeg",
+    "image": "/images/EASTERN TENDER MANGO PICKLE 400G.jpeg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Eastern",
+    "inStock": true
+  },
+  {
+    "id": "4979",
+    "name": "PRIYA MANGO GINGER PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-MANGO-GINGER-PICKLE-300G.jpg",
+    "image": "/images/PRIYA MANGO GINGER PICKLE 300G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4982",
+    "name": "PRIYA AMLA PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-AMLA-PICKLE-300G.jpg",
+    "image": "/images/PRIYA AMLA PICKLE 300G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4985",
+    "name": "PRIYA GONGURA PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-GONGURA-PICKLE-300G.webp",
+    "image": "/images/PRIYA GONGURA PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4988",
+    "name": "PRIYA GARLIC PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-GARLIC-PICKLE-300G.jpg",
+    "image": "/images/PRIYA GARLIC PICKLE 300G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "4992",
+    "name": "KOPIKO BLACK 3 IN ONE COFFEE MIX 300G",
+    "price": 4.99,
+    "original_image": "KOPIKO-BLACK-3-IN-ONE-COFFEE-MIX-300G.webp",
+    "image": "/images/KOPIKO BLACK 3 IN ONE COFFEE MIX 300G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "Kopiko",
+    "inStock": true
+  },
+  {
+    "id": "4995",
+    "name": "WAGHN BAKRI MASALA CHAI 250G",
+    "price": 4.99,
+    "original_image": "WAGHN-BAKRI-MASALA-CHAI-250G.avif",
+    "image": "/images/WAGHN BAKRI MASALA CHAI 250G.avif",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "4998",
+    "name": "WAGHN BAKRI PREMIUM TEA 1KG",
+    "price": 4.99,
+    "original_image": "WAGHN-BAKRI-PREMIUM-TEA-1KG.webp",
+    "image": "/images/WAGHN BAKRI PREMIUM TEA 1KG.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "5001",
+    "name": "WAGHN BAKRI PREMIUM TEA 2LB",
+    "price": 4.99,
+    "original_image": "WAGHN-BAKRI-PREMIUM-TEA-2LB.avif",
+    "image": "/images/WAGHN BAKRI PREMIUM TEA 2LB.avif",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "WAGH BAKRI",
+    "inStock": true
+  },
+  {
+    "id": "5004",
+    "name": "RED LABEL TEA 900G",
+    "price": 4.99,
+    "original_image": "RED-LABEL-TEA-900G.jpg",
+    "image": "/images/RED LABEL TEA 900G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "Brooke Bond",
+    "inStock": true
+  },
+  {
+    "id": "5007",
+    "name": "BRU GREEN LABEL COFFEE 500G",
+    "price": 4.99,
+    "original_image": "BRU-GREEN-LABEL-COFFEE-500G.jpg",
+    "image": "/images/BRU GREEN LABEL COFFEE 500G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "BRU ORIGINAL",
+    "inStock": true
+  },
+  {
+    "id": "5013",
+    "name": "BRU INSTANT 200G",
+    "price": 4.99,
+    "original_image": "BRU-INSTANT-200G.webp",
+    "image": "/images/BRU INSTANT 200G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "BRU ORIGINAL",
+    "inStock": true
+  },
+  {
+    "id": "5015",
+    "name": "COTHAS COFFEE 454G",
+    "price": 4.99,
+    "original_image": "COTHAS-COFFEE-454G.jpg",
+    "image": "/images/COTHAS COFFEE 454G.jpg",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "COTHAS COFFEE",
+    "inStock": true
+  },
+  {
+    "id": "5019",
+    "name": "NARASU'S ANANDHAM HOTEL BLEND 500G",
+    "price": 4.99,
+    "original_image": "NARASUS-ANANDHAM-HOTEL-BLEND-500G.webp",
+    "image": "/images/NARASU'S ANANDHAM HOTEL BLEND 500G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "NARASU'S",
+    "inStock": true
+  },
+  {
+    "id": "5022",
+    "name": "NESCAFE GOLD SMOOTH VELOUTE 100G",
+    "price": 4.99,
+    "original_image": "NESCAFE-GOLD-SMOOTH-VELOUTE-100G.webp",
+    "image": "/images/NESCAFE GOLD SMOOTH VELOUTE 100G.webp",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "NESCAFE",
+    "inStock": true
+  },
+  {
+    "id": "5025",
+    "name": "NESCAFE GOLD COLOMBIA 95G",
+    "price": 4.99,
+    "original_image": "NESCAFE-GOLD-COLOMBIA-95G.avif",
+    "image": "/images/NESCAFE GOLD COLOMBIA 95G.avif",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "NESCAFE",
+    "inStock": true
+  },
+  {
+    "id": "5028",
+    "name": "NESCAFE RICH 170G",
+    "price": 4.99,
+    "original_image": "NESCAFE-RICH-170G.avif",
+    "image": "/images/NESCAFE RICH 170G.avif",
+    "categories": [
+      "TEA / COFFEE"
+    ],
+    "brand": "NESCAFE",
+    "inStock": true
+  },
+  {
+    "id": "5033",
+    "name": "PRIYA MANGO THOKKU PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-MANGO-THOKKU-PICKLE-300G.webp",
+    "image": "/images/PRIYA MANGO THOKKU PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5037",
+    "name": "PRIYA RED CHILLI PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-RED-CHILLI-PICKLE-300G.webp",
+    "image": "/images/PRIYA RED CHILLI PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5040",
+    "name": "PRIYA TOMATO PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-TOMATO-PICKLE-300G.webp",
+    "image": "/images/PRIYA TOMATO PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5043",
+    "name": "PRIYA LIME GINGER PICKLE 300G",
+    "price": 4.99,
+    "original_image": "PRIYA-LIME-GINGER-PICKLE-300G.jpg",
+    "image": "/images/PRIYA LIME GINGER PICKLE 300G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5046",
+    "name": "EASTERN LIME PICKLE 400G",
+    "price": 4.99,
+    "original_image": "EASTERN-LIME-PICKLE-400G.webp",
+    "image": "/images/EASTERN LIME PICKLE 400G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Eastern",
+    "inStock": true
+  },
+  {
+    "id": "5049",
+    "name": "DOUBLE HORSE TENDER MANGO PICKLE 400G",
+    "price": 4.99,
+    "original_image": "DOUBLE-HORSE-TENDER-MANGO-PICKLE-400G.webp",
+    "image": "/images/DOUBLE HORSE TENDER MANGO PICKLE 400G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "DOUBLE HORSE",
+    "inStock": true
+  },
+  {
+    "id": "5052",
+    "name": "MOTHERS PUNJABI MANGO PICKLE 500G",
+    "price": 4.99,
+    "original_image": "MOTHERS-PUNJABI-MANGO-PICKLE-500G.webp",
+    "image": "/images/MOTHERS PUNJABI MANGO PICKLE 500G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "MOTHER'S RECIPE",
+    "inStock": true
+  },
+  {
+    "id": "5056",
+    "name": "MOTHERS MANGO AND CHILLI PICKLE 500G",
+    "price": 4.99,
+    "original_image": "MOTHERS-MANGO-AND-CHILLI-PICKLE-500G.webp",
+    "image": "/images/MOTHERS MANGO AND CHILLI PICKLE 500G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "MOTHER'S RECIPE",
+    "inStock": true
+  },
+  {
+    "id": "5059",
+    "name": "MOTHERS GREEN CHILLI PICKLE 500G",
+    "price": 4.99,
+    "original_image": "MOTHERS-GREEN-CHILLI-PICKLE-500G.jpg",
+    "image": "/images/MOTHERS GREEN CHILLI PICKLE 500G.jpg",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "MOTHER'S RECIPE",
+    "inStock": true
+  },
+  {
+    "id": "5062",
+    "name": "BRAHMINS GINGER PICKLE 400G",
+    "price": 4.99,
+    "original_image": "BRAHMINS-GINGER-PICKLE-400G.webp",
+    "image": "/images/BRAHMINS GINGER PICKLE 400G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5065",
+    "name": "BRAHMINS GARLIC PICKLE 400G",
+    "price": 4.99,
+    "original_image": "BRAHMINS-GARLIC-PICKLE-400G.webp",
+    "image": "/images/BRAHMINS GARLIC PICKLE 400G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5068",
+    "name": "BRAHMINS LIME PICKLE 400G",
+    "price": 4.99,
+    "original_image": "BRAHMINS-LIME-PICKLE-400G.webp",
+    "image": "/images/BRAHMINS LIME PICKLE 400G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5072",
+    "name": "DEEP GREEN CHILLI PICKLE 283G",
+    "price": 4.99,
+    "original_image": "DEEP-GREEN-CHILLI-PICKLE-280G.avif",
+    "image": "/images/DEEP GREEN CHILLI PICKLE 283G.avif",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5075",
+    "name": "DEEP MIXED PICKLE 283G",
+    "price": 4.99,
+    "original_image": "DEEP-MIXED-PICKLE-283G.webp",
+    "image": "/images/DEEP MIXED PICKLE 283G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5079",
+    "name": "JAWARI DRUMSTICK LEAVES THOKKU 300G",
+    "price": 4.99,
+    "original_image": "JAWARI-DRUMSTICK-LEAVES-THOKKU-300G.webp",
+    "image": "/images/JAWARI DRUMSTICK LEAVES THOKKU 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5082",
+    "name": "JAWARI TOMATO PICKLE 300G",
+    "price": 4.99,
+    "original_image": "JAWARI-TOMATO-PICKLE-300G.webp",
+    "image": "/images/JAWARI TOMATO PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5085",
+    "name": "JAWARI CURRY LEAVES PICKLE 300G",
+    "price": 4.99,
+    "original_image": "JAWARI-CURRY-LEAVES-PICKLE-300G.webp",
+    "image": "/images/JAWARI CURRY LEAVES PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5088",
+    "name": "JAWARI BITTER GOURD PICKLE 300G",
+    "price": 4.99,
+    "original_image": "JAWARI-BITTER-GOURD-PICKLE-300G-scaled.webp",
+    "image": "/images/JAWARI BITTER GOURD PICKLE 300G.webp",
+    "categories": [
+      "Pickles"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5093",
+    "name": "AACHI RASAM POWDER 160G",
+    "price": 4.99,
+    "original_image": "AACHI-RASAM-POWDER-160G.png",
+    "image": "/images/AACHI RASAM POWDER 160G.png",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Aachi",
+    "inStock": true
+  },
+  {
+    "id": "5096",
+    "name": "BRAHMINS GARAM MASALA 100G",
+    "price": 4.99,
+    "original_image": "BRAHMINS-GARAM-MASALA-100G.jpg",
+    "image": "/images/BRAHMINS GARAM MASALA 100G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5099",
+    "name": "BRAHMINS SAMBAR MASALA 200G",
+    "price": 4.99,
+    "original_image": "BRAHMINS-SAMBAR-MASALA-200G.webp",
+    "image": "/images/BRAHMINS SAMBAR MASALA 200G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5102",
+    "name": "EVEREST SAMBAR POWDER 100G",
+    "price": 4.99,
+    "original_image": "EVEREST-SAMBAR-POWDER-100G.jpg",
+    "image": "/images/EVEREST SAMBAR POWDER 100G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Everest",
+    "inStock": true
+  },
+  {
+    "id": "5107",
+    "name": "SAKTHI BIRYANI MASALA 200G",
+    "price": 4.99,
+    "original_image": "SAKTHI-BIRYANI-MASALA-200G.jpg",
+    "image": "/images/SAKTHI BIRYANI MASALA 200G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Sakthi",
+    "inStock": true
+  },
+  {
+    "id": "5110",
+    "name": "SAKTHI SAMBAR POWDER 200G",
+    "price": 4.99,
+    "original_image": "SAKTHI-SAMBAR-POWDER-200G.jpg",
+    "image": "/images/SAKTHI SAMBAR POWDER 200G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Sakthi",
+    "inStock": true
+  },
+  {
+    "id": "5113",
+    "name": "SAKTHI RASAM POWDER 200G",
+    "price": 4.99,
+    "original_image": "SAKTHI-RASAM-POWDER-200G.jpg",
+    "image": "/images/SAKTHI RASAM POWDER 200G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Sakthi",
+    "inStock": true
+  },
+  {
+    "id": "5116",
+    "name": "SAKTHI GARAM MASALA 200G",
+    "price": 4.99,
+    "original_image": "SAKTHI-GARAM-MASALA-200G.webp",
+    "image": "/images/SAKTHI GARAM MASALA 200G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Sakthi",
+    "inStock": true
+  },
+  {
+    "id": "5119",
+    "name": "SAKTHI CORIANDER POWDER 100G",
+    "price": 4.99,
+    "original_image": "SAKTHI-CORIANDER-POWDER-100G.jpg",
+    "image": "/images/SAKTHI CORIANDER POWDER 100G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Sakthi",
+    "inStock": true
+  },
+  {
+    "id": "5122",
+    "name": "SWETHA TELUGU FOODS CHICKEN MASALA 80G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-CHICKEN-MASALA-80G.avif",
+    "image": "/images/SWETHA TELUGU FOODS CHICKEN MASALA 80G.avif",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Sakthi",
+    "inStock": true
+  },
+  {
+    "id": "5125",
+    "name": "SWETHA TELUGU FOODS SAMBAR POWDER 100G",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-SAMBAR-POWDER-100G.webp",
+    "image": "/images/SWETHA TELUGU FOODS SAMBAR POWDER 100G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5128",
+    "name": "MTR SAMBAR MIX 200G",
+    "price": 4.99,
+    "original_image": "MTR-SAMBAR-MIX-200G.webp",
+    "image": "/images/MTR SAMBAR MIX 200G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "5131",
+    "name": "MTR RASAM POWDER 200G",
+    "price": 4.99,
+    "original_image": "MTR-RASAM-POWDER-200G.webp",
+    "image": "/images/MTR RASAM POWDER 200G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "5134",
+    "name": "MTR SAMBAR POWDER 200G",
+    "price": 4.99,
+    "original_image": "MTR-SAMBAR-POWDER-200G.jpg",
+    "image": "/images/MTR SAMBAR POWDER 200G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "5137",
+    "name": "MTR PULIOGARE POWDER 200G",
+    "price": 4.99,
+    "original_image": "MTR-PULIOGARE-POWDER-200G.jpg",
+    "image": "/images/MTR PULIOGARE POWDER 200G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "5140",
+    "name": "LG HING POWDER 100G",
+    "price": 4.99,
+    "original_image": "LG-HING-POWDER-100G.avif",
+    "image": "/images/LG HING POWDER 100G.avif",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "5143",
+    "name": "LG HING POWDER 80G",
+    "price": 4.99,
+    "original_image": "LG-HING-POWDER-80G.webp",
+    "image": "/images/LG HING POWDER 80G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "5146",
+    "name": "SHAN MUTTON BIRYANI MASALA 60G",
+    "price": 4.99,
+    "original_image": "SHER-MUTTON-BIRYANI-MASALA-60G.webp",
+    "image": "/images/SHAN MUTTON BIRYANI MASALA 60G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Shan",
+    "inStock": true
+  },
+  {
+    "id": "5151",
+    "name": "SHAN BUTTER CHICKEN MASALA 50G",
+    "price": 4.99,
+    "original_image": "SHAN-BUTTER-CHICKEN-MASALA-50G.webp",
+    "image": "/images/SHAN BUTTER CHICKEN MASALA 50G.webp",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Shan",
+    "inStock": true
+  },
+  {
+    "id": "5154",
+    "name": "SHAN CHICKEN MASALA 50G",
+    "price": 4.99,
+    "original_image": "SHAN-CHICKEN-MASALA-50GM.jpg",
+    "image": "/images/SHAN CHICKEN MASALA 50G.jpg",
+    "categories": [
+      "Spices"
+    ],
+    "brand": "Shan",
+    "inStock": true
+  },
+  {
+    "id": "5160",
+    "name": "SWETHA TELUGU FOODS JAGGERY BALLS 2LB",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-JAGGERY-BALLS-2LB.webp",
+    "image": "/images/SWETHA TELUGU FOODS JAGGERY BALLS 2LB.webp",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5164",
+    "name": "HANDI JAGGERY 1KG",
+    "price": 4.99,
+    "original_image": "HANDI-JAGGERY-1KG.png",
+    "image": "/images/HANDI JAGGERY 1KG.png",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5167",
+    "name": "HANDI SHAKKAR 1KG",
+    "price": 4.99,
+    "original_image": "HANDI-SHAKKAR-1KG.webp",
+    "image": "/images/HANDI SHAKKAR 1KG.webp",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5170",
+    "name": "SWETHA TELUGU FOODS JAGGERY POWDER 2LB",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-JAGGERY-POWDER-2LB.webp",
+    "image": "/images/SWETHA TELUGU FOODS JAGGERY POWDER 2LB.webp",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5173",
+    "name": "SWETHA TELUGU FOODS JAGGERY CUBES 2LB",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-JAGGERY-CUBES-2LB.jpeg",
+    "image": "/images/SWETHA TELUGU FOODS JAGGERY CUBES 2LB.jpeg",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5176",
+    "name": "CANTEEN PUNJABI SHAKKAR 2LBS",
+    "price": 4.99,
+    "original_image": "CANTEEN-PUNJABI-SHAKKAR-2LBS.jpg",
+    "image": "/images/CANTEEN PUNJABI SHAKKAR 2LBS.jpg",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Canteen Foods",
+    "inStock": true
+  },
+  {
+    "id": "5179",
+    "name": "GLOBAL CHOICE WHITE CANE SUGAR 4LBS",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-WHITE-CANE-SUGAR-4LBS.jpeg",
+    "image": "/images/GLOBAL CHOICE WHITE CANE SUGAR 4LBS.jpeg",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "5182",
+    "name": "GLOBAL CHOICE WHITE SUGAR 10LBS",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-WHITE-SUGAR-10LBS.jpeg",
+    "image": "/images/GLOBAL CHOICE WHITE SUGAR 10LBS.jpeg",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "5185",
+    "name": "VISHVA INDIAN SUGAR 2LBS",
+    "price": 4.99,
+    "original_image": "VISHVA-INDIAN-SUGAR-2LBS.webp",
+    "image": "/images/VISHVA INDIAN SUGAR 2LBS.webp",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Vishva",
+    "inStock": true
+  },
+  {
+    "id": "5188",
+    "name": "REDPATH GRANULATED SUGAR 2KG",
+    "price": 4.99,
+    "original_image": "REDPATH-GRANULATED-SUGAR-2KG.png",
+    "image": "/images/REDPATH GRANULATED SUGAR 2KG.png",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Redpath",
+    "inStock": true
+  },
+  {
+    "id": "5191",
+    "name": "REDPATH DARK BROWN SUGAR 1KG",
+    "price": 4.99,
+    "original_image": "REDPATH-DARK-BROWN-SUGAR-1KG.png",
+    "image": "/images/REDPATH DARK BROWN SUGAR 1KG.png",
+    "categories": [
+      "Sugar and Jaggery"
+    ],
+    "brand": "Redpath",
+    "inStock": true
+  },
+  {
+    "id": "5195",
+    "name": "LAXMI BAJRI FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "LAXMI-BAJRI-FLOUR-2LB.webp",
+    "image": "/images/LAXMI BAJRI FLOUR 2LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5198",
+    "name": "LAXMI JOWAR FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "LAXMI-JOWAR-FLOUR-2LB.webp",
+    "image": "/images/LAXMI JOWAR FLOUR 2LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5201",
+    "name": "CHAKRA JOWAR FLOUR 4LBS",
+    "price": 4.99,
+    "original_image": "CHAKRA-JOWAR-FLOUR-4LBS-1.jpg",
+    "image": "/images/CHAKRA JOWAR FLOUR 4LBS.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "5205",
+    "name": "CHAKRA RAGI FLOUR 2LBS",
+    "price": 4.99,
+    "original_image": "CHAKRA-RAGI-FLOUR-2LBS.jpg",
+    "image": "/images/CHAKRA RAGI FLOUR 2LBS.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Chakra",
+    "inStock": true
+  },
+  {
+    "id": "5212",
+    "name": "A2 FOODS RAGI FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "A2-FOODS-RAGI-FLOUR-2LB.png",
+    "image": "/images/A2 FOODS RAGI FLOUR 2LB.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "A2",
+    "inStock": true
+  },
+  {
+    "id": "5215",
+    "name": "LAXMI RICE FLOUR 4LB",
+    "price": 4.99,
+    "original_image": "LAXMI-RICE-FLOUR-4LB.webp",
+    "image": "/images/LAXMI RICE FLOUR 4LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5220",
+    "name": "LAXMI RICE FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "LAXMI-RICE-FLOUR-2LB.webp",
+    "image": "/images/LAXMI RICE FLOUR 2LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5222",
+    "name": "SWETHA TELUGU FOODS RICE FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-RICE-FLOUR-2LB.webp",
+    "image": "/images/SWETHA TELUGU FOODS RICE FLOUR 2LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5225",
+    "name": "EASTERN PUTTU PODI POWDER WHITE 1KG",
+    "price": 4.99,
+    "original_image": "EASTERN-PUTTU-PODI-POWDER-WHITE-1KG.webp",
+    "image": "/images/EASTERN PUTTU PODI POWDER WHITE 1KG.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Eastern",
+    "inStock": true
+  },
+  {
+    "id": "5228",
+    "name": "BRAHMINS PUTTU POWDER 1KG",
+    "price": 4.99,
+    "original_image": "BRAHMINS-PUTTU-POWDER-1KG-.jpg",
+    "image": "/images/BRAHMINS PUTTU POWDER 1KG.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5231",
+    "name": "DEEP CORN FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "DEEP-CORN-FLOUR-2LB.png",
+    "image": "/images/DEEP CORN FLOUR 2LB.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5234",
+    "name": "DEEP BHAKRI FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "DEEP-BHAKRI-FLOUR-2LB.png",
+    "image": "/images/DEEP BHAKRI FLOUR 2LB.png",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5237",
+    "name": "DEEP MATHIA FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "DEEP-MATHIA-FLOUR-2LB.webp",
+    "image": "/images/DEEP MATHIA FLOUR 2LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5240",
+    "name": "DEEP DHOLKA FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "DEEP-DHOLKA-FLOUR-2LB.jpg",
+    "image": "/images/DEEP DHOLKA FLOUR 2LB.jpg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5243",
+    "name": "DEEP HANDVA FLOUR 2LB",
+    "price": 4.99,
+    "original_image": "DEEP-HANDVA-FLOUR-2LB.jpeg",
+    "image": "/images/DEEP HANDVA FLOUR 2LB.jpeg",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5246",
+    "name": "DEEP SOYA BEAN 2LB",
+    "price": 4.99,
+    "original_image": "DEEP-SOYA-BEAN-2LB.webp",
+    "image": "/images/DEEP SOYA BEAN 2LB.webp",
+    "categories": [
+      "Flours"
+    ],
+    "brand": "Deep",
+    "inStock": true
+  },
+  {
+    "id": "5253",
+    "name": "HANDI VERMICELLI 150G",
+    "price": 4.99,
+    "original_image": "HANDI-VERMICELLI-150G.webp",
+    "image": "/images/HANDI VERMICELLI 150G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "5256",
+    "name": "TEJA VERMICELLI NEST 300G",
+    "price": 4.99,
+    "original_image": "TEJA-VERMICELLI-NEST-300G.jpg",
+    "image": "/images/TEJA VERMICELLI NEST 300G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Teja",
+    "inStock": true
+  },
+  {
+    "id": "5259",
+    "name": "HANDI CRACKED WHEAT 2LB",
+    "price": 4.99,
+    "original_image": "HANDI-CRACKED-WHEAT-2LB.jpg",
+    "image": "/images/HANDI CRACKED WHEAT 2LB.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "5262",
+    "name": "VERKA VERMICELLI NEST 300G",
+    "price": 4.99,
+    "original_image": "VERKA-VERMICELLI-NEST-300G.avif",
+    "image": "/images/VERKA VERMICELLI NEST 300G.avif",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "VERKA",
+    "inStock": true
+  },
+  {
+    "id": "5265",
+    "name": "BAMBINO VERMICELLI ROASTED 800G",
+    "price": 4.99,
+    "original_image": "BAMBINO-VERMICELLI-ROASTED-800G.jpg",
+    "image": "/images/BAMBINO VERMICELLI ROASTED 800G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Bambino",
+    "inStock": true
+  },
+  {
+    "id": "5268",
+    "name": "PRIYA VERMICELLI 1KG",
+    "price": 4.99,
+    "original_image": "PRIYA-VERMICELLI-1KG.webp",
+    "image": "/images/PRIYA VERMICELLI 1KG.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5271",
+    "name": "ANIL RAGI VERMICELLI 450G",
+    "price": 4.99,
+    "original_image": "ANIL-RAGI-VERMICELLI-450G.webp",
+    "image": "/images/ANIL RAGI VERMICELLI 450G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Anil",
+    "inStock": true
+  },
+  {
+    "id": "5274",
+    "name": "SWETHA TELUGU FOODS ROASTED UPMA RAVA 4LB",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-ROASTED-UPMA-RAVA-4LB.webp",
+    "image": "/images/SWETHA TELUGU FOODS ROASTED UPMA RAVA 4LB.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5277",
+    "name": "NATIVE FOOD STORE MUTLI MILLET VERMICELLI 200G",
+    "price": 4.99,
+    "original_image": "NATIVE-FOOD-STORE-MUTLI-MILLET-VERMICELLI-200G.jpg",
+    "image": "/images/NATIVE FOOD STORE MUTLI MILLET VERMICELLI 200G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Native Foods",
+    "inStock": true
+  },
+  {
+    "id": "5280",
+    "name": "VISHVA SOOJI COARSE 2LBS",
+    "price": 4.99,
+    "original_image": "VISHVA-SOOJI-COARSE-2LBS.jpg",
+    "image": "/images/VISHVA SOOJI COARSE 2LBS.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Vishva",
+    "inStock": true
+  },
+  {
+    "id": "5283",
+    "name": "GLOBAL CHOICE SOOJI COARSE 4LBS",
+    "price": 4.99,
+    "original_image": "GLOBAL-CHOICE-SOOJI-COARSE-4LBS.jpg",
+    "image": "/images/GLOBAL CHOICE SOOJI COARSE 4LBS.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Global Choice",
+    "inStock": true
+  },
+  {
+    "id": "5286",
+    "name": "MEGH SOOJI COURSE 2LB",
+    "price": 4.99,
+    "original_image": "MEGH-SOOJI-COURSE-2LB.webp",
+    "image": "/images/MEGH SOOJI COURSE 2LB.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Megh",
+    "inStock": true
+  },
+  {
+    "id": "5289",
+    "name": "LAXMI SOOJI COARSE 4LB",
+    "price": 4.99,
+    "original_image": "LAXMI-SOOJI-COARSE-4LB.webp",
+    "image": "/images/LAXMI SOOJI COARSE 4LB.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5292",
+    "name": "SWETHA TELUGU FOODS ROASTED WHEAT RAVA 4LB",
+    "price": 4.99,
+    "original_image": "SWETHA-TELUGU-FOODS-ROASTED-WHEAT-RAVA-4LB.jpg",
+    "image": "/images/SWETHA TELUGU FOODS ROASTED WHEAT RAVA 4LB.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Swetha Telugu Foods",
+    "inStock": true
+  },
+  {
+    "id": "5295",
+    "name": "LAXMI IDLI RAVA 4LB",
+    "price": 4.99,
+    "original_image": "LAXMI-IDLI-RAVA-4LB.jpg",
+    "image": "/images/LAXMI IDLI RAVA 4LB.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5298",
+    "name": "LAXMI ROASTED UPMA RAVA 4LB",
+    "price": 4.99,
+    "original_image": "LAXMI-ROASTED-UPMA-RAVA-4LB.avif",
+    "image": "/images/LAXMI ROASTED UPMA RAVA 4LB.avif",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5306",
+    "name": "PRIYA UPMA INSTANT MIX 175G",
+    "price": 4.99,
+    "original_image": "PRIYA-UPMA-INSTANT-MIX-175G.webp",
+    "image": "/images/PRIYA UPMA INSTANT MIX 175G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5309",
+    "name": "PRIYA INSTANT DOSA MIX 200G",
+    "price": 4.99,
+    "original_image": "PRIYA-INSTANT-DOSA-MIX-200G.jpg",
+    "image": "/images/PRIYA INSTANT DOSA MIX 200G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5312",
+    "name": "PRIYA INSTANT RAVA IDLI MIX 200G",
+    "price": 4.99,
+    "original_image": "PRIYA-INSTANT-RAVA-IDLI-MIX-200G.webp",
+    "image": "/images/PRIYA INSTANT RAVA IDLI MIX 200G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Priya",
+    "inStock": true
+  },
+  {
+    "id": "5315",
+    "name": "GITS MIX RICE IDLI 200G",
+    "price": 4.99,
+    "original_image": "GITS-MIX-RICE-IDLI-200G.webp",
+    "image": "/images/GITS MIX RICE IDLI 200G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Gits",
+    "inStock": true
+  },
+  {
+    "id": "5318",
+    "name": "DOUBLE HORSE 2 MINUTE INSTANT IDLIYAPPAM 200G",
+    "price": 4.99,
+    "original_image": "DOUBLE-HORSE-2-MINUTE-INSTANT-IDLIYAPPAM-200G.webp",
+    "image": "/images/DOUBLE HORSE 2 MINUTE INSTANT IDLIYAPPAM 200G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "DOUBLE HORSE",
+    "inStock": true
+  },
+  {
+    "id": "5321",
+    "name": "MAGGI CHICKEN FLAVOURED BOUILLON",
+    "price": 4.99,
+    "original_image": "MAGGI-CHICKEN-FLAVOURED-BOUILLON.avif",
+    "image": "/images/MAGGI CHICKEN FLAVOURED BOUILLON.avif",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Maggi",
+    "inStock": true
+  },
+  {
+    "id": "5324",
+    "name": "MAGGI PAZZTA CHEESE MACARONI 75G",
+    "price": 4.99,
+    "original_image": "MAGGI-PAZZTA-CHEESE-MACARONI-75G.webp",
+    "image": "/images/MAGGI PAZZTA CHEESE MACARONI 75G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Maggi",
+    "inStock": true
+  },
+  {
+    "id": "5329",
+    "name": "KELLOGG'S MULTIGRAIN CHOCOS",
+    "price": 4.99,
+    "original_image": "KELLOGGS-MULTIGRAIN-CHOCOS.webp",
+    "image": "/images/KELLOGG'S MULTIGRAIN CHOCOS.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Kellogg's",
+    "inStock": true
+  },
+  {
+    "id": "5332",
+    "name": "BRAHMINS EASY PALAPPAM MIX 1KG",
+    "price": 4.99,
+    "original_image": "BRAHMINS-EASY-PALAPPAM-MIX-1KG.jpg",
+    "image": "/images/BRAHMINS EASY PALAPPAM MIX 1KG.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5338",
+    "name": "BRAHMINS DOSA PODI 1KG",
+    "price": 4.99,
+    "original_image": "BRAHMINS-DOSA-PODI-1KG.webp",
+    "image": "/images/BRAHMINS DOSA PODI 1KG.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5340",
+    "name": "BRAHMINS IDLI PODI 1KG",
+    "price": 4.99,
+    "original_image": "BRAHMINS-IDLI-PODI-1KG.jpg",
+    "image": "/images/BRAHMINS IDLI PODI 1KG.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Brahmins",
+    "inStock": true
+  },
+  {
+    "id": "5343",
+    "name": "MTR UTTAPPAM MIX 500G",
+    "price": 4.99,
+    "original_image": "MTR-UTTAPPAM-MIX-500G-1.jpg",
+    "image": "/images/MTR UTTAPPAM MIX 500G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "5346",
+    "name": "MTR DOSA MIX 500G",
+    "price": 4.99,
+    "original_image": "MTR-DOSA-MIX-500G.webp",
+    "image": "/images/MTR DOSA MIX 500G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  },
+  {
+    "id": "5349",
+    "name": "REHMAT-E-SHEREEN PHENI 200G",
+    "price": 4.99,
+    "original_image": "REHMAT-E-SHEREEN-PHENI-200G.webp",
+    "image": "/images/REHMAT-E-SHEREEN PHENI 200G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Rehmat-e-Shereen",
+    "inStock": true
+  },
+  {
+    "id": "5352",
+    "name": "TOP RAMEN MASALA INSTANT NOODLES 260G",
+    "price": 4.99,
+    "original_image": "TOP-RAMEN-MASALA-INSTANT-NOODLES-260G.webp",
+    "image": "/images/TOP RAMEN MASALA INSTANT NOODLES 260G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Top Ramen",
+    "inStock": true
+  },
+  {
+    "id": "5355",
+    "name": "MAGGI 2 MINUTE MASALA INSTANT NOODLES 140G",
+    "price": 4.99,
+    "original_image": "MAGGI-2-MINUTE-MASALA-INSTANT-NOODLES-140G-1.webp",
+    "image": "/images/MAGGI 2 MINUTE MASALA INSTANT NOODLES 140G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Maggi",
+    "inStock": true
+  },
+  {
+    "id": "5358",
+    "name": "CANTON VEGETABLE FLAVOUR 60G",
+    "price": 4.99,
+    "original_image": "CANTON-VEGETABLE-FLAVOUR-60G.jpg",
+    "image": "/images/CANTON VEGETABLE FLAVOUR 60G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "canton",
+    "inStock": true
+  },
+  {
+    "id": "5361",
+    "name": "MAGGI NUTRI-LICIOUS MASALA VEGA ATTA NOODLES 290G",
+    "price": 4.99,
+    "original_image": "MAGGI-NUTRI-LICIOUS-MASALA-VEGA-ATTA-NOODLES-290G-1.jpg",
+    "image": "/images/MAGGI NUTRI-LICIOUS MASALA VEGA ATTA NOODLES 290G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Maggi",
+    "inStock": true
+  },
+  {
+    "id": "5364",
+    "name": "YIPPEE MASALA NOODLES 70G",
+    "price": 4.99,
+    "original_image": "YIPPEE-MASALA-NOODLES-70G-1.jpg",
+    "image": "/images/YIPPEE MASALA NOODLES 70G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Yippee",
+    "inStock": true
+  },
+  {
+    "id": "5370",
+    "name": "JAWARI KODO MILLET UPMA 250G",
+    "price": 4.99,
+    "original_image": "JAWARI-KODO-MILLET-UPMA-250G.webp",
+    "image": "/images/JAWARI KODO MILLET UPMA 250G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5372",
+    "name": "JAWARI KODO MILLET BISI BELE BATH 250G",
+    "price": 4.99,
+    "original_image": "JAWARI-KODO-MILLET-BISI-BELE-BATH-250G.webp",
+    "image": "/images/JAWARI KODO MILLET BISI BELE BATH 250G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5375",
+    "name": "JAWARI FOXTAIL MILLET KHICHDI 250G",
+    "price": 4.99,
+    "original_image": "JAWARI-FOXTAIL-MILLET-KHICHDI-250G.png",
+    "image": "/images/JAWARI FOXTAIL MILLET KHICHDI 250G.png",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5379",
+    "name": "JAWARI MULTI MILLET DOSA 250G",
+    "price": 4.99,
+    "original_image": "JAWARI-MULTI-MILLET-DOSA-250G.jpg",
+    "image": "/images/JAWARI MULTI MILLET DOSA 250G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5382",
+    "name": "JAWARI PEANUT CHUTNEY POWDER 250G",
+    "price": 4.99,
+    "original_image": "JAWARI-PEANUT-CHUTNEY-POWDER-250G.webp",
+    "image": "/images/JAWARI PEANUT CHUTNEY POWDER 250G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5385",
+    "name": "JAWARI KODO MILLET BIRYANI 250G",
+    "price": 4.99,
+    "original_image": "JAWARI-KODO-MILLET-BIRYANI-250G.jpg",
+    "image": "/images/JAWARI KODO MILLET BIRYANI 250G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5388",
+    "name": "JAWARI BARNYARD MILLET KHEER 250G",
+    "price": 4.99,
+    "original_image": "JAWARI-BARNYARD-MILLET-KHEER-250G.jpg",
+    "image": "/images/JAWARI BARNYARD MILLET KHEER 250G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5391",
+    "name": "JAWARI MILLETS TURMERIC ENERGY DRINK 200G",
+    "price": 4.99,
+    "original_image": "JAWARI-MILLETS-TURMERIC-ENERGY-DRINK-200G.webp",
+    "image": "/images/JAWARI MILLETS TURMERIC ENERGY DRINK 200G.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "JAWARI",
+    "inStock": true
+  },
+  {
+    "id": "5401",
+    "name": "QUAKER INSTANT OATMEAL REGULAR 280G",
+    "price": 4.99,
+    "original_image": "QUAKER-INSTANT-OATMEAL-REGULAR-280G.jpg",
+    "image": "/images/QUAKER INSTANT OATMEAL REGULAR 280G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Quaker",
+    "inStock": true
+  },
+  {
+    "id": "5404",
+    "name": "SAFFOLA MASALA OATS VEGGIE TWIST 500G",
+    "price": 4.99,
+    "original_image": "SAFFOLA-MASALA-OATS-VEGGIE-TWIST-500G.jpg",
+    "image": "/images/SAFFOLA MASALA OATS VEGGIE TWIST 500G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "SAFFOLA",
+    "inStock": true
+  },
+  {
+    "id": "5407",
+    "name": "SAFFOLA MASALA OATS CLASSIC MASALA 500G",
+    "price": 4.99,
+    "original_image": "SAFFOLA-MASALA-OATS-CLASSIC-MASALA-500G.jpg",
+    "image": "/images/SAFFOLA MASALA OATS CLASSIC MASALA 500G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "SAFFOLA",
+    "inStock": true
+  },
+  {
+    "id": "5410",
+    "name": "DAN D PAK ROLLED OATS 1KG",
+    "price": 4.99,
+    "original_image": "DAN-D-PAK-ROLLED-OATS-1KG.png",
+    "image": "/images/DAN D PAK ROLLED OATS 1KG.png",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "DAN D PAK",
+    "inStock": true
+  },
+  {
+    "id": "5413",
+    "name": "DAN D PAK QUICK OATS 1KG",
+    "price": 4.99,
+    "original_image": "DAN-D-PAK-QUICK-OATS-1KG.jpg",
+    "image": "/images/DAN D PAK QUICK OATS 1KG.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "DAN D PAK",
+    "inStock": true
+  },
+  {
+    "id": "5416",
+    "name": "IP ITALPASTA 900G",
+    "price": 4.99,
+    "original_image": "IP-ITALPASTA-900G.png",
+    "image": "/images/IP ITALPASTA 900G.png",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "IP",
+    "inStock": true
+  },
+  {
+    "id": "5419",
+    "name": "LANCIA FUSILLI 750G",
+    "price": 4.99,
+    "original_image": "LANCIA-FUSILLI-750G.jpg",
+    "image": "/images/LANCIA FUSILLI 750G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Lancia",
+    "inStock": true
+  },
+  {
+    "id": "5422",
+    "name": "HANDI POHA THIN 2LB",
+    "price": 4.99,
+    "original_image": "HANDI-POHA-THIN-2LB.webp",
+    "image": "/images/HANDI POHA THIN 2LB.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "HANDI",
+    "inStock": true
+  },
+  {
+    "id": "5425",
+    "name": "BANSI POHA SUPER THIN 2LB",
+    "price": 4.99,
+    "original_image": "BANSI-POHA-SUPER-THIN-2LB.webp);",
+    "image": "/images/BANSI POHA SUPER THIN 2LB.webp);",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Bansi",
+    "inStock": true
+  },
+  {
+    "id": "5428",
+    "name": "LAXMI THIN POHA 4LB",
+    "price": 4.99,
+    "original_image": "LAXMI-THIN-POHA-4LB.webp",
+    "image": "/images/LAXMI THIN POHA 4LB.webp",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "Laxmi",
+    "inStock": true
+  },
+  {
+    "id": "5431",
+    "name": "MTR INSTANT REGULAR POHA CUP 80G",
+    "price": 4.99,
+    "original_image": "MTR-INSTANT-REGULAR-POHA-CUP-80G.jpg",
+    "image": "/images/MTR INSTANT REGULAR POHA CUP 80G.jpg",
+    "categories": [
+      "Breakfast"
+    ],
+    "brand": "MTR",
+    "inStock": true
+  }
+]
