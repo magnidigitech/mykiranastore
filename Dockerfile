@@ -10,7 +10,7 @@ RUN npm run build
 FROM node:20-alpine
 WORKDIR /app
 ENV NODE_ENV=production
-ENV PORT=5000
+ENV PORT=3000
 
 # Install dependencies (only production)
 COPY package*.json ./
@@ -23,7 +23,7 @@ COPY server.cjs ./
 COPY --from=builder /app/dist ./dist
 
 # Expose server port
-EXPOSE 5000
+EXPOSE 3000
 
 # Start production server
 CMD ["node", "server.cjs"]
