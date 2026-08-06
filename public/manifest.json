@@ -1,0 +1,23 @@
+{
+  "name": "My Kiranastore - Calgary's Premium Indian Grocery",
+  "short_name": "Kiranastore",
+  "description": "Shop Calgary's best selection of authentic Indian flours, premium basmati rices, hand-ground spices, traditional pickles, and frozen delicacies at My Kiranastore.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#15803d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

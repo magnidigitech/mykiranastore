@@ -15,6 +15,9 @@
     <meta property="og:description" content="Shop Calgary's best selection of authentic Indian flours, premium basmati rices, hand-ground spices, traditional pickles, and frozen delicacies." />
     <meta property="og:image" content="/logo-icon.png" />
     
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#15803d" />
+    
     <!-- Google Fonts: Inter and Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,5 +26,16 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker registered successfully:', reg.scope))
+            .catch(err => console.log('Service Worker registration failed:', err));
+        });
+      }
+    </script>
   </body>
 </html>
