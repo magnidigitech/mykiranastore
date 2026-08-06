@@ -20,6 +20,9 @@ if (!fs.existsSync(IMAGES_DIR)) {
   fs.mkdirSync(IMAGES_DIR, { recursive: true });
 }
 
+// Serve images folder statically
+app.use('/images', express.static(IMAGES_DIR));
+
 // Helper to sanitize filenames (keep spaces, alphanumeric, hyphens, and underscores)
 function sanitizeFilename(name) {
   return name.replace(/[\\/*?:"<>|]/g, '').trim();
