@@ -452,6 +452,7 @@ h6 {
   flex-direction: column;
   transition: var(--transition-bounce);
   position: relative;
+  touch-action: pan-y; /* Prevent browser swipe gestures from interfering with horizontal card swipe */
 }
 
 .product-card:hover {
@@ -1002,6 +1003,7 @@ h6 {
   align-items: center;
   justify-content: center;
   user-select: none;
+  touch-action: none; /* Disable default gestures (scroll/swipe/pinch) on lightbox overlay */
 }
 
 .lightbox-content {

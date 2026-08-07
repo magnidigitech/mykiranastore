@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kiranstore-pwa-cache-v1';
+const CACHE_NAME = 'kiranstore-pwa-cache-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -40,27 +40,56 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
+  const url = new URL(event.request.url);
 
-      return fetch(event.request).then((response) => {
-        // Check if we received a valid response
-        if (!response || response.status !== 200 || response.type !== 'basic') {
+  // Network-First for HTML/document requests and root path
+  const isHtmlRequest = 
+    event.request.mode === 'navigate' || 
+    (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html')) ||
+    url.pathname === '/' || 
+    url.pathname === '/index.html';
+
+  if (isHtmlRequest) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const responseToCache = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+          }
           return response;
+        })
+        .catch(() => {
+          // If offline, fallback to cache
+          return caches.match(event.request);
+        })
+    );
+  } else {
+    // Cache-First for static assets (images, scripts, styles, etc.)
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        if (cachedResponse) {
+          return cachedResponse;
         }
 
-        const responseToCache = response.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, responseToCache);
-        });
+        return fetch(event.request).then((response) => {
+          // Only cache valid GET responses of basic type
+          if (!response || response.status !== 200 || response.type !== 'basic') {
+            return response;
+          }
 
-        return response;
-      }).catch(() => {
-        // Fallback for offline if request fails
-      });
-    })
-  );
+          const responseToCache = response.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
+
+          return response;
+        }).catch(() => {
+          // Fallback if offline and not in cache
+        });
+      })
+    );
+  }
 });
