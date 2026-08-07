@@ -22,7 +22,13 @@ import {
   SlidersHorizontal,
   Home,
   ShoppingBag,
-  Star
+  Star,
+  ClipboardList,
+  Check,
+  Share2,
+  Copy,
+  Undo,
+  Menu
 } from 'lucide-react';
 
 const ITEMS_PER_PAGE = 24;
@@ -33,8 +39,34 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // PWA Shopping List States
+  const [shoppingList, setShoppingList] = useState(() => {
+    try {
+      const saved = localStorage.getItem('kiranstore_shopping_list');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
+
+  const [toast, setToast] = useState(null);
+  const [cardSwipeId, setCardSwipeId] = useState(null);
+  const [cardSwipeOffset, setCardSwipeOffset] = useState(0);
+
+  const cardTouchStart = React.useRef({ x: 0, y: 0 });
+  const cardSwipeActive = React.useRef(false);
+
+  useEffect(() => {
+    if (!toast) return;
+    const timer = setTimeout(() => {
+      setToast(null);
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [toast]);
+
   // Routing & Authentication states
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAdminPath, setIsAdminPath] = useState(window.location.pathname === '/admin');
   const [isLoggedIn, setIsLoggedIn] = useState(sessionStorage.getItem('isAdminLoggedIn') === 'true');
   const [loginUsername, setLoginUsername] = useState('');
@@ -65,6 +97,7 @@ export default function App() {
   const navigateTo = (path) => {
     window.history.pushState({}, '', path);
     window.dispatchEvent(new Event('popstate'));
+    setIsMobileMenuOpen(false);
   };
 
   const handleLoginSubmit = (e) => {
@@ -228,9 +261,176 @@ export default function App() {
   };
 
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
+    const value = e.target.value;
+    setSearchTerm(value);
     setCurrentPage(1);
     setSelectedProductIds([]);
+    if (window.location.pathname !== '/products') {
+      navigateTo('/products');
+    }
+  };
+
+  // --- PWA SHOPPING LIST METHODS & GESTURES ---
+
+  const isItemInList = (id) => shoppingList.some(item => item.id === id);
+
+  const addProductToList = (product) => {
+    const previousList = [...shoppingList];
+    const existingIndex = shoppingList.findIndex(item => item.id === product.id);
+    let newList;
+    if (existingIndex >= 0) {
+      newList = shoppingList.map((item, idx) => 
+        idx === existingIndex ? { ...item, quantity: item.quantity + 1 } : item
+      );
+    } else {
+      newList = [
+        ...shoppingList,
+        {
+          id: product.id,
+          name: product.name,
+          brand: product.brand,
+          image: product.image,
+          inStock: product.inStock,
+          checked: false,
+          quantity: 1
+        }
+      ];
+    }
+    
+    setShoppingList(newList);
+    localStorage.setItem('kiranstore_shopping_list', JSON.stringify(newList));
+    
+    setToast({
+      message: `Added "${product.name}" to your shopping list.`,
+      actionText: 'Undo',
+      onAction: () => {
+        setShoppingList(previousList);
+        localStorage.setItem('kiranstore_shopping_list', JSON.stringify(previousList));
+        setToast(null);
+      }
+    });
+  };
+
+  const removeProductFromList = (id) => {
+    const previousList = [...shoppingList];
+    const itemToRemove = shoppingList.find(item => item.id === id);
+    if (!itemToRemove) return;
+
+    const newList = shoppingList.filter(item => item.id !== id);
+    setShoppingList(newList);
+    localStorage.setItem('kiranstore_shopping_list', JSON.stringify(newList));
+
+    setToast({
+      message: `Removed "${itemToRemove.name}" from your shopping list.`,
+      actionText: 'Undo',
+      onAction: () => {
+        setShoppingList(previousList);
+        localStorage.setItem('kiranstore_shopping_list', JSON.stringify(previousList));
+        setToast(null);
+      }
+    });
+  };
+
+  const toggleProductChecked = (id) => {
+    const newList = shoppingList.map(item => 
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+    setShoppingList(newList);
+    localStorage.setItem('kiranstore_shopping_list', JSON.stringify(newList));
+  };
+
+  const updateProductQuantity = (id, change) => {
+    const newList = shoppingList.map(item => {
+      if (item.id === id) {
+        const newQty = Math.max(1, item.quantity + change);
+        return { ...item, quantity: newQty };
+      }
+      return item;
+    });
+    setShoppingList(newList);
+    localStorage.setItem('kiranstore_shopping_list', JSON.stringify(newList));
+  };
+
+  const clearCheckedItems = () => {
+    const previousList = [...shoppingList];
+    const newList = shoppingList.filter(item => !item.checked);
+    if (newList.length === shoppingList.length) return;
+
+    setShoppingList(newList);
+    localStorage.setItem('kiranstore_shopping_list', JSON.stringify(newList));
+
+    setToast({
+      message: 'Cleared checked items.',
+      actionText: 'Undo',
+      onAction: () => {
+        setShoppingList(previousList);
+        localStorage.setItem('kiranstore_shopping_list', JSON.stringify(previousList));
+        setToast(null);
+      }
+    });
+  };
+
+  const clearAllItems = () => {
+    if (shoppingList.length === 0) return;
+    if (!window.confirm('Are you sure you want to clear your entire shopping list?')) return;
+
+    const previousList = [...shoppingList];
+    setShoppingList([]);
+    localStorage.setItem('kiranstore_shopping_list', JSON.stringify([]));
+
+    setToast({
+      message: 'Cleared all items.',
+      actionText: 'Undo',
+      onAction: () => {
+        setShoppingList(previousList);
+        localStorage.setItem('kiranstore_shopping_list', JSON.stringify(previousList));
+        setToast(null);
+      }
+    });
+  };
+
+  // Card Touch Swipe Gestures for Mobile Add to List
+  const handleCardTouchStart = (e, product) => {
+    if (e.touches.length !== 1) return;
+    cardTouchStart.current = {
+      x: e.touches[0].clientX,
+      y: e.touches[0].clientY
+    };
+    cardSwipeActive.current = false;
+    setCardSwipeId(product.id);
+    setCardSwipeOffset(0);
+  };
+
+  const handleCardTouchMove = (e) => {
+    if (!cardTouchStart.current || e.touches.length !== 1) return;
+    const diffX = e.touches[0].clientX - cardTouchStart.current.x;
+    const diffY = e.touches[0].clientY - cardTouchStart.current.y;
+
+    if (!cardSwipeActive.current) {
+      if (Math.abs(diffX) > 10 && Math.abs(diffX) > Math.abs(diffY)) {
+        cardSwipeActive.current = true;
+      }
+    }
+
+    if (cardSwipeActive.current) {
+      if (e.cancelable) e.preventDefault();
+      const offset = Math.max(0, Math.min(diffX, 150));
+      setCardSwipeOffset(offset);
+    }
+  };
+
+  const handleCardTouchEnd = (e, product) => {
+    const isSwipeTriggered = cardSwipeActive.current;
+    const currentOffset = cardSwipeOffset;
+
+    cardTouchStart.current = null;
+    cardSwipeActive.current = false;
+    setCardSwipeId(null);
+    setCardSwipeOffset(0);
+
+    if (isSwipeTriggered && currentOffset > 80) {
+      addProductToList(product);
+    }
   };
 
   // 5. Lightbox Nav
@@ -553,7 +753,7 @@ export default function App() {
   return (
     <div className="app-container">
       {/* Top Info Bar */}
-      <div style={{
+      <div className="top-info-bar" style={{
         background: 'linear-gradient(90deg, #15803d, #22c55e)',
         color: 'white',
         fontSize: '0.825rem',
@@ -592,9 +792,9 @@ export default function App() {
             />
           </div>
 
-          {/* Search bar (only visible in shop mode) */}
-          {currentPath === '/products' && (
-            <div className="search-container">
+          {/* Search bar (desktop header version) */}
+          {!isAdminPath && (
+            <div className="search-container header-search-desktop">
               <Search className="search-icon-left" size={18} />
               <input 
                 type="text" 
@@ -614,22 +814,114 @@ export default function App() {
                 <span>Back to Catalogue</span>
               </button>
             ) : (
-              <a href="tel:+14034972777" style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-                textDecoration: 'none',
-                color: 'hsl(var(--color-text-dark))',
-                fontWeight: '600',
-                fontSize: '0.9rem'
-              }}>
-                <Phone size={18} style={{ color: 'hsl(var(--color-primary-dark))' }} />
-                <span>+1 (403) 497-2777</span>
-              </a>
+              <>
+                <a href="tel:+14034972777" className="header-phone-desktop" style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  textDecoration: 'none',
+                  color: 'hsl(var(--color-text-dark))',
+                  fontWeight: '600',
+                  fontSize: '0.9rem'
+                }}>
+                  <Phone size={18} style={{ color: 'hsl(var(--color-primary-dark))' }} />
+                  <span>+1 (403) 497-2777</span>
+                </a>
+                <button 
+                  className="hamburger-menu-btn"
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                  aria-label="Toggle navigation menu"
+                  style={{
+                    display: 'none',
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: '0.5rem',
+                    color: 'hsl(var(--color-text-dark))'
+                  }}
+                >
+                  {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
+              </>
             )}
           </div>
         </div>
       </header>
+
+      {/* Mobile Search Bar Container */}
+      {!isAdminPath && (
+        <div className="mobile-search-bar-container">
+          <div className="search-container mobile-search">
+            <Search className="search-icon-left" size={18} />
+            <input 
+              type="text" 
+              className="search-input" 
+              placeholder="Search 500+ premium Indian spices, rices, lentils..."
+              value={searchTerm}
+              onChange={handleSearchChange}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Mobile Navigation Drawer */}
+      {!isAdminPath && isMobileMenuOpen && (
+        <div className="mobile-menu-overlay" onClick={() => setIsMobileMenuOpen(false)}>
+          <div className="mobile-menu-drawer" onClick={(e) => e.stopPropagation()}>
+            <div className="mobile-menu-header">
+              <span className="mobile-menu-title">My Kiranastore</span>
+              <button className="mobile-menu-close" onClick={() => setIsMobileMenuOpen(false)}>
+                <X size={20} />
+              </button>
+            </div>
+            
+            <nav className="mobile-menu-nav">
+              <button 
+                className={`mobile-menu-nav-link ${currentPath === '/' ? 'active' : ''}`}
+                onClick={() => navigateTo('/')}
+              >
+                <Home size={20} />
+                <span>Home</span>
+              </button>
+              <button 
+                className={`mobile-menu-nav-link ${currentPath === '/products' ? 'active' : ''}`}
+                onClick={() => navigateTo('/products')}
+              >
+                <ShoppingBag size={20} />
+                <span>Products</span>
+              </button>
+              <button 
+                className={`mobile-menu-nav-link ${currentPath === '/contact' ? 'active' : ''}`}
+                onClick={() => navigateTo('/contact')}
+              >
+                <Phone size={20} />
+                <span>Contact Us</span>
+              </button>
+              <button 
+                className={`mobile-menu-nav-link ${currentPath === '/mylist' ? 'active' : ''}`}
+                onClick={() => navigateTo('/mylist')}
+                style={{ position: 'relative' }}
+              >
+                <ClipboardList size={20} />
+                <span>My Shopping List</span>
+                {shoppingList.length > 0 && (
+                  <span className="mobile-badge-list-count">{shoppingList.length}</span>
+                )}
+              </button>
+            </nav>
+
+            <div className="mobile-menu-footer">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'hsl(var(--color-text-dark))', fontWeight: '700', marginBottom: '0.5rem' }}>
+                <Phone size={16} />
+                <span>+1 (403) 497-2777</span>
+              </div>
+              <span style={{ fontSize: '0.8rem', color: 'hsl(var(--color-text-muted))' }}>
+                Unit 1125, 6520 36 St NE, Calgary, AB
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Sub-Navigation Bar for storefront views */}
       {!isAdminPath && (
@@ -654,6 +946,17 @@ export default function App() {
           >
             <Phone size={16} />
             <span>Contact</span>
+          </button>
+          <button 
+            className={`sub-nav-link ${currentPath === '/mylist' ? 'active' : ''}`}
+            onClick={() => navigateTo('/mylist')}
+            style={{ position: 'relative' }}
+          >
+            <ClipboardList size={16} />
+            <span>My List</span>
+            {shoppingList.length > 0 && (
+              <span className="badge-list-count">{shoppingList.length}</span>
+            )}
           </button>
         </nav>
       )}
@@ -1034,41 +1337,92 @@ export default function App() {
                 {filteredProducts.length > 0 ? (
                   <>
                     <div className="product-grid">
-                      {paginatedProducts.map(product => (
-                        <article 
-                          className="product-card" 
-                          key={product.id}
-                          onClick={() => openLightbox(product)}
-                        >
-                          <div className="card-img-container">
-                            <img 
-                              src={product.image} 
-                              alt={product.name} 
-                              className="card-img"
-                              onError={(e) => { e.target.src = '/images/placeholder.png'; }}
-                            />
-                            <span className="badge-brand">{product.brand}</span>
-                            {!product.inStock && <span className="badge-stock">Out of Stock</span>}
-                          </div>
+                      {paginatedProducts.map(product => {
+                        const isAdded = isItemInList(product.id);
+                        return (
+                          <div className="product-card-container" key={product.id}>
+                            {/* Swipe background behind card */}
+                            {cardSwipeId === product.id && cardSwipeOffset > 0 && (
+                              <div className="card-swipe-bg">
+                                <Plus size={24} style={{
+                                  transform: `scale(${Math.min(1.5, 0.5 + cardSwipeOffset / 100)})`,
+                                  transition: 'transform 0.1s ease-out'
+                                }} />
+                                <span style={{ marginLeft: '0.75rem', fontWeight: '600' }}>Add to List</span>
+                              </div>
+                            )}
+                            <article 
+                              className="product-card" 
+                              onClick={() => {
+                                if (!cardSwipeActive.current) {
+                                  openLightbox(product);
+                                }
+                              }}
+                              onTouchStart={(e) => handleCardTouchStart(e, product)}
+                              onTouchMove={handleCardTouchMove}
+                              onTouchEnd={(e) => handleCardTouchEnd(e, product)}
+                              style={{
+                                transform: cardSwipeId === product.id ? `translateX(${cardSwipeOffset}px)` : 'translateX(0)',
+                                transition: cardSwipeId === product.id ? 'none' : 'transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+                                position: 'relative',
+                                zIndex: 2,
+                                backgroundColor: 'white'
+                              }}
+                            >
+                              <div className="card-img-container">
+                                <img 
+                                  src={product.image} 
+                                  alt={product.name} 
+                                  className="card-img"
+                                  onError={(e) => { e.target.src = '/images/placeholder.png'; }}
+                                />
+                                <span className="badge-brand">{product.brand}</span>
+                                {!product.inStock && <span className="badge-stock">Out of Stock</span>}
+                              </div>
 
-                          <div className="card-content">
-                            <span className="product-category">{product.categories.join(', ')}</span>
-                            <h3 className="product-name" title={product.name}>{product.name}</h3>
-                            <div className="card-footer" style={{ borderTop: '1px solid hsl(var(--color-border) / 0.5)', paddingTop: '0.75rem', marginTop: '0.5rem', justifyContent: 'center' }}>
-                              <span style={{
-                                fontSize: '0.825rem',
-                                fontWeight: '700',
-                                color: product.inStock ? 'hsl(var(--color-success))' : '#ef4444',
-                                background: product.inStock ? 'hsl(var(--color-success-bg))' : '#fee2e2',
-                                padding: '0.35rem 0.75rem',
-                                borderRadius: 'var(--radius-sm)'
-                              }}>
-                                {product.inStock ? 'In Stock' : 'Out of Stock'}
-                              </span>
-                            </div>
+                              <div className="card-content">
+                                <span className="product-category">{product.categories.join(', ')}</span>
+                                <h3 className="product-name" title={product.name}>{product.name}</h3>
+                                <div className="card-footer" style={{ 
+                                  borderTop: '1px solid hsl(var(--color-border) / 0.5)', 
+                                  paddingTop: '0.75rem', 
+                                  marginTop: '0.5rem', 
+                                  display: 'flex',
+                                  justifyContent: 'space-between',
+                                  alignItems: 'center',
+                                  gap: '0.5rem',
+                                  width: '100%'
+                                }}>
+                                  <span style={{
+                                    fontSize: '0.75rem',
+                                    fontWeight: '700',
+                                    color: product.inStock ? 'hsl(var(--color-success))' : '#ef4444',
+                                    background: product.inStock ? 'hsl(var(--color-success-bg))' : '#fee2e2',
+                                    padding: '0.25rem 0.5rem',
+                                    borderRadius: 'var(--radius-sm)'
+                                  }}>
+                                    {product.inStock ? 'In Stock' : 'Out of Stock'}
+                                  </span>
+                                  <button
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      if (isAdded) {
+                                        removeProductFromList(product.id);
+                                      } else {
+                                        addProductToList(product);
+                                      }
+                                    }}
+                                    className={`btn-add-list ${isAdded ? 'added' : ''}`}
+                                  >
+                                    {isAdded ? <Check size={14} /> : <Plus size={14} />}
+                                    <span>{isAdded ? 'Added' : 'Add to List'}</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </article>
                           </div>
-                        </article>
-                      ))}
+                        );
+                      })}
                     </div>
 
                     {/* Pagination Controls */}
@@ -1227,13 +1581,30 @@ export default function App() {
                         {activeLightboxProduct.brand} | {activeLightboxProduct.categories.join(', ')}
                       </span>
                       <h2 className="lightbox-title">{activeLightboxProduct.name}</h2>
-                      <span style={{
-                        fontSize: '0.875rem',
-                        fontWeight: '700',
-                        color: activeLightboxProduct.inStock ? 'hsl(var(--color-success))' : '#ef4444'
-                      }}>
-                        {activeLightboxProduct.inStock ? '● Available In-Store' : '● Temporarily Out of Stock'}
-                      </span>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+                        <span style={{
+                          fontSize: '0.875rem',
+                          fontWeight: '700',
+                          color: activeLightboxProduct.inStock ? 'hsl(var(--color-success))' : '#ef4444'
+                        }}>
+                          {activeLightboxProduct.inStock ? '● Available In-Store' : '● Temporarily Out of Stock'}
+                        </span>
+                        <button
+                          onClick={() => {
+                            const isAdded = isItemInList(activeLightboxProduct.id);
+                            if (isAdded) {
+                              removeProductFromList(activeLightboxProduct.id);
+                            } else {
+                              addProductToList(activeLightboxProduct);
+                            }
+                          }}
+                          className={`btn-add-list ${isItemInList(activeLightboxProduct.id) ? 'added' : ''}`}
+                          style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}
+                        >
+                          {isItemInList(activeLightboxProduct.id) ? <Check size={16} /> : <Plus size={16} />}
+                          <span>{isItemInList(activeLightboxProduct.id) ? 'Added to List' : 'Add to List'}</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
 
@@ -1247,6 +1618,177 @@ export default function App() {
                 </div>
               )}
             </>
+          )}
+
+          {/* ==================== SHOPPING LIST VIEW ==================== */}
+          {currentPath === '/mylist' && (
+            <div className="mylist-layout">
+              {/* Header Card */}
+              <div className="mylist-header-card">
+                <div className="mylist-title-row">
+                  <h1 className="mylist-title">
+                    <ClipboardList size={32} style={{ color: 'hsl(var(--color-primary))' }} />
+                    <span>My Shopping List</span>
+                  </h1>
+                  <span style={{
+                    fontSize: '0.85rem',
+                    fontWeight: '700',
+                    color: 'white',
+                    background: 'hsl(var(--color-primary))',
+                    padding: '0.35rem 0.75rem',
+                    borderRadius: 'var(--radius-sm)'
+                  }}>
+                    {shoppingList.length} {shoppingList.length === 1 ? 'Item' : 'Items'}
+                  </span>
+                </div>
+                <p className="mylist-subtitle">
+                  Build your checklist offline before visiting us in Calgary. Check off items as you drop them in your basket. Your list is saved automatically.
+                </p>
+              </div>
+
+              {shoppingList.length > 0 ? (
+                <>
+                  {/* Share & Clear Action Card */}
+                  <div className="mylist-actions-card">
+                    <div className="mylist-share-group">
+                      <button 
+                        className="btn-share btn-share-copy" 
+                        onClick={() => {
+                          const listText = shoppingList
+                            .map(item => `${item.checked ? '[x]' : '[ ]'} ${item.quantity}x ${item.name} (${item.brand})`)
+                            .join('\n');
+                          const fullText = `My Kiranastore Shopping List:\n\n${listText}\n\nBuild your list offline at: ${window.location.origin}/mylist`;
+                          navigator.clipboard.writeText(fullText)
+                            .then(() => {
+                              setToast({ message: 'List copied to clipboard!' });
+                            })
+                            .catch(err => {
+                              console.error('Failed to copy: ', err);
+                            });
+                        }}
+                      >
+                        <Copy size={16} />
+                        <span>Copy List</span>
+                      </button>
+                      <button 
+                        className="btn-share btn-share-email"
+                        onClick={() => {
+                          const listText = shoppingList
+                            .map(item => `${item.checked ? '[x]' : '[ ]'} ${item.quantity}x ${item.name} (${item.brand})`)
+                            .join('%0D%0A');
+                          const subject = encodeURIComponent('My Kiranastore Shopping List');
+                          const body = encodeURIComponent('Here is my shopping list for My Kiranastore:\n\n') + listText;
+                          window.location.href = `mailto:?subject=${subject}&body=${body}`;
+                        }}
+                      >
+                        <Mail size={16} />
+                        <span>Email List</span>
+                      </button>
+                    </div>
+
+                    <div className="btn-clear-group">
+                      <button 
+                        className="btn-clear btn-clear-checked"
+                        onClick={clearCheckedItems}
+                        disabled={!shoppingList.some(item => item.checked)}
+                      >
+                        Clear Checked
+                      </button>
+                      <button 
+                        className="btn-clear btn-clear-all"
+                        onClick={clearAllItems}
+                      >
+                        Clear All
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Checklist Grid */}
+                  <div className="mylist-card">
+                    <div className="mylist-items-list">
+                      {shoppingList.map(item => (
+                        <div className={`mylist-item ${item.checked ? 'checked' : ''}`} key={item.id}>
+                          <div className="mylist-checkbox-wrapper">
+                            <input 
+                              type="checkbox" 
+                              className="mylist-checkbox"
+                              checked={item.checked}
+                              onChange={() => toggleProductChecked(item.id)}
+                            />
+                          </div>
+
+                          <div className="mylist-item-img-container">
+                            <img 
+                              src={item.image} 
+                              alt={item.name} 
+                              className="mylist-item-img"
+                              onError={(e) => { e.target.src = '/images/placeholder.png'; }}
+                            />
+                          </div>
+
+                          <div className="mylist-item-details">
+                            <span className="mylist-item-brand">{item.brand}</span>
+                            <span className="mylist-item-name">{item.name}</span>
+                            {!item.inStock && (
+                              <span className="badge-stock-warning">
+                                Temporarily Out of Stock
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="mylist-qty-selector">
+                            <button 
+                              className="qty-btn" 
+                              onClick={() => updateProductQuantity(item.id, -1)}
+                            >
+                              -
+                            </button>
+                            <span className="qty-value">{item.quantity}</span>
+                            <button 
+                              className="qty-btn" 
+                              onClick={() => updateProductQuantity(item.id, 1)}
+                            >
+                              +
+                            </button>
+                          </div>
+
+                          <button 
+                            className="btn-remove-item"
+                            onClick={() => removeProductFromList(item.id)}
+                            title="Remove item"
+                          >
+                            <Trash2 size={18} />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <div className="empty-list-state">
+                  <div className="empty-list-icon-wrapper">
+                    <ClipboardList size={40} />
+                  </div>
+                  <h2 className="empty-list-title">Your list is empty</h2>
+                  <p className="empty-list-desc">
+                    Browse our collection of 500+ premium Indian spices, rices, flours, and frozen delicacies to build your shopping checklist.
+                  </p>
+                  <button 
+                    className="btn-primary" 
+                    onClick={() => navigateTo('/products')}
+                    style={{ padding: '0.75rem 2rem', fontSize: '0.95rem' }}
+                  >
+                    Start Browsing
+                  </button>
+                </div>
+              )}
+
+              {/* Offline note */}
+              <div className="mylist-offline-note">
+                <Info size={18} />
+                <span>This list is saved locally. It will remain accessible inside the store even if you lose network connection.</span>
+              </div>
+            </div>
           )}
 
           {/* ==================== ADMIN LOGIN PAGE ==================== */}
@@ -2138,6 +2680,29 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Toast Notification */}
+      {toast && (
+        <div className="toast-notification">
+          <div className="toast-content">
+            <span className="toast-message">{toast.message}</span>
+            {toast.actionText && toast.onAction && (
+              <button 
+                className="toast-action-btn" 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toast.onAction();
+                }}
+              >
+                {toast.actionText}
+              </button>
+            )}
+            <button className="toast-close-btn" onClick={() => setToast(null)}>
+              <X size={16} />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
