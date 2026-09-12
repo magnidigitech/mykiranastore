@@ -1703,114 +1703,6 @@ export default function App() {
                 </a>
               </div>
             </section>
-
-            {/* Instagram Image Viewer / Lightbox Modal */}
-            {activeFlyerIndex !== null && instagramFeedData.posts && instagramFeedData.posts[activeFlyerIndex] && (() => {
-              const currentFlyer = instagramFeedData.posts[activeFlyerIndex];
-              const totalFlyers = instagramFeedData.posts.length;
-
-              return (
-                <div
-                  className="insta-modal-backdrop"
-                  onClick={() => setActiveFlyerIndex(null)}
-                  role="dialog"
-                  aria-modal="true"
-                >
-                  <div
-                    className="insta-modal-container"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {/* Header Bar */}
-                    <div className="insta-modal-header">
-                      <div className="insta-modal-badge">
-                        <span className="insta-modal-counter">
-                          Flyer {activeFlyerIndex + 1} of {totalFlyers}
-                        </span>
-                        <span className="insta-modal-tag">Weekly Special</span>
-                      </div>
-                      <button
-                        className="insta-modal-close"
-                        onClick={() => setActiveFlyerIndex(null)}
-                        title="Close (Esc)"
-                        aria-label="Close flyer viewer"
-                      >
-                        <X size={20} />
-                      </button>
-                    </div>
-
-                    {/* Modal Image Area with Navigation Buttons */}
-                    <div className="insta-modal-media-wrap">
-                      {totalFlyers > 1 && (
-                        <button
-                          className="insta-nav-btn prev"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setActiveFlyerIndex(prev => (prev > 0 ? prev - 1 : totalFlyers - 1));
-                          }}
-                          title="Previous Flyer"
-                          aria-label="Previous flyer"
-                        >
-                          <ChevronLeft size={24} />
-                        </button>
-                      )}
-
-                      <div className="insta-modal-img-box">
-                        <img
-                          src={currentFlyer.imageUrl}
-                          alt={currentFlyer.caption || "My Kirana Store Flyer"}
-                          className="insta-modal-img"
-                          onError={(e) => {
-                            if (currentFlyer.originalImageUrl && e.currentTarget.src !== currentFlyer.originalImageUrl) {
-                              e.currentTarget.src = currentFlyer.originalImageUrl;
-                            }
-                          }}
-                        />
-                      </div>
-
-                      {totalFlyers > 1 && (
-                        <button
-                          className="insta-nav-btn next"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setActiveFlyerIndex(prev => (prev < totalFlyers - 1 ? prev + 1 : 0));
-                          }}
-                          title="Next Flyer"
-                          aria-label="Next flyer"
-                        >
-                          <ChevronRight size={24} />
-                        </button>
-                      )}
-                    </div>
-
-                    {/* Modal Footer Info */}
-                    <div className="insta-modal-footer">
-                      <div className="insta-modal-info">
-                        <p className="insta-modal-caption">
-                          {currentFlyer.caption || "Weekly in-store Indian grocery deals & fresh arrivals"}
-                        </p>
-                        <span className="insta-modal-subtext">
-                          <MapPin size={13} /> Available at 6520 36 St NE, Calgary • (403) 497-2777
-                        </span>
-                      </div>
-
-                      <div className="insta-modal-actions">
-                        {currentFlyer.postUrl && (
-                          <a
-                            href={currentFlyer.postUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn-insta-modal-ext"
-                          >
-                            <span>View on Instagram</span>
-                            <ExternalLink size={13} />
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })()}
           </div>
         )}
 
@@ -3629,6 +3521,114 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* Instagram Image Viewer / Lightbox Modal */}
+      {activeFlyerIndex !== null && instagramFeedData.posts && instagramFeedData.posts[activeFlyerIndex] && (() => {
+        const currentFlyer = instagramFeedData.posts[activeFlyerIndex];
+        const totalFlyers = instagramFeedData.posts.length;
+
+        return (
+          <div
+            className="insta-modal-backdrop"
+            onClick={() => setActiveFlyerIndex(null)}
+            role="dialog"
+            aria-modal="true"
+          >
+            <div
+              className="insta-modal-container"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Header Bar */}
+              <div className="insta-modal-header">
+                <div className="insta-modal-badge">
+                  <span className="insta-modal-counter">
+                    Flyer {activeFlyerIndex + 1} of {totalFlyers}
+                  </span>
+                  <span className="insta-modal-tag">Weekly Special</span>
+                </div>
+                <button
+                  className="insta-modal-close"
+                  onClick={() => setActiveFlyerIndex(null)}
+                  title="Close (Esc)"
+                  aria-label="Close flyer viewer"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+
+              {/* Modal Image Area with Navigation Buttons */}
+              <div className="insta-modal-media-wrap">
+                {totalFlyers > 1 && (
+                  <button
+                    className="insta-nav-btn prev"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveFlyerIndex(prev => (prev > 0 ? prev - 1 : totalFlyers - 1));
+                    }}
+                    title="Previous Flyer"
+                    aria-label="Previous flyer"
+                  >
+                    <ChevronLeft size={24} />
+                  </button>
+                )}
+
+                <div className="insta-modal-img-box">
+                  <img
+                    src={currentFlyer.imageUrl}
+                    alt={currentFlyer.caption || "My Kirana Store Flyer"}
+                    className="insta-modal-img"
+                    onError={(e) => {
+                      if (currentFlyer.originalImageUrl && e.currentTarget.src !== currentFlyer.originalImageUrl) {
+                        e.currentTarget.src = currentFlyer.originalImageUrl;
+                      }
+                    }}
+                  />
+                </div>
+
+                {totalFlyers > 1 && (
+                  <button
+                    className="insta-nav-btn next"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveFlyerIndex(prev => (prev < totalFlyers - 1 ? prev + 1 : 0));
+                    }}
+                    title="Next Flyer"
+                    aria-label="Next flyer"
+                  >
+                    <ChevronRight size={24} />
+                  </button>
+                )}
+              </div>
+
+              {/* Modal Footer Info */}
+              <div className="insta-modal-footer">
+                <div className="insta-modal-info">
+                  <p className="insta-modal-caption">
+                    {currentFlyer.caption || "Weekly in-store Indian grocery deals & fresh arrivals"}
+                  </p>
+                  <span className="insta-modal-subtext">
+                    <MapPin size={13} /> Available at 6520 36 St NE, Calgary • (403) 497-2777
+                  </span>
+                </div>
+
+                <div className="insta-modal-actions">
+                  {currentFlyer.postUrl && (
+                    <a
+                      href={currentFlyer.postUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-insta-modal-ext"
+                    >
+                      <span>View on Instagram</span>
+                      <ExternalLink size={13} />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }
