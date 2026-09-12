@@ -277,7 +277,7 @@ app.get('/sitemap.xml', (req, res) => {
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
   // Static pages
-  const staticPaths = ['', '/products', '/contact', '/mylist'];
+  const staticPaths = ['', '/products', '/location', '/offers', '/contact', '/mylist'];
   staticPaths.forEach(path => {
     xml += '  <url>\n';
     xml += `    <loc>${baseUrl}${path}</loc>\n`;

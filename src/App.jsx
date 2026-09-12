@@ -130,6 +130,32 @@ export default function App() {
   // Always reset scroll position to top whenever route changes
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+    let title = "Indian Grocery Store in Calgary NE | My Kirana Store";
+    let metaDesc = "Visit My Kirana Store at 6520 36 St NE, Unit 1125, Calgary. Explore our grocery selection, check current offers, and find store hours and directions.";
+
+    if (currentPath === '/location') {
+      title = "Location & Store Hours | My Kirana Store Calgary NE";
+      metaDesc = "Find directions, store hours, holiday hours, storefront details, and contact information for My Kirana Store at 6520 36 St NE Unit 1125, Calgary.";
+    } else if (currentPath === '/offers') {
+      title = "Weekly Grocery Offers & Deals | My Kirana Store Calgary";
+      metaDesc = "Browse current weekly grocery deals, flyer promotions, and special in-store offers at My Kirana Store in Calgary, Alberta.";
+    } else if (currentPath === '/products') {
+      title = "Indian Grocery Products & Catalogue | My Kirana Store Calgary";
+      metaDesc = "Browse basmati rice, authentic atta flour, Indian spices, snacks, frozen foods, and puja items at My Kirana Store in Calgary NE.";
+    } else if (currentPath === '/contact') {
+      title = "Contact Us & Directions | My Kirana Store Calgary NE";
+      metaDesc = "Get in touch with My Kirana Store at 6520 36 St NE Unit 1125, Calgary. Call +1 (403) 497-2777 or send us a message.";
+    } else if (currentPath === '/mylist') {
+      title = "My Shopping List | My Kirana Store Calgary";
+      metaDesc = "View your saved Indian grocery shopping list for My Kirana Store in Calgary NE.";
+    }
+
+    document.title = title;
+    const metaTag = document.querySelector('meta[name="description"]');
+    if (metaTag) {
+      metaTag.setAttribute('content', metaDesc);
+    }
   }, [currentPath]);
 
   const navigateTo = (path) => {
@@ -1039,6 +1065,20 @@ export default function App() {
                 <span>Products</span>
               </button>
               <button 
+                className={`mobile-menu-nav-link ${currentPath === '/offers' ? 'active' : ''}`}
+                onClick={() => navigateTo('/offers')}
+              >
+                <Sparkles size={20} />
+                <span>Weekly Offers</span>
+              </button>
+              <button 
+                className={`mobile-menu-nav-link ${currentPath === '/location' ? 'active' : ''}`}
+                onClick={() => navigateTo('/location')}
+              >
+                <MapPin size={20} />
+                <span>Location & Hours</span>
+              </button>
+              <button 
                 className={`mobile-menu-nav-link ${currentPath === '/contact' ? 'active' : ''}`}
                 onClick={() => navigateTo('/contact')}
               >
@@ -1064,7 +1104,7 @@ export default function App() {
                 <span>+1 (403) 497-2777</span>
               </div>
               <span style={{ fontSize: '0.8rem', color: 'hsl(var(--color-text-muted))' }}>
-                Unit 1125, 6520 36 St NE, Calgary, AB
+                6520 36 St NE Unit 1125, Calgary, AB T3J 2L3
               </span>
             </div>
           </div>
@@ -1087,6 +1127,20 @@ export default function App() {
           >
             <ShoppingBag size={16} />
             <span>Products</span>
+          </button>
+          <button 
+            className={`sub-nav-link ${currentPath === '/offers' ? 'active' : ''}`}
+            onClick={() => navigateTo('/offers')}
+          >
+            <Sparkles size={16} />
+            <span>Weekly Offers</span>
+          </button>
+          <button 
+            className={`sub-nav-link ${currentPath === '/location' ? 'active' : ''}`}
+            onClick={() => navigateTo('/location')}
+          >
+            <MapPin size={16} />
+            <span>Location</span>
           </button>
           <button 
             className={`sub-nav-link ${currentPath === '/contact' ? 'active' : ''}`}
@@ -2435,6 +2489,196 @@ export default function App() {
                 <Info size={18} />
                 <span>This list is saved locally. It will remain accessible inside the store even if you lose network connection.</span>
               </div>
+            </div>
+          )}
+
+          {/* ==================== LOCATION & HOURS PAGE ==================== */}
+          {currentPath === '/location' && (
+            <div className="location-page-layout" style={{ maxWidth: '1200px', margin: '0 auto', padding: '2.5rem 1.5rem', width: '100%' }}>
+              <div className="location-header" style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
+                <span style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '0.4rem', 
+                  background: 'hsl(var(--color-success-bg))', 
+                  color: 'hsl(var(--color-success))', 
+                  fontWeight: '700', 
+                  fontSize: '0.85rem', 
+                  padding: '0.35rem 0.85rem', 
+                  borderRadius: '9999px',
+                  marginBottom: '0.75rem'
+                }}>
+                  <MapPin size={16} /> Northeast Calgary Storefront
+                </span>
+                <h1 style={{ fontSize: '2.2rem', fontWeight: 800, color: 'hsl(var(--color-text-dark))', fontFamily: 'var(--font-family-title)' }}>
+                  Visit My Kirana Store in Northeast Calgary
+                </h1>
+                <p style={{ fontSize: '1.05rem', color: 'hsl(var(--color-text-muted))', maxWidth: '680px', margin: '0.75rem auto 0 auto', lineHeight: '1.6' }}>
+                  Your local destination at 6520 36 St NE, Unit 1125 for authentic Indian groceries, fresh produce, basmati rice, flours, hand-ground spices, and daily staples.
+                </p>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.75rem', marginBottom: '3rem' }}>
+                {/* Store Address Card */}
+                <div style={{ background: 'white', border: '1px solid hsl(var(--color-border))', borderRadius: '16px', padding: '2rem', boxShadow: 'var(--shadow-sm)' }}>
+                  <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#d1fae5', color: '#065f46', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
+                    <MapPin size={24} />
+                  </div>
+                  <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'hsl(var(--color-text-dark))', marginBottom: '0.75rem' }}>Store Address</h2>
+                  <p style={{ fontSize: '0.95rem', color: 'hsl(var(--color-text-muted))', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                    <strong>My Kirana Store</strong><br/>
+                    6520 36 St NE Unit 1125<br/>
+                    Calgary, AB T3J 2L3<br/>
+                    Canada
+                  </p>
+                  <a 
+                    href="https://maps.app.goo.gl/9oQyU9MHixLW2mP4A" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', padding: '0.65rem 1.25rem', fontSize: '0.9rem', borderRadius: '10px', fontWeight: 700 }}
+                  >
+                    Get Driving Directions <ExternalLink size={16} />
+                  </a>
+                </div>
+
+                {/* Store Hours Card */}
+                <div style={{ background: 'white', border: '1px solid hsl(var(--color-border))', borderRadius: '16px', padding: '2rem', boxShadow: 'var(--shadow-sm)' }}>
+                  <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#e0f2fe', color: '#0369a1', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
+                    <Clock size={24} />
+                  </div>
+                  <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'hsl(var(--color-text-dark))', marginBottom: '0.75rem' }}>Store Hours & Holidays</h2>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 1.25rem 0', display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.92rem', color: 'hsl(var(--color-text-dark))' }}>
+                    <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #e2e8f0', paddingBottom: '0.35rem' }}>
+                      <span>Thu, Sun - Tue:</span> <strong>10:30 AM - 9:00 PM</strong>
+                    </li>
+                    <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #e2e8f0', paddingBottom: '0.35rem' }}>
+                      <span>Fri & Sat:</span> <strong>10:30 AM - 10:00 PM</strong>
+                    </li>
+                    <li style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span>Wednesday:</span> <strong>11:00 AM - 9:00 PM</strong>
+                    </li>
+                  </ul>
+                  <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '10px', padding: '0.75rem 1rem', fontSize: '0.825rem', color: 'hsl(var(--color-text-muted))', display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+                    <Calendar size={16} style={{ color: '#0369a1', flexShrink: 0, marginTop: '2px' }} />
+                    <span><strong>Open 7 Days a Week.</strong> We remain open during standard operating hours on statutory holidays unless noted.</span>
+                  </div>
+                </div>
+
+                {/* Store Contact Card */}
+                <div style={{ background: 'white', border: '1px solid hsl(var(--color-border))', borderRadius: '16px', padding: '2rem', boxShadow: 'var(--shadow-sm)' }}>
+                  <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#fef3c7', color: '#b45309', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
+                    <Phone size={24} />
+                  </div>
+                  <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'hsl(var(--color-text-dark))', marginBottom: '0.75rem' }}>Contact & Inquiry</h2>
+                  <p style={{ fontSize: '0.95rem', color: 'hsl(var(--color-text-dark))', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                    <Phone size={16} style={{ color: '#b45309' }} /> <a href="tel:+14034972777" style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}>+1 (403) 497-2777</a>
+                  </p>
+                  <p style={{ fontSize: '0.95rem', color: 'hsl(var(--color-text-dark))', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.25rem' }}>
+                    <Mail size={16} style={{ color: '#b45309' }} /> <a href="mailto:support@kiranstore.ca" style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}>support@kiranstore.ca</a>
+                  </p>
+                  <div style={{ background: '#fffbeb', border: '1px solid #fde68a', borderRadius: '10px', padding: '0.75rem 1rem', fontSize: '0.825rem', color: '#92400e', display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+                    <Info size={16} style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <span>In-Store Shopping & Phone Inquiry Available. Online delivery is not offered at this location.</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Interactive Map Embed Container */}
+              <div style={{ background: 'white', border: '1px solid hsl(var(--color-border))', borderRadius: '20px', padding: '1.5rem', boxShadow: 'var(--shadow-sm)' }}>
+                <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'hsl(var(--color-text-dark))', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <MapPin size={20} style={{ color: 'hsl(var(--color-primary))' }} /> Interactive Google Maps Location
+                </h2>
+                <div style={{ borderRadius: '14px', overflow: 'hidden' }}>
+                  <iframe 
+                    title="My Kirana Store Location Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.12604812345!2d-113.9837743234125!3d51.11084197957134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537165eb920f10cb%3A0xd8e2b5de9b599ea4!2sMy%20Kirana%20Store!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca" 
+                    width="100%" 
+                    height="420" 
+                    style={{ border: 0, borderRadius: '14px' }} 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* ==================== WEEKLY OFFERS PAGE ==================== */}
+          {currentPath === '/offers' && (
+            <div className="offers-page-layout" style={{ maxWidth: '1200px', margin: '0 auto', padding: '2.5rem 1.5rem', width: '100%' }}>
+              <div className="offers-header" style={{ marginBottom: '2.5rem', textAlign: 'center' }}>
+                <span style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '0.4rem', 
+                  background: '#fef3c7', 
+                  color: '#b45309', 
+                  fontWeight: '700', 
+                  fontSize: '0.85rem', 
+                  padding: '0.35rem 0.85rem', 
+                  borderRadius: '9999px',
+                  marginBottom: '0.75rem'
+                }}>
+                  <Sparkles size={16} /> In-Store Specials & Promotions
+                </span>
+                <h1 style={{ fontSize: '2.2rem', fontWeight: 800, color: 'hsl(var(--color-text-dark))', fontFamily: 'var(--font-family-title)' }}>
+                  Weekly Grocery Offers & Deals
+                </h1>
+                <p style={{ fontSize: '1.05rem', color: 'hsl(var(--color-text-muted))', maxWidth: '680px', margin: '0.75rem auto 0 auto', lineHeight: '1.6' }}>
+                  Browse active weekly flyer promotions and special in-store rollbacks at My Kirana Store in Calgary NE (6520 36 St NE Unit 1125).
+                </p>
+              </div>
+
+              {instagramFeedData.posts && instagramFeedData.posts.length > 0 ? (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+                  {instagramFeedData.posts.map((post, idx) => (
+                    <div key={post.id || idx} style={{ background: 'white', border: '1px solid hsl(var(--color-border))', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', display: 'flex', flexDirection: 'column' }}>
+                      <div 
+                        style={{ position: 'relative', aspectRatio: '4/5', background: '#f8fafc', cursor: 'pointer', overflow: 'hidden' }}
+                        onClick={() => setActiveFlyerIndex(idx)}
+                      >
+                        <img 
+                          src={post.imageUrl} 
+                          alt={post.caption || 'Weekly Offer Flyer'} 
+                          style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s' }} 
+                          loading="lazy" 
+                        />
+                        <span style={{ position: 'absolute', top: '0.85rem', left: '0.85rem', background: 'rgba(21, 128, 61, 0.9)', color: 'white', fontSize: '0.75rem', fontWeight: 700, padding: '0.3rem 0.65rem', borderRadius: '9999px', boxShadow: 'var(--shadow-sm)' }}>
+                          Weekly Flyer Deal
+                        </span>
+                      </div>
+                      <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', flex: 1, gap: '0.75rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: 'hsl(var(--color-text-muted))', fontWeight: 600 }}>
+                          <Calendar size={14} /> <span>{post.date || 'In-Store Promotion'}</span>
+                        </div>
+                        <p style={{ fontSize: '0.9rem', color: 'hsl(var(--color-text-dark))', lineHeight: 1.5, margin: 0, flex: 1 }}>
+                          {post.caption}
+                        </p>
+                        <button 
+                          className="btn-primary" 
+                          onClick={() => setActiveFlyerIndex(idx)}
+                          style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', padding: '0.6rem', fontSize: '0.85rem', borderRadius: '10px', marginTop: '0.5rem', fontWeight: 700 }}
+                        >
+                          View Full Flyer <ZoomIn size={16} />
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div style={{ background: 'white', border: '1px solid hsl(var(--color-border))', borderRadius: '20px', padding: '4rem 2rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.25rem', maxWidth: '560px', margin: '0 auto' }}>
+                  <Sparkles size={52} style={{ color: '#b45309' }} />
+                  <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'hsl(var(--color-text-dark))' }}>No Active Promotional Flyer Today</h3>
+                  <p style={{ fontSize: '0.95rem', color: 'hsl(var(--color-text-muted))', lineHeight: 1.6 }}>
+                    We currently have no active promotional flyer posted. Visit us in-store at 6520 36 St NE Unit 1125 for daily rollbacks and everyday low prices on Indian groceries!
+                  </p>
+                  <button className="btn-primary" onClick={() => navigateTo('/location')} style={{ padding: '0.75rem 1.5rem', fontSize: '0.9rem', borderRadius: '12px', fontWeight: 700 }}>
+                    Get Store Directions & Hours
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
