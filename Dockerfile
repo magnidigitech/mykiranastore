@@ -16,10 +16,13 @@ ENV PORT=3000
 COPY package*.json ./
 RUN npm ci --only=production
 
-# Copy server script and database/image seeds
+# Copy server script, service modules, and database/image seeds
 COPY server.cjs ./
+COPY googleReviewsService.cjs ./
+COPY instagramService.cjs ./
 COPY src/data ./src/data
 COPY public/images ./public/images
+COPY public/instagram ./public/instagram
 
 # Copy built frontend assets from Stage 1
 COPY --from=builder /app/dist ./dist
