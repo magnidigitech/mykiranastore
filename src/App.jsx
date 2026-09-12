@@ -209,9 +209,8 @@ export default function App() {
 
   // 1. Fetch products from API on mount
   const fetchProducts = async (isInitial = false) => {
-    const startTime = Date.now();
     try {
-      setLoading(true);
+      if (isInitial) setLoading(true);
       const response = await fetch('/api/products');
       if (!response.ok) {
         throw new Error('Failed to load products');
@@ -223,15 +222,7 @@ export default function App() {
       console.error('Error fetching products:', err);
       setError('Could not fetch products. Make sure the backend server is running.');
     } finally {
-      if (isInitial) {
-        const elapsedTime = Date.now() - startTime;
-        const remainingTime = Math.max(0, 3000 - elapsedTime);
-        setTimeout(() => {
-          setLoading(false);
-        }, remainingTime);
-      } else {
-        setLoading(false);
-      }
+      setLoading(false);
     }
   };
 
@@ -1133,31 +1124,35 @@ export default function App() {
         </div>
       )}
 
-      {/* LOADING STATE */}
-      {loading ? (
-        <div style={{
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '5rem 0',
-          gap: '1.25rem',
-          color: 'hsl(var(--color-text-muted))'
-        }}>
-          <img 
-            src="/logo-icon.png" 
-            alt="Loading..." 
-            className="loader-logo-animation"
-            style={{ height: '70px', objectFit: 'contain' }}
-            onError={(e) => { e.target.src = '/logo.png'; }}
-          />
-          <span style={{ fontSize: '0.95rem', fontWeight: 600, letterSpacing: '-0.2px' }}>
-            Loading Calgary's Indian Store Catalogue...
-          </span>
+      {/* FULL SCREEN LOADER OVERLAY */}
+      {loading && (
+        <div className="full-screen-loader">
+          <div className="loader-card">
+            <div className="loader-logo-wrap">
+              <img 
+                src="/logo-icon.png" 
+                alt="My Kirana Store Logo" 
+                className="loader-logo-icon"
+                onError={(e) => { e.target.style.display = 'none'; }}
+              />
+              <img 
+                src="/logo-text.png" 
+                alt="My Kirana Store Text" 
+                className="loader-logo-text"
+                onError={(e) => { e.target.style.display = 'none'; }}
+              />
+            </div>
+            <div className="loader-spinner-bar">
+              <div className="loader-progress-fill"></div>
+            </div>
+            <span className="loader-caption">
+              Loading Calgary's Indian Store Catalogue...
+            </span>
+          </div>
         </div>
-      ) : (
-        <>
+      )}
+
+      <>
           {/* ==================== ADMIN HOME LANDING PAGE ==================== */}
           {currentPath === '/' && (
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
@@ -2018,6 +2013,8 @@ export default function App() {
                                   src={product.image} 
                                   alt={product.name} 
                                   className="card-img"
+                                  loading="lazy"
+                                  decoding="async"
                                   onError={(e) => { e.target.src = '/images/placeholder.png'; }}
                                 />
                                 <span className="badge-brand">{product.brand}</span>
@@ -2820,7 +2817,6 @@ export default function App() {
             </div>
           )}
         </>
-      )}
 
       {/* ==================== CREATE / EDIT MODAL ==================== */}
       {isFormOpen && (
@@ -3285,34 +3281,70 @@ export default function App() {
             <div className="footer-links-group">
               <div className="footer-links-col">
                 <span className="footer-links-title">Store Hours</span>
-                <span className="footer-link" style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem', fontSize: '0.8rem' }}>
+                <span className="footer-link" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', fontSize: '0.85rem' }}>
                   <span>Thu, Sun - Tue: 10:30 AM - 9:00 PM</span>
                   <span>Fri & Sat: 10:30 AM - 10:00 PM</span>
                   <span>Wednesday: 11:00 AM - 9:00 PM</span>
                 </span>
-                <span className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.25rem' }}>
-                  <Calendar size={14} /> Open 7 Days a week
+                <span className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.35rem', fontWeight: 600 }}>
+                  <Calendar size={15} /> Open 7 Days a week
                 </span>
               </div>
               
               <div className="footer-links-col">
                 <span className="footer-links-title">Store Contact & Location</span>
-                <span className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <MapPin size={14} /> Unit 1125, 6520 36 St NE, Calgary
-                </span>
-                <span className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Phone size={14} /> +1 (403) 497-2777
-                </span>
-                <span className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Mail size={14} /> support@kiranstore.ca
-                </span>
+                <a 
+                  href="https://maps.app.goo.gl/9oQyU9MHixLW2mP4A" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="footer-link" 
+                  style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                >
+                  <MapPin size={15} style={{ flexShrink: 0 }} /> <span>Unit 1125, 6520 36 St NE, Calgary</span>
+                </a>
+                <a 
+                  href="tel:+14034972777" 
+                  className="footer-link" 
+                  style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                >
+                  <Phone size={15} style={{ flexShrink: 0 }} /> <span>+1 (403) 497-2777</span>
+                </a>
+                <a 
+                  href="mailto:support@kiranstore.ca" 
+                  className="footer-link" 
+                  style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                >
+                  <Mail size={15} style={{ flexShrink: 0 }} /> <span>support@kiranstore.ca</span>
+                </a>
               </div>
             </div>
           </div>
 
           <div className="footer-bottom">
-            <span>© {new Date().getFullYear()} Kiran Store. All rights reserved.</span>
-            <span>Made with ❤️ for Calgary's Indian Community</span>
+            <div className="footer-bottom-left">
+              <span>© {new Date().getFullYear()} Kiran Store. All rights reserved.</span>
+            </div>
+            
+            <div className="footer-credits-wrap">
+              <span className="credits-label">Designed & Developed by</span>
+              <a 
+                href="https://magnidigitech.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="magni-credits-btn"
+                title="Magni Digitech - Professional Web Design & Digital Solutions"
+              >
+                <img 
+                  src="/images/magni-digitech-logo.png" 
+                  alt="Magni Digitech" 
+                  className="magni-credits-img"
+                />
+              </a>
+            </div>
+
+            <div className="footer-bottom-right">
+              <span>Made with ❤️ for Calgary's Indian Community</span>
+            </div>
           </div>
         </div>
       </footer>
