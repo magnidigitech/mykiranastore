@@ -1,0 +1,55 @@
+{
+  "placeName": "My Kirana Store",
+  "rating": 4.7,
+  "totalReviews": 106,
+  "googleMapsUrl": "https://maps.app.goo.gl/9oQyU9MHixLW2mP4A",
+  "lastSynced": "2026-09-12T16:59:05.276Z",
+  "source": "live_google_sync",
+  "reviews": [
+    {
+      "id": "rev-1",
+      "authorName": "Sai Teja",
+      "rating": 5,
+      "relativeTime": "a year ago",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzWFdyrABUGKV8VDkRoODg2TvT9vu8BJUJElshV4gz2uqNT-iQ=w36-h36-p-rp-mo-ba12-br100",
+      "isLocalGuide": true,
+      "text": "I recently visited My Kirana Store and was thoroughly impressed with my experience, especially with the service and the free delivery option. The staff at this location are exceptionally polite and helpful."
+    },
+    {
+      "id": "rev-2",
+      "authorName": "Naveen Kambham",
+      "rating": 5,
+      "relativeTime": "a year ago",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUwNX-JXbs9Zr6Mwpr8ztF13ntxR6rWhOecAorTkxddnHrNePnn=w36-h36-p-rp-mo-ba12-br100",
+      "isLocalGuide": true,
+      "text": "I recently visited My Kirana store specializes in fresh Indian vegetables, and I was really impressed. The store had a vibrant selection of vegetables commonly used in Indian cuisine, like okra, bitter melon, eggplant, and a variety of greens."
+    },
+    {
+      "id": "rev-3",
+      "authorName": "yamsani shiva kumar",
+      "rating": 5,
+      "relativeTime": "8 months ago",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJbyGknwRVStWhw6WZfdMXOeHwWovfrlXYrofeJ36RxiwADGA=w36-h36-p-rp-mo-br100",
+      "isLocalGuide": false,
+      "text": "Great Indian grocery store with a solid selection of fresh veggies, spices, and all the essentials. Prices are reasonable, and the store is always clean and easy to navigate. The staff is friendly and helpful, which makes shopping here really comfortable."
+    },
+    {
+      "id": "rev-4",
+      "authorName": "ram",
+      "rating": 5,
+      "relativeTime": "9 months ago",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpXbsAkQ2P5htOUP7fHwp8s5SOZ3HUTg9JXb-n8ulAkULI7Rfc=w36-h36-p-rp-mo-ba12-br100",
+      "isLocalGuide": true,
+      "text": "Thank you for helping me find everything I needed! I was looking for specific pooja items and this store had all of them in one place. It truly feels like a one-stop shop for all essentials for reasonable prices."
+    },
+    {
+      "id": "rev-5",
+      "authorName": "warrior Sailor",
+      "rating": 5,
+      "relativeTime": "a year ago",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLFxDIOLq5Agz4Rj7g9fazqZ-Df_mQtlei85GbFvmQBGbdxOA=w36-h36-p-rp-mo-br100",
+      "isLocalGuide": false,
+      "text": "I recently visited this grocery store and was very impressed with my experience. From the moment I walked in, I felt welcomed by the friendly atmosphere. They had a great selection of South Indian groceries, which is exactly what I was looking for."
+    }
+  ]
+}

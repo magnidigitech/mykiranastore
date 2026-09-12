@@ -28,7 +28,14 @@ import {
   Share2,
   Copy,
   Undo,
-  Menu
+  Menu,
+  RefreshCw,
+  ExternalLink,
+  ShieldCheck,
+  Sparkles,
+  Truck,
+  ArrowRight,
+  ZoomIn
 } from 'lucide-react';
 
 const ITEMS_PER_PAGE = 24;
@@ -64,6 +71,32 @@ export default function App() {
     return () => clearTimeout(timer);
   }, [toast]);
 
+  // Live Google Reviews state
+  const [googleReviewsData, setGoogleReviewsData] = useState({
+    placeName: "My Kirana Store",
+    rating: 4.7,
+    totalReviews: 106,
+    googleMapsUrl: "https://maps.app.goo.gl/9oQyU9MHixLW2mP4A",
+    lastSynced: null,
+    reviews: []
+  });
+  const [syncingReviews, setSyncingReviews] = useState(false);
+  const [syncMessage, setSyncMessage] = useState(null);
+  const [showAllReviews, setShowAllReviews] = useState(false);
+
+  // Live Instagram Feed state
+  const [instagramFeedData, setInstagramFeedData] = useState({
+    username: "mykiranastore_ca",
+    name: "mykiranastore",
+    bio: "Indian grocery store in Calgary • Weekly in-store deals & fresh arrivals",
+    profileUrl: "https://www.instagram.com/mykiranastore_ca/",
+    followers: "859+ followers",
+    posts: []
+  });
+  const [syncingInstagram, setSyncingInstagram] = useState(false);
+  const [instagramSyncMsg, setInstagramSyncMsg] = useState(null);
+  const [activeFlyerIndex, setActiveFlyerIndex] = useState(null);
+
   // Routing & Authentication states
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -94,10 +127,27 @@ export default function App() {
     return () => window.removeEventListener('popstate', handleLocationChange);
   }, []);
 
+  // Always reset scroll position to top whenever route changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [currentPath]);
+
   const navigateTo = (path) => {
     window.history.pushState({}, '', path);
     window.dispatchEvent(new Event('popstate'));
     setIsMobileMenuOpen(false);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
+  // Helper to filter and navigate to products while guaranteeing scroll-to-top
+  const applyProductFilter = (term = '', category = 'All', brand = 'All') => {
+    setSearchTerm(term);
+    setSelectedCategory(category);
+    setSelectedBrand(brand);
+    setCurrentPage(1);
+    setSelectedProductIds([]);
+    navigateTo('/products');
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
   const handleLoginSubmit = (e) => {
@@ -185,9 +235,107 @@ export default function App() {
     }
   };
 
+  const fetchReviews = async () => {
+    try {
+      const response = await fetch('/api/reviews');
+      if (response.ok) {
+        const data = await response.json();
+        setGoogleReviewsData(data);
+      }
+    } catch (err) {
+      console.error('Error fetching Google reviews:', err);
+    }
+  };
+
+  const handleSyncGoogleReviews = async () => {
+    setSyncingReviews(true);
+    setSyncMessage('Syncing live reviews with Google Maps...');
+    try {
+      const response = await fetch('/api/reviews/sync', { method: 'POST' });
+      if (response.ok) {
+        const result = await response.json();
+        if (result.data) {
+          setGoogleReviewsData(result.data);
+          setSyncMessage('Successfully synced with Google profile!');
+          setTimeout(() => setSyncMessage(null), 4000);
+        }
+      } else {
+        setSyncMessage('Sync temporarily unavailable. Using cached Google reviews.');
+        setTimeout(() => setSyncMessage(null), 4000);
+      }
+    } catch (err) {
+      console.error('Error syncing reviews:', err);
+      setSyncMessage('Error syncing with Google. Using cached reviews.');
+      setTimeout(() => setSyncMessage(null), 4000);
+    } finally {
+      setSyncingReviews(false);
+    }
+  };
+
+  const fetchInstagramFeed = async () => {
+    try {
+      const response = await fetch('/api/instagram');
+      if (response.ok) {
+        const data = await response.json();
+        setInstagramFeedData(data);
+      }
+    } catch (err) {
+      console.error('Error fetching Instagram feed:', err);
+    }
+  };
+
+  const handleSyncInstagram = async () => {
+    setSyncingInstagram(true);
+    setInstagramSyncMsg('Syncing latest posts with Instagram...');
+    try {
+      const response = await fetch('/api/instagram/sync', { method: 'POST' });
+      if (response.ok) {
+        const result = await response.json();
+        if (result.data) {
+          setInstagramFeedData(result.data);
+          setInstagramSyncMsg('Successfully synced with @mykiranastore_ca!');
+          setTimeout(() => setInstagramSyncMsg(null), 4000);
+        }
+      } else {
+        setInstagramSyncMsg('Instagram sync busy. Using cached feed.');
+        setTimeout(() => setSyncMessage(null), 4000);
+      }
+    } catch (err) {
+      console.error('Error syncing Instagram:', err);
+      setInstagramSyncMsg('Using cached Instagram feed.');
+      setTimeout(() => setInstagramSyncMsg(null), 4000);
+    } finally {
+      setSyncingInstagram(false);
+    }
+  };
+
   useEffect(() => {
     fetchProducts(true);
+    fetchReviews();
+    fetchInstagramFeed();
   }, []);
+
+  // Keyboard navigation & scroll locking for Instagram Flyer Lightbox Modal
+  useEffect(() => {
+    if (activeFlyerIndex === null) return;
+    const handleKeyDown = (e) => {
+      const count = instagramFeedData.posts?.length || 0;
+      if (count === 0) return;
+      if (e.key === 'Escape') {
+        setActiveFlyerIndex(null);
+      } else if (e.key === 'ArrowLeft') {
+        setActiveFlyerIndex(prev => (prev > 0 ? prev - 1 : count - 1));
+      } else if (e.key === 'ArrowRight') {
+        setActiveFlyerIndex(prev => (prev < count - 1 ? prev + 1 : 0));
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [activeFlyerIndex, instagramFeedData.posts]);
 
   // 2. Compute unique categories and brands (cached)
   const categories = useMemo(() => {
@@ -246,18 +394,20 @@ export default function App() {
 
   const adminTotalPages = Math.ceil(adminFilteredProducts.length / adminItemsPerPage);
 
-  // Reset pagination when filters change
+  // Reset pagination when filters change and scroll to top
   const handleCategorySelect = (cat) => {
     setSelectedCategory(cat);
     setSelectedBrand('All');
     setCurrentPage(1);
     setSelectedProductIds([]);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
   const handleBrandSelect = (brand) => {
     setSelectedBrand(brand);
     setCurrentPage(1);
     setSelectedProductIds([]);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
   const handleSearchChange = (e) => {
@@ -269,6 +419,13 @@ export default function App() {
       navigateTo('/products');
     }
   };
+
+  // Scroll to top when page changes in products catalogue
+  useEffect(() => {
+    if (currentPage > 1) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
+  }, [currentPage]);
 
   // --- PWA SHOPPING LIST METHODS & GESTURES ---
 
@@ -848,8 +1005,8 @@ export default function App() {
         </div>
       </header>
 
-      {/* Mobile Search Bar Container */}
-      {!isAdminPath && (
+      {/* Mobile Search Bar Container (only shown on non-landing pages on mobile) */}
+      {!isAdminPath && currentPath !== '/' && (
         <div className="mobile-search-bar-container">
           <div className="search-container mobile-search">
             <Search className="search-icon-left" size={18} />
@@ -1005,20 +1162,196 @@ export default function App() {
           {currentPath === '/' && (
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
               {/* Hero Banner Section */}
-              <section className="landing-hero">
-                <div className="landing-hero-inner">
-                  <span className="landing-badge">Grocery & General Store</span>
-                  <h1 className="landing-title">Authentic Indian Groceries <span>Right in Calgary</span></h1>
-                  <p className="landing-desc">
-                    Explore Calgary's premier shopping destination for high-quality Indian foods. We import premium basmati rices, hand-ground spices, traditional flours (atta), homestyle pickles, sweets, and essential kitchen dry goods.
-                  </p>
-                  <div className="landing-ctas">
-                    <button className="btn-primary" onClick={() => navigateTo('/products')}>
-                      Explore Products
-                    </button>
-                    <button className="btn-secondary" onClick={() => navigateTo('/contact')}>
-                      Contact Us
-                    </button>
+              <section className="landing-hero-pro">
+                <div className="landing-hero-pro-container">
+                  {/* Left Column: Hero Content & Search */}
+                  <div className="hero-pro-content">
+                    {/* Location & Google rating badge */}
+                    <div className="hero-trust-pill">
+                      <span className="hero-trust-city">
+                        <MapPin size={14} className="hero-pin-icon" /> Calgary, Alberta
+                      </span>
+                      <span className="hero-trust-divider">•</span>
+                      <a 
+                        href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/9oQyU9MHixLW2mP4A'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hero-trust-rating"
+                        title="View Google Maps Profile"
+                      >
+                        <div className="hero-stars-mini">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
+                          ))}
+                        </div>
+                        <strong>{googleReviewsData.rating || 4.7}</strong>
+                        <span>({googleReviewsData.totalReviews || 106}+ Google Reviews)</span>
+                      </a>
+                    </div>
+
+                    {/* Main Headline */}
+                    <h1 className="hero-pro-title">
+                      Authentic Indian Groceries,
+                      <span className="hero-pro-highlight"> Spices & Fresh Produce</span>
+                      <span className="hero-pro-city"> Right in Calgary</span>
+                    </h1>
+
+                    {/* Description */}
+                    <p className="hero-pro-desc">
+                      Your trusted neighbourhood Indian supermarket in Calgary for premium basmati rice, hand-ground spices, traditional atta flours, organic lentils, homestyle pickles, snacks, and fresh produce.
+                    </p>
+
+                    {/* Live Hero Search Bar */}
+                    <div className="hero-search-wrapper">
+                      <form 
+                        className="hero-search-form"
+                        onSubmit={(e) => {
+                          e.preventDefault();
+                          applyProductFilter(searchTerm, 'All', 'All');
+                        }}
+                      >
+                        <Search size={19} className="hero-search-icon" />
+                        <input 
+                          type="text" 
+                          placeholder="Search basmati rice, atta, MDH spices, pickles, snacks..."
+                          value={searchTerm}
+                          onChange={(e) => setSearchTerm(e.target.value)}
+                          className="hero-search-input"
+                        />
+                        <button type="submit" className="hero-search-btn">
+                          <span>Search</span>
+                          <ArrowRight size={15} />
+                        </button>
+                      </form>
+
+                      {/* Trending Chips */}
+                      <div className="hero-quick-chips">
+                        <span className="chips-label">Popular:</span>
+                        {['Basmati Rice', 'Atta Flour', 'MDH Spices', 'Pickles', 'Sweets'].map((tag) => (
+                          <button 
+                            key={tag}
+                            type="button"
+                            className="chip-tag-btn"
+                            onClick={() => applyProductFilter(tag, 'All', 'All')}
+                          >
+                            {tag}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Primary CTAs */}
+                    <div className="hero-action-row">
+                      <button 
+                        className="btn-hero-primary" 
+                        onClick={() => applyProductFilter('', 'All', 'All')}
+                      >
+                        <ShoppingBag size={18} />
+                        <span>Browse 500+ Products</span>
+                      </button>
+
+                      <button 
+                        className="btn-hero-secondary" 
+                        onClick={() => navigateTo('/contact')}
+                      >
+                        <Clock size={18} />
+                        <span>Hours & Directions</span>
+                      </button>
+                    </div>
+
+                    {/* Trust Highlights Strip */}
+                    <div className="hero-feature-pills">
+                      <div className="hero-feat-item">
+                        <ShieldCheck size={18} className="feat-icon" />
+                        <div>
+                          <strong>100% Authentic</strong>
+                          <span>Direct Indian Brands</span>
+                        </div>
+                      </div>
+                      <div className="hero-feat-item">
+                        <Sparkles size={18} className="feat-icon" />
+                        <div>
+                          <strong>Fresh Arrivals</strong>
+                          <span>Weekly Vegetables</span>
+                        </div>
+                      </div>
+                      <div className="hero-feat-item">
+                        <Truck size={18} className="feat-icon" />
+                        <div>
+                          <strong>Free Delivery</strong>
+                          <span>In Calgary Area</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right Column: Visual Showcase Collage with Floating Badges */}
+                  <div className="hero-pro-visual">
+                    <div className="hero-visual-card-main">
+                      <div className="hero-showcase-grid">
+                        <div 
+                          className="hero-showcase-item item-daawat"
+                          onClick={() => applyProductFilter('Basmati Rice', 'All', 'All')}
+                        >
+                          <img src="/images/DAAWAT%20TRADITIONAL%20BASMATI%20RICE%2010LBS.jpg" alt="Daawat Traditional Basmati Rice" />
+                          <span className="item-label">Aged Basmati Rice</span>
+                        </div>
+
+                        <div 
+                          className="hero-showcase-item item-aashirvaad"
+                          onClick={() => applyProductFilter('Atta', 'All', 'All')}
+                        >
+                          <img src="/images/AASHIRVAAD%20WHOLE%20WHEAT%20FLOUR%2020LBS.jpg" alt="Aashirvaad Whole Wheat Atta" />
+                          <span className="item-label">Chakki Atta</span>
+                        </div>
+
+                        <div 
+                          className="hero-showcase-item item-mdh"
+                          onClick={() => applyProductFilter('Masala', 'All', 'All')}
+                        >
+                          <img src="/images/MDH%20Garam%20Masala%20100g.jpg" alt="MDH Garam Masala" />
+                          <span className="item-label">Authentic Masalas</span>
+                        </div>
+
+                        <div 
+                          className="hero-showcase-item item-haldiram"
+                          onClick={() => applyProductFilter('Soan Papdi', 'All', 'All')}
+                        >
+                          <img src="/images/Haldirams%20Soan%20Papdi%20-%20Blended%20with%20Natural%20Cardamom,%20250g%20Pack.jpg" alt="Haldiram's Soan Papdi" />
+                          <span className="item-label">Indian Sweets</span>
+                        </div>
+                      </div>
+
+                      {/* Floating Badge: Google Rating */}
+                      <div className="floating-badge badge-google">
+                        <div className="badge-google-header">
+                          <svg viewBox="0 0 24 24" width="18" height="18">
+                            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                          </svg>
+                          <div className="badge-stars">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} size={12} fill="#f59e0b" color="#f59e0b" />
+                            ))}
+                          </div>
+                        </div>
+                        <div className="badge-rating-text">
+                          <strong>{googleReviewsData.rating || 4.7} / 5.0 Rating</strong>
+                          <span>Verified by {googleReviewsData.totalReviews || 106}+ Calgary shoppers</span>
+                        </div>
+                      </div>
+
+                      {/* Floating Badge: In-Store Inventory */}
+                      <div className="floating-badge badge-store-status">
+                        <div className="live-dot-green"></div>
+                        <div>
+                          <strong>Open 7 Days a Week</strong>
+                          <span>6520 36 St NE, Calgary</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -1067,57 +1400,368 @@ export default function App() {
                 </div>
               </section>
 
-              {/* Customer Testimonials Section */}
-              <section className="testimonials-section">
+              {/* Instagram Feed Section (Placed Above Reviews) */}
+              <section className="instagram-section">
                 <div className="section-header">
-                  <h2 className="section-title">Loved by the Calgary Community</h2>
-                  <p className="section-desc">Here is what our shoppers have to say about their experience</p>
+                  <div className="instagram-pill-badge">
+                    <svg className="instagram-gradient-icon" viewBox="0 0 24 24" width="18" height="18">
+                      <defs>
+                        <radialGradient id="ig-pill-grad" r="150%" cx="30%" cy="107%">
+                          <stop stopColor="#fdf497" offset="0%" />
+                          <stop stopColor="#fdf497" offset="5%" />
+                          <stop stopColor="#fd5949" offset="45%" />
+                          <stop stopColor="#d6249f" offset="60%" />
+                          <stop stopColor="#285AEB" offset="90%" />
+                        </radialGradient>
+                      </defs>
+                      <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-pill-grad)" />
+                      <circle cx="12" cy="12" r="4.2" stroke="#fff" strokeWidth="1.8" fill="none" />
+                      <circle cx="17.2" cy="6.8" r="1.1" fill="#fff" />
+                    </svg>
+                    <span>@mykiranastore_ca</span>
+                    <span className="ig-followers-tag">{instagramFeedData.followers || '859+ followers'}</span>
+                  </div>
+
+                  <h2 className="section-title">Weekly In-Store Deals & Updates</h2>
+                  <p className="section-desc">
+                    Follow our official Instagram for weekly grocery flyers, festive specials, and fresh arrivals
+                  </p>
+
+                  <div className="instagram-action-bar">
+                    <a 
+                      href={instagramFeedData.profileUrl || 'https://www.instagram.com/mykiranastore_ca/'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-follow-instagram"
+                    >
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                      </svg>
+                      <span>Follow @mykiranastore_ca</span>
+                      <ExternalLink size={14} />
+                    </a>
+
+                    <button 
+                      onClick={handleSyncInstagram}
+                      disabled={syncingInstagram}
+                      className="btn-sync-instagram"
+                      title="Sync latest posts from Instagram"
+                    >
+                      <RefreshCw size={14} className={syncingInstagram ? "spin-sync-icon" : ""} />
+                      <span>{syncingInstagram ? "Syncing..." : "Sync Instagram"}</span>
+                    </button>
+                  </div>
+
+                  {instagramSyncMsg && (
+                    <div className="instagram-sync-alert">
+                      {instagramSyncMsg}
+                    </div>
+                  )}
                 </div>
-                <div className="testimonials-grid">
-                  <div className="testimonial-card">
-                    <div className="testimonial-stars">
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
+
+                <div className="instagram-grid">
+                  {(instagramFeedData.posts && instagramFeedData.posts.length > 0 
+                    ? instagramFeedData.posts 
+                    : []
+                  ).map((post, idx) => (
+                    <div 
+                      key={post.id || idx}
+                      className="instagram-post-card"
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => setActiveFlyerIndex(idx)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          setActiveFlyerIndex(idx);
+                        }
+                      }}
+                      aria-label={`View flyer: ${post.caption || 'Weekly deal'}`}
+                    >
+                      <div className="instagram-img-wrapper">
+                        <img 
+                          src={post.imageUrl} 
+                          alt={post.caption || "Instagram update from My Kirana Store"} 
+                          loading="lazy"
+                          onError={(e) => {
+                            if (post.originalImageUrl && e.currentTarget.src !== post.originalImageUrl) {
+                              e.currentTarget.src = post.originalImageUrl;
+                            }
+                          }}
+                        />
+                        <div className="instagram-card-overlay">
+                          <div className="instagram-overlay-icon">
+                            <ZoomIn size={24} color="white" />
+                          </div>
+                          <span className="instagram-overlay-text">Click to View Image</span>
+                        </div>
+                      </div>
+                      <div className="instagram-card-caption">
+                        <p className="instagram-caption-text">
+                          {post.caption ? (post.caption.length > 85 ? post.caption.slice(0, 85) + '...' : post.caption) : 'Weekly In-Store Deal'}
+                        </p>
+                        <div className="instagram-card-footer">
+                          <span className="instagram-view-cta">View Full Image ↗</span>
+                          <span className="instagram-post-badge">In-Store Deal</span>
+                        </div>
+                      </div>
                     </div>
-                    <p className="testimonial-text">"The absolute best place in Calgary to find authentic Indian brands. Excellent selection of flours and rice, and the stock is always fresh. Staff is incredibly helpful!"</p>
-                    <div className="testimonial-author">
-                      Amrit Singh
-                      <span>Calgary Shopper</span>
-                    </div>
-                  </div>
-                  <div className="testimonial-card">
-                    <div className="testimonial-stars">
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                    </div>
-                    <p className="testimonial-text">"Very clean and well-organized store. I can always find my favorite brands of pickles and spices here. Highly recommended for daily grocery shopping!"</p>
-                    <div className="testimonial-author">
-                      Priya Patel
-                      <span>Regular Customer</span>
-                    </div>
-                  </div>
-                  <div className="testimonial-card">
-                    <div className="testimonial-stars">
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                      <Star size={16} fill="currentColor" />
-                    </div>
-                    <p className="testimonial-text">"Amazing selection and very fair prices. Having real-time catalogue updates makes planning my store visits so much easier. Love shopping here!"</p>
-                    <div className="testimonial-author">
-                      Rajesh Kumar
-                      <span>Calgary Resident</span>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </section>
+
+              {/* Customer Google Reviews Section */}
+              <section className="testimonials-section google-reviews-section">
+                <div className="section-header">
+                  <div className="google-pill-badge">
+                    <svg className="google-g-icon" viewBox="0 0 24 24" width="18" height="18">
+                      <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                      <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                      <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                      <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                    </svg>
+                    <span>Google Business Reviews</span>
+                    <span className="live-pulse-indicator">
+                      <span className="live-pulse-dot"></span> Live Synced
+                    </span>
+                  </div>
+
+                  <h2 className="section-title">Loved by the Calgary Community</h2>
+                  <p className="section-desc">
+                    Verified customer feedback live from our Google Maps profile
+                  </p>
+
+                  <div className="google-rating-banner">
+                    <div className="google-score-block">
+                      <span className="google-score-number">{googleReviewsData.rating || 4.7}</span>
+                      <div className="google-score-stars-wrap">
+                        <div className="google-stars-row">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} size={18} fill="#f59e0b" color="#f59e0b" />
+                          ))}
+                        </div>
+                        <span className="google-score-subtext">
+                          Based on <strong>{googleReviewsData.totalReviews || 106}+</strong> Google reviews
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="google-banner-actions">
+                      <a 
+                        href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/9oQyU9MHixLW2mP4A'}
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="btn-review-google"
+                      >
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                        </svg>
+                        <span>Review Us on Google</span>
+                        <ExternalLink size={14} />
+                      </a>
+
+                      <button 
+                        onClick={handleSyncGoogleReviews} 
+                        disabled={syncingReviews}
+                        className="btn-sync-reviews"
+                        title="Sync with Google Maps profile"
+                      >
+                        <RefreshCw size={14} className={syncingReviews ? "spin-sync-icon" : ""} />
+                        <span>{syncingReviews ? "Syncing..." : "Sync Live Reviews"}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {syncMessage && (
+                    <div className="google-sync-alert">
+                      {syncMessage}
+                    </div>
+                  )}
+                </div>
+
+                <div className="testimonials-grid google-reviews-grid">
+                  {(showAllReviews 
+                    ? (googleReviewsData.reviews || []) 
+                    : (googleReviewsData.reviews || []).slice(0, 6)
+                  ).map((rev, idx) => (
+                    <div key={rev.id || idx} className="testimonial-card google-review-card">
+                      <div className="google-review-header">
+                        <div className="google-review-profile">
+                          {rev.authorPhotoUrl ? (
+                            <img 
+                              src={rev.authorPhotoUrl} 
+                              alt={rev.authorName} 
+                              className="google-reviewer-img" 
+                              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                            />
+                          ) : (
+                            <div className="google-reviewer-initial">
+                              {(rev.authorName || 'C').charAt(0)}
+                            </div>
+                          )}
+                          <div className="google-reviewer-meta">
+                            <div className="testimonial-author">
+                              {rev.authorName}
+                              {rev.isLocalGuide && (
+                                <span className="local-guide-badge">Local Guide</span>
+                              )}
+                            </div>
+                            <span className="review-timestamp">{rev.relativeTime}</span>
+                          </div>
+                        </div>
+
+                        <svg className="google-card-badge-icon" viewBox="0 0 24 24" width="20" height="20" title="Google Verified">
+                          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                        </svg>
+                      </div>
+
+                      <div className="testimonial-stars">
+                        {[...Array(Math.round(rev.rating || 5))].map((_, starIdx) => (
+                          <Star key={starIdx} size={16} fill="currentColor" />
+                        ))}
+                      </div>
+
+                      <p className="testimonial-text">"{rev.text}"</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="google-reviews-footer-actions">
+                  {googleReviewsData.reviews && googleReviewsData.reviews.length > 6 && (
+                    <button 
+                      className="btn-toggle-reviews"
+                      onClick={() => setShowAllReviews(!showAllReviews)}
+                    >
+                      {showAllReviews 
+                        ? "Show Less" 
+                        : `Show All Synced Reviews (${googleReviewsData.reviews.length})`}
+                    </button>
+                  )}
+                  <a
+                    href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/9oQyU9MHixLW2mP4A'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-view-all-google"
+                  >
+                    <span>Read all {googleReviewsData.totalReviews || 106}+ reviews on Google Maps</span>
+                    <ExternalLink size={14} />
+                  </a>
+                </div>
+              </section>
+
+              {/* Instagram Image Viewer / Lightbox Modal */}
+              {activeFlyerIndex !== null && instagramFeedData.posts && instagramFeedData.posts[activeFlyerIndex] && (() => {
+                const currentFlyer = instagramFeedData.posts[activeFlyerIndex];
+                const totalFlyers = instagramFeedData.posts.length;
+
+                return (
+                  <div 
+                    className="insta-modal-backdrop"
+                    onClick={() => setActiveFlyerIndex(null)}
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <div 
+                      className="insta-modal-container"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {/* Header Bar */}
+                      <div className="insta-modal-header">
+                        <div className="insta-modal-badge">
+                          <span className="insta-modal-counter">
+                            Flyer {activeFlyerIndex + 1} of {totalFlyers}
+                          </span>
+                          <span className="insta-modal-tag">Weekly Special</span>
+                        </div>
+                        <button 
+                          className="insta-modal-close" 
+                          onClick={() => setActiveFlyerIndex(null)}
+                          title="Close (Esc)"
+                          aria-label="Close flyer viewer"
+                        >
+                          <X size={20} />
+                        </button>
+                      </div>
+
+                      {/* Modal Image Area with Navigation Buttons */}
+                      <div className="insta-modal-media-wrap">
+                        {totalFlyers > 1 && (
+                          <button 
+                            className="insta-nav-btn prev"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setActiveFlyerIndex(prev => (prev > 0 ? prev - 1 : totalFlyers - 1));
+                            }}
+                            title="Previous Flyer"
+                            aria-label="Previous flyer"
+                          >
+                            <ChevronLeft size={24} />
+                          </button>
+                        )}
+
+                        <div className="insta-modal-img-box">
+                          <img 
+                            src={currentFlyer.imageUrl} 
+                            alt={currentFlyer.caption || "My Kirana Store Flyer"} 
+                            className="insta-modal-img"
+                            onError={(e) => {
+                              if (currentFlyer.originalImageUrl && e.currentTarget.src !== currentFlyer.originalImageUrl) {
+                                e.currentTarget.src = currentFlyer.originalImageUrl;
+                              }
+                            }}
+                          />
+                        </div>
+
+                        {totalFlyers > 1 && (
+                          <button 
+                            className="insta-nav-btn next"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setActiveFlyerIndex(prev => (prev < totalFlyers - 1 ? prev + 1 : 0));
+                            }}
+                            title="Next Flyer"
+                            aria-label="Next flyer"
+                          >
+                            <ChevronRight size={24} />
+                          </button>
+                        )}
+                      </div>
+
+                      {/* Modal Footer Info */}
+                      <div className="insta-modal-footer">
+                        <div className="insta-modal-info">
+                          <p className="insta-modal-caption">
+                            {currentFlyer.caption || "Weekly in-store Indian grocery deals & fresh arrivals"}
+                          </p>
+                          <span className="insta-modal-subtext">
+                            <MapPin size={13} /> Available at 6520 36 St NE, Calgary • (403) 497-2777
+                          </span>
+                        </div>
+
+                        <div className="insta-modal-actions">
+                          {currentFlyer.postUrl && (
+                            <a 
+                              href={currentFlyer.postUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn-insta-modal-ext"
+                            >
+                              <span>View on Instagram</span>
+                              <ExternalLink size={13} />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
             </div>
           )}
 
@@ -1377,7 +2021,9 @@ export default function App() {
                                   onError={(e) => { e.target.src = '/images/placeholder.png'; }}
                                 />
                                 <span className="badge-brand">{product.brand}</span>
-                                {!product.inStock && <span className="badge-stock">Out of Stock</span>}
+                                <span className={`badge-stock ${product.inStock ? 'in-stock' : 'out-of-stock'}`}>
+                                  {product.inStock ? 'In Stock' : 'Out of Stock'}
+                                </span>
                               </div>
 
                               <div className="card-content">
@@ -1388,21 +2034,10 @@ export default function App() {
                                   paddingTop: '0.75rem', 
                                   marginTop: '0.5rem', 
                                   display: 'flex',
-                                  justifyContent: 'space-between',
+                                  justifyContent: 'center',
                                   alignItems: 'center',
-                                  gap: '0.5rem',
                                   width: '100%'
                                 }}>
-                                  <span style={{
-                                    fontSize: '0.75rem',
-                                    fontWeight: '700',
-                                    color: product.inStock ? 'hsl(var(--color-success))' : '#ef4444',
-                                    background: product.inStock ? 'hsl(var(--color-success-bg))' : '#fee2e2',
-                                    padding: '0.25rem 0.5rem',
-                                    borderRadius: 'var(--radius-sm)'
-                                  }}>
-                                    {product.inStock ? 'In Stock' : 'Out of Stock'}
-                                  </span>
                                   <button
                                     onClick={(e) => {
                                       e.stopPropagation();
@@ -1413,8 +2048,9 @@ export default function App() {
                                       }
                                     }}
                                     className={`btn-add-list ${isAdded ? 'added' : ''}`}
+                                    style={{ width: '100%', justifyContent: 'center' }}
                                   >
-                                    {isAdded ? <Check size={14} /> : <Plus size={14} />}
+                                    {isAdded ? <Check size={16} /> : <Plus size={16} />}
                                     <span>{isAdded ? 'Added' : 'Add to List'}</span>
                                   </button>
                                 </div>

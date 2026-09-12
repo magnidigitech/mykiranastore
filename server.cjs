@@ -3,6 +3,8 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const { getStoredReviews, syncReviews, initReviewsService } = require('./googleReviewsService.cjs');
+const { getStoredInstagramFeed, syncInstagram, initInstagramService } = require('./instagramService.cjs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,14 +16,19 @@ app.use(express.json());
 // Paths
 const DATA_FILE = path.join(__dirname, 'src', 'data', 'products.json');
 const IMAGES_DIR = path.join(__dirname, 'public', 'images');
+const INSTAGRAM_DIR = path.join(__dirname, 'public', 'instagram');
 
 // Enforce image directory exists
 if (!fs.existsSync(IMAGES_DIR)) {
   fs.mkdirSync(IMAGES_DIR, { recursive: true });
 }
+if (!fs.existsSync(INSTAGRAM_DIR)) {
+  fs.mkdirSync(INSTAGRAM_DIR, { recursive: true });
+}
 
 // Serve images folder statically
 app.use('/images', express.static(IMAGES_DIR));
+app.use('/instagram', express.static(INSTAGRAM_DIR));
 
 // Helper to sanitize filenames (keep spaces, alphanumeric, hyphens, and underscores)
 function sanitizeFilename(name) {
@@ -296,6 +303,44 @@ app.get('/sitemap.xml', (req, res) => {
 });
 
 
+// --- Google Reviews API ---
+app.get('/api/reviews', (req, res) => {
+  try {
+    const reviews = getStoredReviews();
+    res.json(reviews);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to retrieve reviews' });
+  }
+});
+
+app.post('/api/reviews/sync', async (req, res) => {
+  try {
+    const fresh = await syncReviews();
+    res.json({ success: true, data: fresh });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to sync reviews', message: err.message });
+  }
+});
+
+// --- Instagram Feed API ---
+app.get('/api/instagram', (req, res) => {
+  try {
+    const feed = getStoredInstagramFeed();
+    res.json(feed);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to retrieve Instagram feed' });
+  }
+});
+
+app.post('/api/instagram/sync', async (req, res) => {
+  try {
+    const fresh = await syncInstagram();
+    res.json({ success: true, data: fresh });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to sync Instagram', message: err.message });
+  }
+});
+
 // Serve built frontend assets in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'dist')));
@@ -306,4 +351,6 @@ if (process.env.NODE_ENV === 'production') {
 
 app.listen(PORT, () => {
   console.log(`Backend server running on http://localhost:${PORT}`);
+  initReviewsService();
+  initInstagramService();
 });
