@@ -1475,59 +1475,6 @@ export default function App() {
               </div>
             </section>
 
-            {/* Premium Interactive Promo Banner */}
-            <section className="promo-banner">
-              <div className="promo-banner-backdrop-glow"></div>
-              <div className="promo-banner-inner">
-                <div className="promo-badge">
-                  <MapPin size={16} />
-                  <span>Northeast Calgary • 6520 36 St NE Unit 1125</span>
-                </div>
-                
-                <h2 className="promo-title">Visit Us In-Store Today</h2>
-                
-                <p className="promo-desc">
-                  Experience a clean, organized, and friendly shopping environment. Check out our physical storefront in Calgary NE for fresh arrivals, weekly in-store specials, and daily savings on all your Indian grocery essentials!
-                </p>
-
-                <div className="promo-features-row">
-                  <div className="promo-feature-item">
-                    <Clock size={18} />
-                    <span>Open 7 Days a Week</span>
-                  </div>
-                  <div className="promo-feature-divider"></div>
-                  <div className="promo-feature-item">
-                    <Sparkles size={18} />
-                    <span>Fresh Stock Received Weekly</span>
-                  </div>
-                  <div className="promo-feature-divider"></div>
-                  <div className="promo-feature-item">
-                    <Phone size={18} />
-                    <span>(403) 497-2777</span>
-                  </div>
-                </div>
-
-                <div className="promo-actions">
-                  <button 
-                    className="promo-primary-btn" 
-                    onClick={() => navigateTo('/location')}
-                  >
-                    <MapPin size={18} />
-                    <span>Get Store Directions & Hours</span>
-                    <ArrowRight size={18} />
-                  </button>
-
-                  <button 
-                    className="promo-secondary-btn" 
-                    onClick={() => navigateTo('/offers')}
-                  >
-                    <Sparkles size={18} />
-                    <span>View Weekly Offers</span>
-                  </button>
-                </div>
-              </div>
-            </section>
-
             {/* Instagram Feed Section (Placed Above Reviews) */}
             <section className="instagram-section">
               <div className="section-header">
@@ -1780,6 +1727,59 @@ export default function App() {
                   <span>Read all {googleReviewsData.totalReviews || 106}+ reviews on Google Maps</span>
                   <ExternalLink size={14} />
                 </a>
+              </div>
+            </section>
+
+            {/* Premium Interactive Promo Banner */}
+            <section className="promo-banner">
+              <div className="promo-banner-backdrop-glow"></div>
+              <div className="promo-banner-inner">
+                <div className="promo-badge">
+                  <MapPin size={16} />
+                  <span>Northeast Calgary • 6520 36 St NE Unit 1125</span>
+                </div>
+                
+                <h2 className="promo-title">Visit Us In-Store Today</h2>
+                
+                <p className="promo-desc">
+                  Experience a clean, organized, and friendly shopping environment. Check out our physical storefront in Calgary NE for fresh arrivals, weekly in-store specials, and daily savings on all your Indian grocery essentials!
+                </p>
+
+                <div className="promo-features-row">
+                  <div className="promo-feature-item">
+                    <Clock size={18} />
+                    <span>Open 7 Days a Week</span>
+                  </div>
+                  <div className="promo-feature-divider"></div>
+                  <div className="promo-feature-item">
+                    <Sparkles size={18} />
+                    <span>Fresh Stock Received Weekly</span>
+                  </div>
+                  <div className="promo-feature-divider"></div>
+                  <div className="promo-feature-item">
+                    <Phone size={18} />
+                    <span>(403) 497-2777</span>
+                  </div>
+                </div>
+
+                <div className="promo-actions">
+                  <button 
+                    className="promo-primary-btn" 
+                    onClick={() => navigateTo('/location')}
+                  >
+                    <MapPin size={18} />
+                    <span>Get Store Directions & Hours</span>
+                    <ArrowRight size={18} />
+                  </button>
+
+                  <button 
+                    className="promo-secondary-btn" 
+                    onClick={() => navigateTo('/offers')}
+                  >
+                    <Sparkles size={18} />
+                    <span>View Weekly Offers</span>
+                  </button>
+                </div>
               </div>
             </section>
           </div>
