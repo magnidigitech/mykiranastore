@@ -7,7 +7,9 @@
     <title>Indian Grocery Store in Calgary NE | My Kirana Store</title>
     <meta name="description" content="Visit My Kirana Store at 6520 36 St NE, Unit 1125, Calgary. Explore our grocery selection, check current offers, and find store hours and directions." />
     <meta name="keywords" content="Indian grocery store Calgary, Indian supermarket Calgary, Indian grocery NE Calgary, desi grocery store Calgary, My Kirana Store Calgary, Indian grocery store 36 St NE, Indian grocery store Northeast Calgary" />
-    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <link rel="canonical" href="https://mykiranastore.ca" />
     
     <!-- Open Graph / Facebook -->
@@ -77,14 +79,48 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     
-    <!-- PWA Service Worker Registration -->
+    <!-- PWA Service Worker Registration with Auto Cache Busting -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('Service Worker registered successfully:', reg.scope))
-            .catch(err => console.log('Service Worker registration failed:', err));
+            .then(reg => {
+              console.log('[PWA] Service Worker registered:', reg.scope);
+              // Force update check on every page load
+              reg.update();
+
+              // Auto refresh when a new Service Worker takes over
+              let refreshing = false;
+              navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (!refreshing) {
+                  refreshing = true;
+                  window.location.reload();
+                }
+              });
+            })
+            .catch(err => console.log('[PWA] Service Worker registration failed:', err));
         });
+
+        // Global chunk loading error handler: Clear stale caches and auto-reload page if bundle fails
+        window.addEventListener('error', (e) => {
+          if (e.message && (
+            e.message.includes('Loading chunk') || 
+            e.message.includes('dynamically imported module') || 
+            e.message.includes('Importing a module script failed') ||
+            e.message.includes('Unexpected token')
+          )) {
+            console.warn('[CacheBuster] Stale asset load detected. Purging cache and reloading...');
+            if ('caches' in window) {
+              caches.keys().then(names => {
+                return Promise.all(names.map(name => caches.delete(name)));
+              }).then(() => {
+                window.location.reload(true);
+              });
+            } else {
+              window.location.reload(true);
+            }
+          }
+        }, true);
       }
     </script>
   </body>

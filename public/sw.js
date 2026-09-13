@@ -1,31 +1,36 @@
-const CACHE_NAME = 'kiranstore-pwa-cache-v2';
+const CACHE_NAME = 'kiranstore-pwa-v3';
+
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/logo-icon.png',
   '/logo.png',
   '/logo-text.png',
+  '/favicon.png',
   '/favicon.svg',
-  '/icons.svg'
+  '/icons.svg',
+  '/manifest.json'
 ];
 
-// Install Service Worker
+// Install Service Worker - Force immediate activation
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
-    }).then(() => self.skipWaiting())
+      return cache.addAll(ASSETS_TO_CACHE).catch(() => {});
+    })
   );
 });
 
-// Activate Service Worker
+// Activate Service Worker - Delete all old caches & claim clients immediately
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
-        cacheNames.map((cache) => {
-          if (cache !== CACHE_NAME) {
-            return caches.delete(cache);
+        cacheNames.map((cacheName) => {
+          if (cacheName !== CACHE_NAME) {
+            console.log('[SW] Deleting old cache:', cacheName);
+            return caches.delete(cacheName);
           }
         })
       );
@@ -33,62 +38,64 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch Assets
-self.addEventListener('fetch', (event) => {
-  // Ignore non-GET requests and API requests
-  if (event.request.method !== 'GET' || event.request.url.includes('/api/')) {
-    return;
+// Listen for skipWaiting message from client
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
   }
+});
+
+// Fetch Strategy: Network-First for HTML, JS, and CSS to prevent blank screens on new deploys
+self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
 
-  // Network-First for HTML/document requests and root path
-  const isHtmlRequest = 
-    event.request.mode === 'navigate' || 
-    (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html')) ||
-    url.pathname === '/' || 
-    url.pathname === '/index.html';
+  // Ignore non-http(s), API requests, or external origins
+  if (!url.protocol.startsWith('http') || url.pathname.startsWith('/api/')) {
+    return;
+  }
 
-  if (isHtmlRequest) {
+  // Network-First for HTML, JS scripts, CSS stylesheets, and root navigation
+  const isCodeOrDoc = 
+    event.request.mode === 'navigate' ||
+    url.pathname.endsWith('.html') ||
+    url.pathname.endsWith('.js') ||
+    url.pathname.endsWith('.css') ||
+    url.pathname === '/';
+
+  if (isCodeOrDoc) {
     event.respondWith(
       fetch(event.request)
-        .then((response) => {
-          if (response && response.status === 200) {
-            const responseToCache = response.clone();
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseClone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, responseToCache);
+              cache.put(event.request, responseClone);
             });
           }
-          return response;
+          return networkResponse;
         })
         .catch(() => {
-          // If offline, fallback to cache
+          // If offline, fallback to cached copy
           return caches.match(event.request);
         })
     );
   } else {
-    // Cache-First for static assets (images, scripts, styles, etc.)
+    // Stale-While-Revalidate for images & media
     event.respondWith(
       caches.match(event.request).then((cachedResponse) => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-
-        return fetch(event.request).then((response) => {
-          // Only cache valid GET responses of basic type
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
+        const fetchPromise = fetch(event.request).then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseClone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseClone);
+            });
           }
+          return networkResponse;
+        }).catch(() => cachedResponse);
 
-          const responseToCache = response.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
-          });
-
-          return response;
-        }).catch(() => {
-          // Fallback if offline and not in cache
-        });
+        return cachedResponse || fetchPromise;
       })
     );
   }
