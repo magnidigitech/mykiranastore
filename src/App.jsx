@@ -1313,8 +1313,8 @@ export default function App() {
                     </div>
                   </div>
 
-                  {/* Primary CTAs */}
-                  <div className="hero-action-row">
+                  {/* Primary CTAs & Highlights */}
+                  <div className="hero-action-stack">
                     <button
                       className="btn-hero-primary"
                       onClick={() => applyProductFilter('', 'All', 'All')}
@@ -1323,16 +1323,30 @@ export default function App() {
                       <span>Browse Products</span>
                     </button>
 
-                    <button
-                      className="btn-hero-secondary"
-                      onClick={() => {
-                        const el = document.querySelector('.landing-features');
-                        if (el) el.scrollIntoView({ behavior: 'smooth' });
-                      }}
-                    >
-                      <Sparkles size={18} />
-                      <span>Features</span>
-                    </button>
+                    {/* Trust Highlights Strip in middle */}
+                    <div className="hero-feature-pills">
+                      <div className="hero-feat-item">
+                        <ShieldCheck size={18} className="feat-icon" />
+                        <div>
+                          <strong>100% Authentic</strong>
+                          <span>Direct Indian Brands</span>
+                        </div>
+                      </div>
+                      <div className="hero-feat-item">
+                        <Sparkles size={18} className="feat-icon" />
+                        <div>
+                          <strong>Fresh Arrivals</strong>
+                          <span>Weekly Vegetables</span>
+                        </div>
+                      </div>
+                      <div className="hero-feat-item">
+                        <Truck size={18} className="feat-icon" />
+                        <div>
+                          <strong>Free Delivery</strong>
+                          <span>In Calgary Area</span>
+                        </div>
+                      </div>
+                    </div>
 
                     <button
                       className="btn-hero-secondary"
@@ -1341,31 +1355,6 @@ export default function App() {
                       <Clock size={18} />
                       <span>Hours & Directions</span>
                     </button>
-                  </div>
-
-                  {/* Trust Highlights Strip */}
-                  <div className="hero-feature-pills">
-                    <div className="hero-feat-item">
-                      <ShieldCheck size={18} className="feat-icon" />
-                      <div>
-                        <strong>100% Authentic</strong>
-                        <span>Direct Indian Brands</span>
-                      </div>
-                    </div>
-                    <div className="hero-feat-item">
-                      <Sparkles size={18} className="feat-icon" />
-                      <div>
-                        <strong>Fresh Arrivals</strong>
-                        <span>Weekly Vegetables</span>
-                      </div>
-                    </div>
-                    <div className="hero-feat-item">
-                      <Truck size={18} className="feat-icon" />
-                      <div>
-                        <strong>Free Delivery</strong>
-                        <span>In Calgary Area</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
