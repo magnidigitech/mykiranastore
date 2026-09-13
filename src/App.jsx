@@ -1320,7 +1320,18 @@ export default function App() {
                       onClick={() => applyProductFilter('', 'All', 'All')}
                     >
                       <ShoppingBag size={18} />
-                      <span>Browse 500+ Products</span>
+                      <span>Browse Products</span>
+                    </button>
+
+                    <button
+                      className="btn-hero-secondary"
+                      onClick={() => {
+                        const el = document.querySelector('.landing-features');
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                    >
+                      <Sparkles size={18} />
+                      <span>Features</span>
                     </button>
 
                     <button
