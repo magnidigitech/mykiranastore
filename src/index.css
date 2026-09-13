@@ -2560,8 +2560,8 @@ h6 {
   }
 
   .hero-action-row {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 0.6rem !important;
     width: 100% !important;
     margin-top: 0.25rem !important;
@@ -2571,9 +2571,9 @@ h6 {
   .btn-hero-secondary {
     width: 100% !important;
     justify-content: center !important;
-    padding: 0.75rem 0.5rem !important;
-    font-size: 0.84rem !important;
-    gap: 0.4rem !important;
+    padding: 0.85rem 1rem !important;
+    font-size: 0.9rem !important;
+    gap: 0.5rem !important;
     text-align: center !important;
   }
 
