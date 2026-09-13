@@ -2616,8 +2616,8 @@ h6 {
 
   .hero-visual-card-main {
     max-width: 100% !important;
-    padding: 2.5rem 0.85rem 2.25rem 0.85rem !important;
-    margin: 1rem 0 !important;
+    padding: 1rem !important;
+    margin: 0.5rem 0 !important;
     border-radius: 20px !important;
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08) !important;
   }
@@ -2642,60 +2642,11 @@ h6 {
     font-size: 0.72rem !important;
   }
 
-  .floating-badge {
-    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.15) !important;
-  }
-
-  .badge-google {
-    top: -16px !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    padding: 0.45rem 0.9rem !important;
-    width: auto !important;
-    max-width: 92% !important;
-    white-space: nowrap !important;
-  }
-
-  .badge-google-header {
-    gap: 0.4rem !important;
-  }
-
-  .badge-google svg {
-    width: 16px !important;
-    height: 16px !important;
-  }
-
-  .badge-stars svg {
-    width: 12px !important;
-    height: 12px !important;
-  }
-
-  .badge-rating-text strong {
-    font-size: 0.78rem !important;
-  }
-
-  .badge-rating-text span {
-    font-size: 0.68rem !important;
-  }
-
+  .hero-badges-wrap,
+  .floating-badge,
+  .badge-google,
   .badge-store-status {
-    bottom: -16px !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    padding: 0.45rem 0.9rem !important;
-    width: auto !important;
-    max-width: 92% !important;
-    white-space: nowrap !important;
-  }
-
-  .badge-store-status strong {
-    font-size: 0.76rem !important;
-  }
-
-  .badge-store-status span {
-    font-size: 0.66rem !important;
+    display: none !important;
   }
 }
 
