@@ -1286,7 +1286,7 @@ export default function App() {
                       <Search size={19} className="hero-search-icon" />
                       <input
                         type="text"
-                        placeholder="Search basmati rice, atta, MDH spices, pickles, snacks..."
+                        placeholder="Search rice, atta, spices, snacks..."
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                         className="hero-search-input"
