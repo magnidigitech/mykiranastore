@@ -354,6 +354,28 @@ export default function App() {
     };
   }, [activeFlyerIndex, instagramFeedData.posts]);
 
+  // Helper for flexible category matching (handles exact tags, aliases, composite tags & multi-word filters)
+  const isCategoryMatch = (productCategories, targetCategory) => {
+    if (!targetCategory || targetCategory === 'All') return true;
+    if (!Array.isArray(productCategories) || productCategories.length === 0) return false;
+
+    const target = targetCategory.toLowerCase().trim();
+
+    return productCategories.some(c => {
+      const cat = c.toLowerCase().trim();
+      if (cat === target) return true;
+      if (target.includes(cat) || cat.includes(target)) return true;
+
+      // Smart category aliases for department cards & popular search chips
+      if ((target.includes('rice') || target.includes('staple')) && (cat.includes('rice') || cat.includes('atta') || cat.includes('dal') || cat.includes('flour') || cat.includes('lentil'))) return true;
+      if ((target.includes('spice') || target.includes('masala')) && (cat.includes('spice') || cat.includes('masala') || cat.includes('chili') || cat.includes('powder'))) return true;
+      if ((target.includes('snack') || target.includes('sweet') || target.includes('namkeen')) && (cat.includes('snack') || cat.includes('sweet') || cat.includes('namkeen') || cat.includes('tea') || cat.includes('biscuit') || cat.includes('farsan'))) return true;
+      if ((target.includes('frozen') || target.includes('import') || target.includes('pooja')) && (cat.includes('frozen') || cat.includes('pooja') || cat.includes('pickle') || cat.includes('paneer') || cat.includes('specialty'))) return true;
+
+      return false;
+    });
+  };
+
   // 2. Compute unique categories and brands (cached)
   const categories = useMemo(() => {
     const allCats = new Set();
@@ -368,7 +390,7 @@ export default function App() {
   const brands = useMemo(() => {
     const productsInSelectedCategory = selectedCategory === 'All'
       ? products
-      : products.filter(p => p.categories && p.categories.includes(selectedCategory));
+      : products.filter(p => isCategoryMatch(p.categories, selectedCategory));
     const allBrands = new Set(productsInSelectedCategory.map(p => p.brand).filter(Boolean));
     return ['All', ...Array.from(allBrands).sort()];
   }, [products, selectedCategory]);
@@ -376,11 +398,13 @@ export default function App() {
   // 3. Shop View: Filtered & Paginated Products
   const filteredProducts = useMemo(() => {
     return products.filter(p => {
-      const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      const matchesSearch = !searchTerm.trim() || (
+        p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         (p.brand && p.brand.toLowerCase().includes(searchTerm.toLowerCase())) ||
-        (p.categories && p.categories.some(c => c.toLowerCase().includes(searchTerm.toLowerCase())));
-      const matchesCategory = selectedCategory === 'All' || (p.categories && p.categories.includes(selectedCategory));
-      const matchesBrand = selectedBrand === 'All' || p.brand === selectedBrand;
+        (p.categories && p.categories.some(c => c.toLowerCase().includes(searchTerm.toLowerCase())))
+      );
+      const matchesCategory = isCategoryMatch(p.categories, selectedCategory);
+      const matchesBrand = selectedBrand === 'All' || (p.brand && p.brand.toLowerCase() === selectedBrand.toLowerCase());
 
       return matchesSearch && matchesCategory && matchesBrand;
     });
