@@ -2778,74 +2778,319 @@ h6 {
   }
 }
 
+/* Core Departments Section Styling */
+.landing-features {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border-top: 1px solid hsl(var(--color-border) / 0.6);
+  border-bottom: 1px solid hsl(var(--color-border) / 0.6);
+}
+
+.departments-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  color: #15803d;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid #86efac;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.12);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.75rem;
+  max-width: 1240px;
+  margin: 2.5rem auto 0 auto;
+}
+
 .feature-card {
   background: white;
-  border: 1px solid hsl(var(--color-border));
-  border-radius: var(--radius-md);
-  padding: 2.25rem 2rem;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 20px;
+  padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #16a34a, #059669);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-  border-color: hsl(var(--color-primary) / 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(22, 163, 74, 0.12);
+  border-color: #86efac;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .feature-icon-wrapper {
-  background: hsl(var(--color-primary) / 0.08);
-  color: hsl(var(--color-primary-dark));
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-sm);
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.icon-staples {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  color: #15803d;
+}
+
+.icon-spices {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #b45309;
+}
+
+.icon-snacks {
+  background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
+  color: #c2410c;
+}
+
+.icon-imports {
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  color: #4338ca;
+}
+
+.feature-tag-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.tag-spices {
+  background: #fffbeb;
+  color: #b45309;
+}
+
+.tag-snacks {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.tag-imports {
+  background: #eef2ff;
+  color: #4338ca;
 }
 
 .feature-title {
   font-family: var(--font-family-title);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 800;
-  color: hsl(var(--color-text-dark));
+  color: #0f172a;
+  margin-top: 0.25rem;
 }
 
 .feature-desc {
-  font-size: 0.9rem;
-  color: hsl(var(--color-text-muted));
-  line-height: 1.5;
+  font-size: 0.925rem;
+  color: #64748b;
+  line-height: 1.6;
+  flex: 1;
 }
 
-/* Promo Banner Section */
+.feature-card-footer {
+  margin-top: 0.5rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.feature-link-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #16a34a;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: transform 0.25s ease;
+}
+
+.feature-card:hover .feature-link-text {
+  transform: translateX(4px);
+  color: #15803d;
+}
+
+/* Premium Promo Banner Styling */
 .promo-banner {
-  background: hsl(var(--color-primary-dark));
+  background: linear-gradient(135deg, #064e3b 0%, #047857 40%, #065f46 100%);
   color: white;
-  padding: 4.5rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-banner-backdrop-glow {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(52, 211, 153, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
 }
 
 .promo-banner-inner {
-  max-width: 700px;
+  max-width: 840px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: #a7f3d0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 1.1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .promo-title {
   font-family: var(--font-family-title);
-  font-size: 2.25rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .promo-desc {
-  font-size: 1rem;
-  opacity: 0.9;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #e6f4ea;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.promo-features-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.75rem 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.promo-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f0fdf4;
+}
+
+.promo-feature-divider {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #34d399;
+}
+
+.promo-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.promo-primary-btn {
+  background: white;
+  color: #047857;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.promo-primary-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  background: #f0fdf4;
+  color: #065f46;
+}
+
+.promo-secondary-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  backdrop-filter: blur(6px);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.promo-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Testimonial & Google Reviews styling */

@@ -1408,44 +1408,123 @@ export default function App() {
             {/* Core Features / Departments Section */}
             <section className="landing-features">
               <div className="section-header">
+                <div className="departments-pill-badge">
+                  <Sparkles size={16} />
+                  <span>Curated Indian Grocery Selection</span>
+                </div>
                 <h2 className="section-title">Our Store Departments</h2>
-                <p className="section-desc">We stock over 500+ premium imports to bring you authentic tastes of home</p>
+                <p className="section-desc">We stock over 500+ premium authentic imports to bring you the rich tastes of home</p>
               </div>
+
               <div className="features-grid">
-                <div className="feature-card">
-                  <div className="feature-icon-wrapper">
-                    <ShoppingBag size={24} />
+                <div className="feature-card" onClick={() => applyProductFilter('', 'Atta, Rice & Dals')} style={{ cursor: 'pointer' }}>
+                  <div className="feature-card-header">
+                    <div className="feature-icon-wrapper icon-staples">
+                      <ShoppingBag size={26} />
+                    </div>
+                    <span className="feature-tag-badge">50+ Rice & Dals</span>
                   </div>
-                  <h3 className="feature-title">Premium Staples</h3>
-                  <p className="feature-desc">High-quality basmati rice, organic dals, premium lentils, and traditional wheat flours (atta) for daily home cooking.</p>
+                  <h3 className="feature-title">Premium Staples & Atta</h3>
+                  <p className="feature-desc">High-quality Royal & Sher Basmati rice, organic dals, premium lentils, and traditional chakki fresh wheat flours for daily home cooking.</p>
+                  <div className="feature-card-footer">
+                    <span className="feature-link-text">Browse Staples & Flours ➔</span>
+                  </div>
                 </div>
-                <div className="feature-card">
-                  <div className="feature-icon-wrapper">
-                    <SlidersHorizontal size={24} />
+
+                <div className="feature-card" onClick={() => applyProductFilter('', 'Spices & Masalas')} style={{ cursor: 'pointer' }}>
+                  <div className="feature-card-header">
+                    <div className="feature-icon-wrapper icon-spices">
+                      <Sparkles size={26} />
+                    </div>
+                    <span className="feature-tag-badge tag-spices">Pure & Aromatic</span>
                   </div>
-                  <h3 className="feature-title">Authentic Spices</h3>
-                  <p className="feature-desc">Pure, aromatic whole and ground spices, authentic masalas, and condiments to elevate your dishes.</p>
+                  <h3 className="feature-title">Authentic Spices & Masalas</h3>
+                  <p className="feature-desc">Pure whole and ground spices, authentic MDH & Everest masalas, Kashmiri chili, turmeric, and aromatic blends to elevate your dishes.</p>
+                  <div className="feature-card-footer">
+                    <span className="feature-link-text">Browse Spices & Blends ➔</span>
+                  </div>
                 </div>
-                <div className="feature-card">
-                  <div className="feature-icon-wrapper">
-                    <Info size={24} />
+
+                <div className="feature-card" onClick={() => applyProductFilter('', 'Snacks & Sweets')} style={{ cursor: 'pointer' }}>
+                  <div className="feature-card-header">
+                    <div className="feature-icon-wrapper icon-snacks">
+                      <Layers size={26} />
+                    </div>
+                    <span className="feature-tag-badge tag-snacks">Fresh & Crispy</span>
                   </div>
-                  <h3 className="feature-title">Traditional Imports</h3>
-                  <p className="feature-desc">Homestyle spicy pickles, traditional sweets, tea leaves, pooja essentials, and frozen Indian food specialties.</p>
+                  <h3 className="feature-title">Snacks & Namkeen</h3>
+                  <p className="feature-desc">Haldiram's bhujia, crispy South Indian murukku, Gujarati farsan, sweets, biscuits, and authentic masala chai teas.</p>
+                  <div className="feature-card-footer">
+                    <span className="feature-link-text">Browse Snacks & Sweets ➔</span>
+                  </div>
+                </div>
+
+                <div className="feature-card" onClick={() => applyProductFilter('', 'Frozen & Specialty')} style={{ cursor: 'pointer' }}>
+                  <div className="feature-card-header">
+                    <div className="feature-icon-wrapper icon-imports">
+                      <Truck size={26} />
+                    </div>
+                    <span className="feature-tag-badge tag-imports">Frozen & Pooja</span>
+                  </div>
+                  <h3 className="feature-title">Frozen & Traditional Imports</h3>
+                  <p className="feature-desc">Homestyle spicy pickles, fresh paneer, frozen parathas, samosas, sweets, gulab jamun, and traditional pooja essentials.</p>
+                  <div className="feature-card-footer">
+                    <span className="feature-link-text">Browse Frozen & Specialty ➔</span>
+                  </div>
                 </div>
               </div>
             </section>
 
-            {/* Promo Banner */}
+            {/* Premium Interactive Promo Banner */}
             <section className="promo-banner">
+              <div className="promo-banner-backdrop-glow"></div>
               <div className="promo-banner-inner">
+                <div className="promo-badge">
+                  <MapPin size={16} />
+                  <span>Northeast Calgary • 6520 36 St NE Unit 1125</span>
+                </div>
+                
                 <h2 className="promo-title">Visit Us In-Store Today</h2>
+                
                 <p className="promo-desc">
-                  We offer a clean, organized, and friendly shopping environment. Check out our physical store location in Calgary, Alberta, for all your daily grocery essentials!
+                  Experience a clean, organized, and friendly shopping environment. Check out our physical storefront in Calgary NE for fresh arrivals, weekly in-store specials, and daily savings on all your Indian grocery essentials!
                 </p>
-                <button className="btn-secondary" style={{ border: 'none', background: 'white', color: 'hsl(var(--color-primary-dark))', marginTop: '0.5rem' }} onClick={() => navigateTo('/contact')}>
-                  Get Directions & Hours
-                </button>
+
+                <div className="promo-features-row">
+                  <div className="promo-feature-item">
+                    <Clock size={18} />
+                    <span>Open 7 Days a Week</span>
+                  </div>
+                  <div className="promo-feature-divider"></div>
+                  <div className="promo-feature-item">
+                    <Sparkles size={18} />
+                    <span>Fresh Stock Received Weekly</span>
+                  </div>
+                  <div className="promo-feature-divider"></div>
+                  <div className="promo-feature-item">
+                    <Phone size={18} />
+                    <span>(403) 497-2777</span>
+                  </div>
+                </div>
+
+                <div className="promo-actions">
+                  <button 
+                    className="promo-primary-btn" 
+                    onClick={() => navigateTo('/location')}
+                  >
+                    <MapPin size={18} />
+                    <span>Get Store Directions & Hours</span>
+                    <ArrowRight size={18} />
+                  </button>
+
+                  <button 
+                    className="promo-secondary-btn" 
+                    onClick={() => navigateTo('/offers')}
+                  >
+                    <Sparkles size={18} />
+                    <span>View Weekly Offers</span>
+                  </button>
+                </div>
               </div>
             </section>
 
