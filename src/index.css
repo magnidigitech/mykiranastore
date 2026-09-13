@@ -4878,64 +4878,9 @@ html, body {
     padding: 1.25rem !important;
   }
 
-  .hero-badges-wrap {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-    gap: 0.65rem !important;
-    margin-top: 0.75rem !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Prevent Floating Badges from overflowing viewport on right/left and render centered on mobile */
-  .badge-google {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    left: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    align-items: center !important;
-    text-align: center !important;
-    padding: 0.85rem 1rem !important;
-    border-radius: 16px !important;
-    border: 1px solid #e2e8f0 !important;
-    background: white !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
-  }
-
-  .badge-google-header {
-    justify-content: center !important;
-  }
-
-  .badge-rating-text {
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .badge-store-status {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    left: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    justify-content: center !important;
-    text-align: center !important;
-    padding: 0.85rem 1rem !important;
-    border-radius: 16px !important;
-    border: 1px solid #e2e8f0 !important;
-    background: white !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
-  }
-
-  .badge-store-status div {
-    align-items: center !important;
-    text-align: center !important;
+  .hero-badges-wrap,
+  .floating-badge {
+    display: none !important;
   }
 
   .instagram-grid {

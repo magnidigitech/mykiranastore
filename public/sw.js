@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kiranstore-pwa-v5';
+const CACHE_NAME = 'kiranstore-pwa-v6';
 
 const ASSETS_TO_CACHE = [
   '/',
