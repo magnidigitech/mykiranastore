@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Sitemap declaration
+Sitemap: https://mykiranastore.ca/sitemap.xml

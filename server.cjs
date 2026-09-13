@@ -261,9 +261,7 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
 
 // 6. GET sitemap.xml for Google SEO ranking
 app.get('/sitemap.xml', (req, res) => {
-  const host = req.get('host');
-  const protocol = req.secure ? 'https' : 'http';
-  const baseUrl = `${protocol}://${host}`;
+  const baseUrl = 'https://mykiranastore.ca';
 
   const products = readProducts();
   const categories = new Set();
@@ -300,6 +298,20 @@ app.get('/sitemap.xml', (req, res) => {
 
   res.header('Content-Type', 'application/xml');
   res.status(200).send(xml);
+});
+
+// 7. GET robots.txt
+app.get('/robots.txt', (req, res) => {
+  const content = `# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Sitemap URL
+Sitemap: https://mykiranastore.ca/sitemap.xml
+`;
+  res.header('Content-Type', 'text/plain');
+  res.status(200).send(content);
 });
 
 
