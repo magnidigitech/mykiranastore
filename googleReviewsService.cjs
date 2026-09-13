@@ -5,7 +5,7 @@ const { exec } = require('child_process');
 const DATA_FILE = path.join(__dirname, 'src', 'data', 'googleReviews.json');
 const MAPS_URL = 'https://www.google.com/maps/place/My+Kirana+Store/@51.1108417,-113.9811994,17z/data=!4m8!3m7!1s0x537165eb920f10cb:0xd8e2b5de9b599ea4!8m2!3d51.1108417!4d-113.9811994!9m1!1b1!16s%2Fg%2F11y40hjg1m';
 const PLACE_ID = 'ChIJyxAPkutlcVMRpJ5Zm9614tg';
-const SHORT_URL = 'https://maps.app.goo.gl/9oQyU9MHixLW2mP4A';
+const SHORT_URL = 'https://maps.app.goo.gl/CcYCfES5xPNcnS6w7';
 
 // Fallback baseline in case network is down on initial boot
 const DEFAULT_REVIEWS_DATA = {

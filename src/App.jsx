@@ -76,7 +76,7 @@ export default function App() {
     placeName: "My Kirana Store",
     rating: 4.7,
     totalReviews: 106,
-    googleMapsUrl: "https://maps.app.goo.gl/9oQyU9MHixLW2mP4A",
+    googleMapsUrl: "https://maps.app.goo.gl/CcYCfES5xPNcnS6w7",
     lastSynced: null,
     reviews: []
   });
@@ -1222,7 +1222,7 @@ export default function App() {
                     </span>
                     <span className="hero-trust-divider">•</span>
                     <a
-                      href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/9oQyU9MHixLW2mP4A'}
+                      href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/CcYCfES5xPNcnS6w7'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hero-trust-rating"
@@ -1623,7 +1623,7 @@ export default function App() {
 
                   <div className="google-banner-actions">
                     <a
-                      href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/9oQyU9MHixLW2mP4A'}
+                      href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/CcYCfES5xPNcnS6w7'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-review-google"
@@ -1719,7 +1719,7 @@ export default function App() {
                   </button>
                 )}
                 <a
-                  href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/9oQyU9MHixLW2mP4A'}
+                  href={googleReviewsData.googleMapsUrl || 'https://maps.app.goo.gl/CcYCfES5xPNcnS6w7'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-view-all-google"
@@ -1823,13 +1823,10 @@ export default function App() {
                     <span className="contact-item-label">Store Hours</span>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', fontSize: '0.9rem', color: 'hsl(var(--color-text-dark))', marginTop: '0.35rem' }}>
                       <span style={{ display: 'flex', justifyContent: 'space-between', gap: '1.5rem' }}>
-                        <strong>Thu, Sun - Tue:</strong> <span>10:30 AM - 9:00 PM</span>
+                        <strong>Mon - Thu, Sun:</strong> <span>10:30 AM - 9:00 PM</span>
                       </span>
                       <span style={{ display: 'flex', justifyContent: 'space-between', gap: '1.5rem' }}>
                         <strong>Fri & Sat:</strong> <span>10:30 AM - 10:00 PM</span>
-                      </span>
-                      <span style={{ display: 'flex', justifyContent: 'space-between', gap: '1.5rem' }}>
-                        <strong>Wednesday:</strong> <span>11:00 AM - 9:00 PM</span>
                       </span>
                     </div>
                   </div>
@@ -2503,7 +2500,7 @@ export default function App() {
                   Canada
                 </p>
                 <a
-                  href="https://maps.app.goo.gl/9oQyU9MHixLW2mP4A"
+                  href="https://maps.app.goo.gl/CcYCfES5xPNcnS6w7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
@@ -2521,13 +2518,10 @@ export default function App() {
                 <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'hsl(var(--color-text-dark))', marginBottom: '0.75rem' }}>Store Hours & Holidays</h2>
                 <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 1.25rem 0', display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.92rem', color: 'hsl(var(--color-text-dark))' }}>
                   <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #e2e8f0', paddingBottom: '0.35rem' }}>
-                    <span>Thu, Sun - Tue:</span> <strong>10:30 AM - 9:00 PM</strong>
-                  </li>
-                  <li style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed #e2e8f0', paddingBottom: '0.35rem' }}>
-                    <span>Fri & Sat:</span> <strong>10:30 AM - 10:00 PM</strong>
+                    <span>Mon - Thu, Sun:</span> <strong>10:30 AM - 9:00 PM</strong>
                   </li>
                   <li style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>Wednesday:</span> <strong>11:00 AM - 9:00 PM</strong>
+                    <span>Fri & Sat:</span> <strong>10:30 AM - 10:00 PM</strong>
                   </li>
                 </ul>
                 <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '10px', padding: '0.75rem 1rem', fontSize: '0.825rem', color: 'hsl(var(--color-text-muted))', display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
@@ -2541,13 +2535,21 @@ export default function App() {
                 <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#fef3c7', color: '#b45309', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
                   <Phone size={24} />
                 </div>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'hsl(var(--color-text-dark))', marginBottom: '0.75rem' }}>Contact & Inquiry</h2>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'hsl(var(--color-text-dark))', marginBottom: '0.75rem' }}>Contact & Socials</h2>
                 <p style={{ fontSize: '0.95rem', color: 'hsl(var(--color-text-dark))', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
                   <Phone size={16} style={{ color: '#b45309' }} /> <a href="tel:+14034972777" style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}>+1 (403) 497-2777</a>
                 </p>
-                <p style={{ fontSize: '0.95rem', color: 'hsl(var(--color-text-dark))', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.25rem' }}>
+                <p style={{ fontSize: '0.95rem', color: 'hsl(var(--color-text-dark))', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
                   <Mail size={16} style={{ color: '#b45309' }} /> <a href="mailto:support@mykiranstore.ca" style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}>support@mykiranstore.ca</a>
                 </p>
+                <div style={{ display: 'flex', gap: '0.6rem', marginBottom: '1rem' }}>
+                  <a href="https://www.instagram.com/mykiranastore_ca/?hl=en" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', background: '#fdf2f8', color: '#db2777', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.825rem', fontWeight: 700, textDecoration: 'none' }}>
+                    Instagram ↗
+                  </a>
+                  <a href="https://www.facebook.com/mykiranastoreca/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', background: '#eff6ff', color: '#1d4ed8', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.825rem', fontWeight: 700, textDecoration: 'none' }}>
+                    Facebook ↗
+                  </a>
+                </div>
                 <div style={{ background: '#fffbeb', border: '1px solid #fde68a', borderRadius: '10px', padding: '0.75rem 1rem', fontSize: '0.825rem', color: '#92400e', display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
                   <Info size={16} style={{ flexShrink: 0, marginTop: '2px' }} />
                   <span>In-Store Shopping & Phone Inquiry Available. Online delivery is not offered at this location.</span>
@@ -3510,10 +3512,9 @@ export default function App() {
             <div className="footer-links-group">
               <div className="footer-links-col">
                 <span className="footer-links-title">Store Hours</span>
-                <span className="footer-link" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', fontSize: '0.85rem' }}>
-                  <span>Thu, Sun - Tue: 10:30 AM - 9:00 PM</span>
+                <span className="footer-link" style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', fontSize: '0.85rem' }}>
+                  <span>Mon - Thu, Sun: 10:30 AM - 9:00 PM</span>
                   <span>Fri & Sat: 10:30 AM - 10:00 PM</span>
-                  <span>Wednesday: 11:00 AM - 9:00 PM</span>
                 </span>
                 <span className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.35rem', fontWeight: 600 }}>
                   <Calendar size={15} /> Open 7 Days a week
@@ -3521,9 +3522,9 @@ export default function App() {
               </div>
 
               <div className="footer-links-col">
-                <span className="footer-links-title">Store Contact & Location</span>
+                <span className="footer-links-title">Store Contact & Socials</span>
                 <a
-                  href="https://maps.app.goo.gl/9oQyU9MHixLW2mP4A"
+                  href="https://maps.app.goo.gl/CcYCfES5xPNcnS6w7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-link"
@@ -3545,6 +3546,26 @@ export default function App() {
                 >
                   <Mail size={15} style={{ flexShrink: 0 }} /> <span>support@mykiranstore.ca</span>
                 </a>
+                <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.5rem' }}>
+                  <a
+                    href="https://www.instagram.com/mykiranastore_ca/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer-link"
+                    style={{ color: '#db2777', fontWeight: 700 }}
+                  >
+                    Instagram ↗
+                  </a>
+                  <a
+                    href="https://www.facebook.com/mykiranastoreca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer-link"
+                    style={{ color: '#3b82f6', fontWeight: 700 }}
+                  >
+                    Facebook ↗
+                  </a>
+                </div>
               </div>
             </div>
           </div>
